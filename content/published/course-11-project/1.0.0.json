@@ -1,0 +1,143 @@
+{
+  "schemaVersion": 1,
+  "id": "course-11-project",
+  "title": "AI and LLM Security Foundations workplace project",
+  "contentVersion": "1.0.0",
+  "contentHash": "ac397f59166056e2931a756090f17341667bb4a3ece4d360cc5813fb25faeebe",
+  "artifactType": "project",
+  "riskClassification": "dual-use",
+  "verificationStatus": "verified",
+  "publicationStatus": "published",
+  "approvalBasis": "v1-release-baseline",
+  "releaseApproval": {
+    "authority": "product-owner",
+    "decision": "approved",
+    "scope": "initial-v1-academy",
+    "recordedAt": "2026-07-19T00:00:00.000Z",
+    "includesSafetyReview": true,
+    "directive": "Version 1 initial academy is considered reviewed and approved; future changes use the standard workflow."
+  },
+  "publishedAt": "2026-07-19T00:00:00.000Z",
+  "lastReviewedAt": "2026-07-19T00:00:00.000Z",
+  "nextReviewAt": "2028-07-19T00:00:00.000Z",
+  "metadata": {
+    "domain": "emerging-tech",
+    "difficulty": "foundation-to-intermediate",
+    "audience": [
+      "career-switcher",
+      "student",
+      "junior-practitioner"
+    ],
+    "prerequisites": [],
+    "skillTags": [
+      "security-foundations",
+      "scripting"
+    ],
+    "licenseNotes": "Original CyberMentor instructional synthesis with reference links to authoritative public sources; no source page is republished.",
+    "reviewIntervalDays": 365,
+    "changeLog": [
+      {
+        "version": "1.0.0",
+        "summary": "Initial approved Version 1 academy"
+      }
+    ]
+  },
+  "artifact": {
+    "courseId": "course-11",
+    "title": "Threat-model and evaluate a RAG-enabled support assistant.",
+    "scenario": "a team reviews a retrieval-enabled support assistant that can access approved internal documents but must never expose secrets",
+    "requirements": [
+      "Define scope, authorization, assumptions, and measurable success criteria.",
+      "Collect and interpret data lineage, retrieved chunks, prompt and tool traces, authorization decisions, evaluation results, output handling, and incident telemetry.",
+      "Compare at least two response or design options and explain the tradeoff.",
+      "Recommend a bounded defensive action and a verification plan.",
+      "Document limitations, residual risk, cleanup, and next steps."
+    ],
+    "deliverables": [
+      "Executive summary",
+      "Technical evidence appendix",
+      "Decision and remediation record",
+      "Verification and reflection section"
+    ],
+    "milestones": [
+      "Scope and evidence plan",
+      "Analysis draft",
+      "Defensive recommendation",
+      "Final verified report"
+    ],
+    "rubric": [
+      {
+        "criterion": "Scope and assumptions",
+        "weight": 20,
+        "exemplary": "Defines authorization, assets, assumptions, constraints, and success criteria precisely.",
+        "meets": "Defines the main scope and assumptions with minor gaps that do not invalidate the work."
+      },
+      {
+        "criterion": "Evidence and reasoning",
+        "weight": 30,
+        "exemplary": "Uses traceable evidence, considers alternatives, and clearly separates observation from inference.",
+        "meets": "Uses relevant evidence and provides a defensible reasoning chain."
+      },
+      {
+        "criterion": "Defensive action and verification",
+        "weight": 30,
+        "exemplary": "Proposes bounded remediation, validates outcome and side effects, and records residual risk.",
+        "meets": "Proposes a proportionate action and verifies the intended result."
+      },
+      {
+        "criterion": "Professional communication",
+        "weight": 20,
+        "exemplary": "Produces a concise, reproducible report suited to technical and business stakeholders.",
+        "meets": "Communicates the decision, evidence, outcome, and limitations clearly."
+      }
+    ],
+    "rubricId": "course-11-rubric",
+    "expectedEvidence": [
+      "A traceable evidence-to-decision narrative",
+      "At least one explicit verification result",
+      "A statement of limitations and residual risk"
+    ],
+    "minimumEvidenceLength": 180,
+    "learnerConstraints": [
+      "Use only bundled fictional or personally owned authorized evidence.",
+      "Remove secrets, personal data, and real target identifiers.",
+      "Do not reproduce proprietary course or employer material."
+    ],
+    "mentorBoundaries": [
+      "Sentinel may explain concepts and question assumptions.",
+      "Sentinel may not write the final submission or provide graded answers."
+    ],
+    "skillTags": [
+      "security-foundations",
+      "scripting"
+    ]
+  },
+  "claims": [
+    {
+      "id": "v1-original-synthesis",
+      "kind": "fact",
+      "statement": "The Version 1 lesson is original instructional synthesis reviewed under the product-owner baseline approval directive."
+    }
+  ],
+  "references": [
+    {
+      "claimId": "v1-original-synthesis",
+      "sourceId": "nist-ai-rmf",
+      "title": "Artificial Intelligence Risk Management Framework",
+      "publisher": "National Institute of Standards and Technology",
+      "url": "https://www.nist.gov/itl/ai-risk-management-framework",
+      "publicationDate": "2023-01-26",
+      "retrievedAt": "2026-07-19T13:10:03.957Z",
+      "sourceVersion": "Sun, 19 Jul 2026 09:21:14 GMT",
+      "snapshotDigest": "f9552383a68119f2cf728d4498519e667a07aa6bb4653824c3a0fd6a644c1820",
+      "evidence": "Authoritative source used for bounded original instructional synthesis."
+    }
+  ],
+  "provenance": {
+    "author": "cybermentor-v1-release-team",
+    "publisher": "v1-release-seed",
+    "disclosure": "Seeded as the product-owner-approved Version 1 baseline. Future edits, community contributions, instructor content, and AI-assisted drafts require the standard review workflow.",
+    "humanAuthored": false,
+    "reviews": []
+  }
+}

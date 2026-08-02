@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "sourceId": "nist-ai-rmf",
+  "sourceTitle": "Artificial Intelligence Risk Management Framework",
+  "publisher": "National Institute of Standards and Technology",
+  "requestedUrl": "https://www.nist.gov/itl/ai-risk-management-framework",
+  "finalUrl": "https://www.nist.gov/itl/ai-risk-management-framework",
+  "retrievedAt": "2026-07-19T13:10:03.957Z",
+  "publicationDate": "2023-01-26",
+  "sourceVersion": "Sun, 19 Jul 2026 09:21:14 GMT",
+  "contentDigest": "f9552383a68119f2cf728d4498519e667a07aa6bb4653824c3a0fd6a644c1820",
+  "contentType": "text/html; charset=UTF-8",
+  "byteLength": 91755,
+  "httpStatus": 200,
+  "evidenceMatches": [],
+  "rawContentStored": false
+}

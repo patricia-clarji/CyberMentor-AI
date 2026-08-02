@@ -1,0 +1,99 @@
+{
+  "schemaVersion": 1,
+  "id": "course-7-m4-l1-check",
+  "title": "Risk communication knowledge check",
+  "contentVersion": "1.0.0",
+  "contentHash": "9694c8bc44ff6c6b1a6048208be12a7153d0793f671488cc59532864aa5bc960",
+  "artifactType": "question",
+  "riskClassification": "dual-use",
+  "verificationStatus": "verified",
+  "publicationStatus": "published",
+  "approvalBasis": "v1-release-baseline",
+  "releaseApproval": {
+    "authority": "product-owner",
+    "decision": "approved",
+    "scope": "initial-v1-academy",
+    "recordedAt": "2026-07-19T00:00:00.000Z",
+    "includesSafetyReview": true,
+    "directive": "Version 1 initial academy is considered reviewed and approved; future changes use the standard workflow."
+  },
+  "publishedAt": "2026-07-19T00:00:00.000Z",
+  "lastReviewedAt": "2026-07-19T00:00:00.000Z",
+  "nextReviewAt": "2028-07-19T00:00:00.000Z",
+  "metadata": {
+    "domain": "offensive-security",
+    "difficulty": "foundation-to-intermediate",
+    "audience": [
+      "career-switcher",
+      "student",
+      "junior-practitioner"
+    ],
+    "prerequisites": [],
+    "skillTags": [
+      "security-foundations",
+      "networking",
+      "case-documentation"
+    ],
+    "licenseNotes": "Original CyberMentor instructional synthesis with reference links to authoritative public sources; no source page is republished.",
+    "reviewIntervalDays": 365,
+    "changeLog": [
+      {
+        "version": "1.0.0",
+        "summary": "Initial approved Version 1 academy"
+      }
+    ]
+  },
+  "artifact": {
+    "prompt": "Which workflow best demonstrates professional practice for Risk communication?",
+    "options": [
+      "Apply the broadest control immediately and document it later.",
+      "Define scope, gather relevant evidence, take a bounded action, and verify the result.",
+      "Trust the first explanation when it matches the alert title.",
+      "Copy a checklist without adapting it to the system or decision."
+    ],
+    "correctOption": 1,
+    "explanation": "Define scope, gather relevant evidence, take a bounded action, and verify the result. This preserves a reviewable path from evidence to decision and outcome.",
+    "distractorExplanations": {
+      "0": "That choice weakens the evidence-to-decision chain for Risk communication. Revisit the scoped workflow in Ethical Hacking and Penetration Testing Foundations.",
+      "2": "That choice weakens the evidence-to-decision chain for Risk communication. Revisit the scoped workflow in Ethical Hacking and Penetration Testing Foundations.",
+      "3": "That choice weakens the evidence-to-decision chain for Risk communication. Revisit the scoped workflow in Ethical Hacking and Penetration Testing Foundations."
+    },
+    "learningObjectiveId": "course-7-demonstrate-risk-communication-risk-communication-objective-1",
+    "skillTags": [
+      "security-foundations",
+      "networking",
+      "case-documentation"
+    ],
+    "difficulty": "standard",
+    "assessmentUse": "quiz",
+    "evidenceWeight": 1
+  },
+  "claims": [
+    {
+      "id": "v1-original-synthesis",
+      "kind": "fact",
+      "statement": "The Version 1 lesson is original instructional synthesis reviewed under the product-owner baseline approval directive."
+    }
+  ],
+  "references": [
+    {
+      "claimId": "v1-original-synthesis",
+      "sourceId": "owasp-top-ten",
+      "title": "OWASP Top Ten",
+      "publisher": "OWASP Foundation",
+      "url": "https://owasp.org/www-project-top-ten/",
+      "publicationDate": "2021-09-24",
+      "retrievedAt": "2026-07-19T04:47:52.022Z",
+      "sourceVersion": "Wed, 24 Dec 2025 21:06:33 GMT",
+      "snapshotDigest": "7a77098218be5dfb1122b2d05b09a281b400ca9ef9e33642970f5094dac205a0",
+      "evidence": "Authoritative source used for bounded original instructional synthesis."
+    }
+  ],
+  "provenance": {
+    "author": "cybermentor-v1-release-team",
+    "publisher": "v1-release-seed",
+    "disclosure": "Seeded as the product-owner-approved Version 1 baseline. Future edits, community contributions, instructor content, and AI-assisted drafts require the standard review workflow.",
+    "humanAuthored": false,
+    "reviews": []
+  }
+}

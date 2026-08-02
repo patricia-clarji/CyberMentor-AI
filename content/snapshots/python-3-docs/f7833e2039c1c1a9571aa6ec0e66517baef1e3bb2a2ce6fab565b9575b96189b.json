@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "sourceId": "python-3-docs",
+  "sourceTitle": "Python 3 Documentation",
+  "publisher": "Python Software Foundation",
+  "requestedUrl": "https://docs.python.org/3/",
+  "finalUrl": "https://docs.python.org/3/",
+  "retrievedAt": "2026-07-19T04:47:52.677Z",
+  "publicationDate": "Sat, 18 Jul 2026 20:07:03 GMT",
+  "sourceVersion": "\"6a5bdce7-4987\"",
+  "contentDigest": "f7833e2039c1c1a9571aa6ec0e66517baef1e3bb2a2ce6fab565b9575b96189b",
+  "contentType": "text/html",
+  "byteLength": 18823,
+  "httpStatus": 200,
+  "evidenceMatches": [],
+  "rawContentStored": false
+}

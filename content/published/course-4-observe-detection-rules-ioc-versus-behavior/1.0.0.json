@@ -1,0 +1,199 @@
+{
+  "schemaVersion": 1,
+  "id": "course-4-observe-detection-rules-ioc-versus-behavior",
+  "title": "IOC versus behavior",
+  "contentVersion": "1.0.0",
+  "contentHash": "49fa0a7ae4cc19711ae951c926e9b020910d0f43987ed0f13998541bd0bbde99",
+  "artifactType": "lesson",
+  "riskClassification": "defensive",
+  "verificationStatus": "verified",
+  "publicationStatus": "published",
+  "approvalBasis": "v1-release-baseline",
+  "releaseApproval": {
+    "authority": "product-owner",
+    "decision": "approved",
+    "scope": "initial-v1-academy",
+    "recordedAt": "2026-07-19T00:00:00.000Z",
+    "includesSafetyReview": true,
+    "directive": "Version 1 initial academy is considered reviewed and approved; future changes use the standard workflow."
+  },
+  "publishedAt": "2026-07-19T00:00:00.000Z",
+  "lastReviewedAt": "2026-07-19T00:00:00.000Z",
+  "nextReviewAt": "2028-07-19T00:00:00.000Z",
+  "metadata": {
+    "domain": "blue-team",
+    "difficulty": "foundation-to-intermediate",
+    "audience": [
+      "career-switcher",
+      "student",
+      "junior-practitioner"
+    ],
+    "prerequisites": [],
+    "skillTags": [
+      "alert-triage",
+      "log-correlation",
+      "case-documentation"
+    ],
+    "licenseNotes": "Original CyberMentor instructional synthesis with reference links to authoritative public sources; no source page is republished.",
+    "reviewIntervalDays": 365,
+    "changeLog": [
+      {
+        "version": "1.0.0",
+        "summary": "Initial approved Version 1 academy"
+      }
+    ]
+  },
+  "artifact": {
+    "courseId": "course-4",
+    "moduleId": "course-4-m2",
+    "lessonId": "course-4-observe-detection-rules-ioc-versus-behavior",
+    "title": "IOC versus behavior",
+    "minutes": 32,
+    "objectives": [
+      "Explain ioc versus behavior using a scoped evidence-to-decision model",
+      "Apply a safe, repeatable ioc versus behavior workflow to a workplace simulation",
+      "Evaluate evidence and verify a defensive outcome related to ioc versus behavior"
+    ],
+    "blocks": [
+      {
+        "id": "mental-model",
+        "type": "paragraph",
+        "text": "IOC versus behavior is taught here as an operational capability inside Introduction to Security Operations and SOC Analysis, not as an isolated definition. SOC work converts noisy telemetry into a documented decision. An analyst establishes what fired, what entity is affected, what supporting evidence exists, and whether escalation changes risk or response priority. In this module, your job is to recognize the evidence that distinguishes normal and concerning behavior. Start by naming the system or decision in scope, the assumptions you are making, and the outcome that would count as success. Then connect ioc versus behavior to observable evidence and an accountable decision owner. This structure prevents vocabulary from becoming false confidence and makes later lab and project work reproducible.",
+        "claimIds": [
+          "v1-original-synthesis"
+        ]
+      },
+      {
+        "id": "operational-workflow",
+        "type": "paragraph",
+        "text": "Use a five-part workflow. First, define the authorized scope and the question you are trying to answer. Second, preserve a baseline so later changes can be explained or reversed. Third, collect the smallest sufficient evidence; for this course that commonly includes alert logic, raw events, identity and asset context, timelines, corroborating sources, and case notes. Fourth, compare at least two plausible explanations and select a proportionate action. Fifth, verify the resulting state with a different observation where practical, record limitations, and identify who owns follow-up. The same workflow applies whether ioc versus behavior is used for prevention, investigation, engineering, or communication.",
+        "claimIds": [
+          "v1-original-synthesis"
+        ]
+      },
+      {
+        "id": "evidence-standard",
+        "type": "callout",
+        "heading": "Evidence standard",
+        "body": "Evidence quality matters more than volume. Prefer records that identify source, time, affected entity, collection method, and relevant configuration or context. Separate direct observations from inferences, and do not silently discard contradictory data. A strong note explains why an artifact supports the conclusion, how it could be misleading, and what additional check would change confidence. For ioc versus behavior, capture enough context that another learner can reproduce the reasoning without receiving a hidden answer or relying on the original operator’s memory.",
+        "claimIds": [
+          "v1-original-synthesis"
+        ]
+      },
+      {
+        "id": "decision-table",
+        "type": "comparison-table",
+        "heading": "From weak activity to professional evidence",
+        "columns": [
+          "Weak approach",
+          "Professional approach",
+          "Verification"
+        ],
+        "rows": [
+          [
+            "Act from an assumption",
+            "State scope and gather traceable evidence",
+            "Corroborate the key observation"
+          ],
+          [
+            "Make a broad change",
+            "Use a bounded, reversible action",
+            "Compare the resulting state with success criteria"
+          ],
+          [
+            "Report a tool label",
+            "Explain impact, confidence, and limitations",
+            "Retest and record residual risk"
+          ]
+        ],
+        "claimIds": []
+      },
+      {
+        "id": "worked-case",
+        "type": "worked-example",
+        "body": "Consider this approved workplace simulation: a junior analyst receives several identity alerts during a busy shift and must prioritize the evidence. The team must reason about ioc versus behavior. A careful analyst records the starting condition, identifies the relevant decision and evidence owners, gathers alert logic, raw events, identity and asset context, timelines, corroborating sources, and case notes, and compares the observation with the expected state. The analyst applies one bounded change or recommendation, checks both the intended outcome and likely side effects, and records residual uncertainty. The final report describes what was observed, what was inferred, what was changed, how recovery or cleanup was verified, and what should be monitored next.",
+        "claimIds": [
+          "v1-original-synthesis"
+        ]
+      },
+      {
+        "id": "misconception",
+        "type": "misconception",
+        "body": "A common failure is closing or escalating an alert from its title alone instead of reviewing the underlying events and context. That approach feels fast but breaks traceability and can increase impact. Instead, pause when scope, evidence origin, authorization, or the success criterion is unclear. Ask what an independent reviewer would need to reproduce the decision. Tool output, model output, alert names, and copied commands are inputs—not authority. The learner remains responsible for validating the result and staying inside the approved environment.",
+        "claimIds": [
+          "v1-original-synthesis"
+        ]
+      },
+      {
+        "id": "defensive-counterpart",
+        "type": "callout",
+        "heading": "Defense, authorization, and cleanup",
+        "body": "Defensive practice must accompany every concept: preserve raw evidence, test alternative explanations, document confidence, tune detections, and verify containment. For dual-use subjects, all activity stays inside the supplied local simulation; never transfer targets, credentials, payloads, or techniques to public systems. Good work includes remediation and retesting, not merely identifying a weakness. It also protects sensitive evidence and explains uncertainty in language appropriate for technical and nontechnical stakeholders.",
+        "claimIds": [
+          "v1-original-synthesis"
+        ]
+      },
+      {
+        "id": "decision-practice",
+        "type": "interactive-decision",
+        "body": "Before continuing, write one direct observation, one hypothesis, one bounded action, and one independent verification step for ioc versus behavior. If authorization or evidence is missing, the correct decision is to stop and obtain it.",
+        "claimIds": []
+      },
+      {
+        "id": "summary",
+        "type": "summary",
+        "body": "IOC versus behavior becomes job-ready evidence when the learner can define scope, preserve and interpret relevant observations, choose a proportionate action, verify the outcome, and communicate limitations. The quiz checks this reasoning; the course lab and project require the same chain in a larger scenario.",
+        "claimIds": [
+          "v1-original-synthesis"
+        ]
+      }
+    ],
+    "keyTerms": [
+      "IOC versus behavior",
+      "scope",
+      "evidence",
+      "verification",
+      "residual risk"
+    ],
+    "workedExample": "Consider this approved workplace simulation: a junior analyst receives several identity alerts during a busy shift and must prioritize the evidence. The team must reason about ioc versus behavior. A careful analyst records the starting condition, identifies the relevant decision and evidence owners, gathers alert logic, raw events, identity and asset context, timelines, corroborating sources, and case notes, and compares the observation with the expected state. The analyst applies one bounded change or recommendation, checks both the intended outcome and likely side effects, and records residual uncertainty. The final report describes what was observed, what was inferred, what was changed, how recovery or cleanup was verified, and what should be monitored next.",
+    "check": {
+      "id": "course-4-m2-l2-check",
+      "question": "How should a learner verify that a control related to IOC versus behavior worked?",
+      "options": [
+        "Assume success when the configuration command returns no error.",
+        "Define the expected state, test it with independent evidence, and record residual risk or follow-up work.",
+        "Measure only whether the control was purchased or enabled.",
+        "Skip retesting when the original issue is no longer visible to one tool."
+      ],
+      "gradingKeyRef": "course-4-m2-l2-check"
+    }
+  },
+  "claims": [
+    {
+      "id": "v1-original-synthesis",
+      "kind": "fact",
+      "statement": "The Version 1 lesson is original instructional synthesis reviewed under the product-owner baseline approval directive."
+    }
+  ],
+  "references": [
+    {
+      "claimId": "v1-original-synthesis",
+      "sourceId": "mitre-attack",
+      "title": "MITRE ATT&CK Enterprise",
+      "publisher": "MITRE",
+      "url": "https://attack.mitre.org/",
+      "publicationDate": null,
+      "retrievedAt": "2026-07-19T04:47:50.623Z",
+      "sourceVersion": "W/\"6a3ad945-170c4e\"",
+      "snapshotDigest": "deb01d761ac935c8106cfae211657fa91b0cfb9c1dfdc371848b9ca85cf1ef32",
+      "evidence": "Authoritative source used for bounded original instructional synthesis."
+    }
+  ],
+  "provenance": {
+    "author": "cybermentor-v1-release-team",
+    "publisher": "v1-release-seed",
+    "disclosure": "Seeded as the product-owner-approved Version 1 baseline. Future edits, community contributions, instructor content, and AI-assisted drafts require the standard review workflow.",
+    "humanAuthored": false,
+    "reviews": []
+  }
+}

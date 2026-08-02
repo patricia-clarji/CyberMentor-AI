@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "sourceId": "owasp-top-ten",
+  "sourceTitle": "OWASP Top Ten",
+  "publisher": "OWASP Foundation",
+  "requestedUrl": "https://owasp.org/www-project-top-ten/",
+  "finalUrl": "https://owasp.org/www-project-top-ten/",
+  "retrievedAt": "2026-07-19T04:47:52.022Z",
+  "publicationDate": "2021-09-24",
+  "sourceVersion": "Wed, 24 Dec 2025 21:06:33 GMT",
+  "contentDigest": "7a77098218be5dfb1122b2d05b09a281b400ca9ef9e33642970f5094dac205a0",
+  "contentType": "text/html; charset=utf-8",
+  "byteLength": 71432,
+  "httpStatus": 200,
+  "evidenceMatches": [],
+  "rawContentStored": false
+}

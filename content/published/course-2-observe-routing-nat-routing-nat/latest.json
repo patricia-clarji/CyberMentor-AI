@@ -1,0 +1,199 @@
+{
+  "schemaVersion": 1,
+  "id": "course-2-observe-routing-nat-routing-nat",
+  "title": "Routing & NAT",
+  "contentVersion": "1.0.0",
+  "contentHash": "2dfcedc509492c3f740cd6b953b465bdde12f6d7e51aa2d4f75111f78c1621b6",
+  "artifactType": "lesson",
+  "riskClassification": "defensive",
+  "verificationStatus": "verified",
+  "publicationStatus": "published",
+  "approvalBasis": "v1-release-baseline",
+  "releaseApproval": {
+    "authority": "product-owner",
+    "decision": "approved",
+    "scope": "initial-v1-academy",
+    "recordedAt": "2026-07-19T00:00:00.000Z",
+    "includesSafetyReview": true,
+    "directive": "Version 1 initial academy is considered reviewed and approved; future changes use the standard workflow."
+  },
+  "publishedAt": "2026-07-19T00:00:00.000Z",
+  "lastReviewedAt": "2026-07-19T00:00:00.000Z",
+  "nextReviewAt": "2028-07-19T00:00:00.000Z",
+  "metadata": {
+    "domain": "networking",
+    "difficulty": "foundation-to-intermediate",
+    "audience": [
+      "career-switcher",
+      "student",
+      "junior-practitioner"
+    ],
+    "prerequisites": [],
+    "skillTags": [
+      "networking",
+      "tcp-ip",
+      "packet-analysis"
+    ],
+    "licenseNotes": "Original CyberMentor instructional synthesis with reference links to authoritative public sources; no source page is republished.",
+    "reviewIntervalDays": 365,
+    "changeLog": [
+      {
+        "version": "1.0.0",
+        "summary": "Initial approved Version 1 academy"
+      }
+    ]
+  },
+  "artifact": {
+    "courseId": "course-2",
+    "moduleId": "course-2-m2",
+    "lessonId": "course-2-observe-routing-nat-routing-nat",
+    "title": "Routing & NAT",
+    "minutes": 28,
+    "objectives": [
+      "Explain routing & nat using a scoped evidence-to-decision model",
+      "Apply a safe, repeatable routing & nat workflow to a workplace simulation",
+      "Evaluate evidence and verify a defensive outcome related to routing & nat"
+    ],
+    "blocks": [
+      {
+        "id": "mental-model",
+        "type": "paragraph",
+        "text": "Routing & NAT is taught here as an operational capability inside Networking for Cybersecurity, not as an isolated definition. Network analysis follows communication across layers and devices. Analysts separate addressing, name resolution, transport state, application behavior, and enforcement so a symptom is not mistaken for a cause. In this module, your job is to recognize the evidence that distinguishes normal and concerning behavior. Start by naming the system or decision in scope, the assumptions you are making, and the outcome that would count as success. Then connect routing & nat to observable evidence and an accountable decision owner. This structure prevents vocabulary from becoming false confidence and makes later lab and project work reproducible.",
+        "claimIds": [
+          "v1-original-synthesis"
+        ]
+      },
+      {
+        "id": "operational-workflow",
+        "type": "paragraph",
+        "text": "Use a five-part workflow. First, define the authorized scope and the question you are trying to answer. Second, preserve a baseline so later changes can be explained or reversed. Third, collect the smallest sufficient evidence; for this course that commonly includes packet headers, flow direction, timing, protocol state, name-resolution results, and device configuration. Fourth, compare at least two plausible explanations and select a proportionate action. Fifth, verify the resulting state with a different observation where practical, record limitations, and identify who owns follow-up. The same workflow applies whether routing & nat is used for prevention, investigation, engineering, or communication.",
+        "claimIds": [
+          "v1-original-synthesis"
+        ]
+      },
+      {
+        "id": "evidence-standard",
+        "type": "callout",
+        "heading": "Evidence standard",
+        "body": "Evidence quality matters more than volume. Prefer records that identify source, time, affected entity, collection method, and relevant configuration or context. Separate direct observations from inferences, and do not silently discard contradictory data. A strong note explains why an artifact supports the conclusion, how it could be misleading, and what additional check would change confidence. For routing & nat, capture enough context that another learner can reproduce the reasoning without receiving a hidden answer or relying on the original operator’s memory.",
+        "claimIds": [
+          "v1-original-synthesis"
+        ]
+      },
+      {
+        "id": "decision-table",
+        "type": "comparison-table",
+        "heading": "From weak activity to professional evidence",
+        "columns": [
+          "Weak approach",
+          "Professional approach",
+          "Verification"
+        ],
+        "rows": [
+          [
+            "Act from an assumption",
+            "State scope and gather traceable evidence",
+            "Corroborate the key observation"
+          ],
+          [
+            "Make a broad change",
+            "Use a bounded, reversible action",
+            "Compare the resulting state with success criteria"
+          ],
+          [
+            "Report a tool label",
+            "Explain impact, confidence, and limitations",
+            "Retest and record residual risk"
+          ]
+        ],
+        "claimIds": []
+      },
+      {
+        "id": "worked-case",
+        "type": "worked-example",
+        "body": "Consider this approved workplace simulation: a small business experiences intermittent access to a customer portal after a network change. The team must reason about routing & nat. A careful analyst records the starting condition, identifies the relevant decision and evidence owners, gathers packet headers, flow direction, timing, protocol state, name-resolution results, and device configuration, and compares the observation with the expected state. The analyst applies one bounded change or recommendation, checks both the intended outcome and likely side effects, and records residual uncertainty. The final report describes what was observed, what was inferred, what was changed, how recovery or cleanup was verified, and what should be monitored next.",
+        "claimIds": [
+          "v1-original-synthesis"
+        ]
+      },
+      {
+        "id": "misconception",
+        "type": "misconception",
+        "body": "A common failure is jumping to an attack conclusion before confirming the expected protocol exchange and network path. That approach feels fast but breaks traceability and can increase impact. Instead, pause when scope, evidence origin, authorization, or the success criterion is unclear. Ask what an independent reviewer would need to reproduce the decision. Tool output, model output, alert names, and copied commands are inputs—not authority. The learner remains responsible for validating the result and staying inside the approved environment.",
+        "claimIds": [
+          "v1-original-synthesis"
+        ]
+      },
+      {
+        "id": "defensive-counterpart",
+        "type": "callout",
+        "heading": "Defense, authorization, and cleanup",
+        "body": "Defensive practice must accompany every concept: use segmentation, least privilege, secure protocols, logging, baselines, and repeatable packet evidence. For dual-use subjects, all activity stays inside the supplied local simulation; never transfer targets, credentials, payloads, or techniques to public systems. Good work includes remediation and retesting, not merely identifying a weakness. It also protects sensitive evidence and explains uncertainty in language appropriate for technical and nontechnical stakeholders.",
+        "claimIds": [
+          "v1-original-synthesis"
+        ]
+      },
+      {
+        "id": "decision-practice",
+        "type": "interactive-decision",
+        "body": "Before continuing, write one direct observation, one hypothesis, one bounded action, and one independent verification step for routing & nat. If authorization or evidence is missing, the correct decision is to stop and obtain it.",
+        "claimIds": []
+      },
+      {
+        "id": "summary",
+        "type": "summary",
+        "body": "Routing & NAT becomes job-ready evidence when the learner can define scope, preserve and interpret relevant observations, choose a proportionate action, verify the outcome, and communicate limitations. The quiz checks this reasoning; the course lab and project require the same chain in a larger scenario.",
+        "claimIds": [
+          "v1-original-synthesis"
+        ]
+      }
+    ],
+    "keyTerms": [
+      "Routing & NAT",
+      "scope",
+      "evidence",
+      "verification",
+      "residual risk"
+    ],
+    "workedExample": "Consider this approved workplace simulation: a small business experiences intermittent access to a customer portal after a network change. The team must reason about routing & nat. A careful analyst records the starting condition, identifies the relevant decision and evidence owners, gathers packet headers, flow direction, timing, protocol state, name-resolution results, and device configuration, and compares the observation with the expected state. The analyst applies one bounded change or recommendation, checks both the intended outcome and likely side effects, and records residual uncertainty. The final report describes what was observed, what was inferred, what was changed, how recovery or cleanup was verified, and what should be monitored next.",
+    "check": {
+      "id": "course-2-m2-l1-check",
+      "question": "How should a learner verify that a control related to Routing & NAT worked?",
+      "options": [
+        "Assume success when the configuration command returns no error.",
+        "Measure only whether the control was purchased or enabled.",
+        "Define the expected state, test it with independent evidence, and record residual risk or follow-up work.",
+        "Skip retesting when the original issue is no longer visible to one tool."
+      ],
+      "gradingKeyRef": "course-2-m2-l1-check"
+    }
+  },
+  "claims": [
+    {
+      "id": "v1-original-synthesis",
+      "kind": "fact",
+      "statement": "The Version 1 lesson is original instructional synthesis reviewed under the product-owner baseline approval directive."
+    }
+  ],
+  "references": [
+    {
+      "claimId": "v1-original-synthesis",
+      "sourceId": "cisa-cpg",
+      "title": "Cross-Sector Cybersecurity Performance Goals",
+      "publisher": "Cybersecurity and Infrastructure Security Agency",
+      "url": "https://www.cisa.gov/cybersecurity-performance-goals",
+      "publicationDate": null,
+      "retrievedAt": "2026-07-19T04:47:48.009Z",
+      "sourceVersion": "d622511c90706353",
+      "snapshotDigest": "d622511c90706353c3ff89f2566cad35d1a5c357c4597f4db076e6e08d9b8341",
+      "evidence": "Authoritative source used for bounded original instructional synthesis."
+    }
+  ],
+  "provenance": {
+    "author": "cybermentor-v1-release-team",
+    "publisher": "v1-release-seed",
+    "disclosure": "Seeded as the product-owner-approved Version 1 baseline. Future edits, community contributions, instructor content, and AI-assisted drafts require the standard review workflow.",
+    "humanAuthored": false,
+    "reviews": []
+  }
+}

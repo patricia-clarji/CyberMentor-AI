@@ -1,0 +1,99 @@
+{
+  "schemaVersion": 1,
+  "id": "course-2-m2-l1-check",
+  "title": "Routing & NAT knowledge check",
+  "contentVersion": "1.0.0",
+  "contentHash": "08544aaaea743d8ea3bbd89d52dda51f3ad016fde9334201bef2b5ad2c6b3fbd",
+  "artifactType": "question",
+  "riskClassification": "defensive",
+  "verificationStatus": "verified",
+  "publicationStatus": "published",
+  "approvalBasis": "v1-release-baseline",
+  "releaseApproval": {
+    "authority": "product-owner",
+    "decision": "approved",
+    "scope": "initial-v1-academy",
+    "recordedAt": "2026-07-19T00:00:00.000Z",
+    "includesSafetyReview": true,
+    "directive": "Version 1 initial academy is considered reviewed and approved; future changes use the standard workflow."
+  },
+  "publishedAt": "2026-07-19T00:00:00.000Z",
+  "lastReviewedAt": "2026-07-19T00:00:00.000Z",
+  "nextReviewAt": "2028-07-19T00:00:00.000Z",
+  "metadata": {
+    "domain": "networking",
+    "difficulty": "foundation-to-intermediate",
+    "audience": [
+      "career-switcher",
+      "student",
+      "junior-practitioner"
+    ],
+    "prerequisites": [],
+    "skillTags": [
+      "networking",
+      "tcp-ip",
+      "packet-analysis"
+    ],
+    "licenseNotes": "Original CyberMentor instructional synthesis with reference links to authoritative public sources; no source page is republished.",
+    "reviewIntervalDays": 365,
+    "changeLog": [
+      {
+        "version": "1.0.0",
+        "summary": "Initial approved Version 1 academy"
+      }
+    ]
+  },
+  "artifact": {
+    "prompt": "How should a learner verify that a control related to Routing & NAT worked?",
+    "options": [
+      "Assume success when the configuration command returns no error.",
+      "Measure only whether the control was purchased or enabled.",
+      "Define the expected state, test it with independent evidence, and record residual risk or follow-up work.",
+      "Skip retesting when the original issue is no longer visible to one tool."
+    ],
+    "correctOption": 2,
+    "explanation": "Define the expected state, test it with independent evidence, and record residual risk or follow-up work. This preserves a reviewable path from evidence to decision and outcome.",
+    "distractorExplanations": {
+      "0": "That choice weakens the evidence-to-decision chain for Routing & NAT. Revisit the scoped workflow in Networking for Cybersecurity.",
+      "1": "That choice weakens the evidence-to-decision chain for Routing & NAT. Revisit the scoped workflow in Networking for Cybersecurity.",
+      "3": "That choice weakens the evidence-to-decision chain for Routing & NAT. Revisit the scoped workflow in Networking for Cybersecurity."
+    },
+    "learningObjectiveId": "course-2-observe-routing-nat-routing-nat-objective-1",
+    "skillTags": [
+      "networking",
+      "tcp-ip",
+      "packet-analysis"
+    ],
+    "difficulty": "standard",
+    "assessmentUse": "quiz",
+    "evidenceWeight": 1
+  },
+  "claims": [
+    {
+      "id": "v1-original-synthesis",
+      "kind": "fact",
+      "statement": "The Version 1 lesson is original instructional synthesis reviewed under the product-owner baseline approval directive."
+    }
+  ],
+  "references": [
+    {
+      "claimId": "v1-original-synthesis",
+      "sourceId": "cisa-cpg",
+      "title": "Cross-Sector Cybersecurity Performance Goals",
+      "publisher": "Cybersecurity and Infrastructure Security Agency",
+      "url": "https://www.cisa.gov/cybersecurity-performance-goals",
+      "publicationDate": null,
+      "retrievedAt": "2026-07-19T04:47:48.009Z",
+      "sourceVersion": "d622511c90706353",
+      "snapshotDigest": "d622511c90706353c3ff89f2566cad35d1a5c357c4597f4db076e6e08d9b8341",
+      "evidence": "Authoritative source used for bounded original instructional synthesis."
+    }
+  ],
+  "provenance": {
+    "author": "cybermentor-v1-release-team",
+    "publisher": "v1-release-seed",
+    "disclosure": "Seeded as the product-owner-approved Version 1 baseline. Future edits, community contributions, instructor content, and AI-assisted drafts require the standard review workflow.",
+    "humanAuthored": false,
+    "reviews": []
+  }
+}

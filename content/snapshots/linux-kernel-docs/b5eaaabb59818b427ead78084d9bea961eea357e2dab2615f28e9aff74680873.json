@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "sourceId": "linux-kernel-docs",
+  "sourceTitle": "The Linux Kernel Documentation",
+  "publisher": "The Linux Kernel Organization",
+  "requestedUrl": "https://docs.kernel.org/",
+  "finalUrl": "https://docs.kernel.org/",
+  "retrievedAt": "2026-07-19T04:47:54.794Z",
+  "publicationDate": "Sun, 12 Jul 2026 21:54:28 GMT",
+  "sourceVersion": "Sun, 12 Jul 2026 21:54:28 GMT",
+  "contentDigest": "b5eaaabb59818b427ead78084d9bea961eea357e2dab2615f28e9aff74680873",
+  "contentType": "text/html; charset=utf-8",
+  "byteLength": 16783,
+  "httpStatus": 200,
+  "evidenceMatches": [],
+  "rawContentStored": false
+}

@@ -1,0 +1,109 @@
+{
+  "schemaVersion": 1,
+  "artifactType": "lesson",
+  "id": "replace-with-stable-draft-id",
+  "courseId": "course-1",
+  "moduleId": "course-1-m1",
+  "lessonId": "replace-with-existing-lesson-id",
+  "title": "Replace with a researched lesson title",
+  "contentVersion": "0.1.0",
+  "status": "draft",
+  "origin": "human-authored",
+  "author": "replace-with-accountable-author-id",
+  "provenance": {
+    "humanAuthored": true,
+    "disclosure": "Describe who wrote the material and disclose any bounded AI assistance."
+  },
+  "createdAt": "YYYY-MM-DDTHH:mm:ss.sssZ",
+  "updatedAt": "YYYY-MM-DDTHH:mm:ss.sssZ",
+  "lastReviewedAt": null,
+  "nextReviewAt": null,
+  "metadata": {
+    "domain": "replace-with-domain",
+    "difficulty": "foundation",
+    "audience": ["replace-with-audience"],
+    "prerequisites": [],
+    "skillTags": ["replace-with-stable-skill-id"],
+    "licenseNotes": "Record source licenses and the originality review result.",
+    "reviewIntervalDays": 180,
+    "changeLog": [
+      {
+        "version": "0.1.0",
+        "summary": "Initial human-authored draft"
+      }
+    ]
+  },
+  "riskClassification": "defensive",
+  "claims": [
+    {
+      "id": "claim-1",
+      "kind": "fact",
+      "statement": "Replace with one precise, independently verifiable claim.",
+      "citations": [
+        {
+          "sourceId": "replace-with-registered-source-id",
+          "evidence": "Use no more than twenty-five words from the public source.",
+          "locator": "Exact section, heading, or paragraph locator"
+        }
+      ]
+    }
+  ],
+  "lesson": {
+    "minutes": 20,
+    "objectives": [
+      "Replace with a measurable explanation objective",
+      "Replace with a measurable workplace application objective"
+    ],
+    "blocks": [
+      {
+        "id": "mental-model-heading",
+        "type": "heading",
+        "text": "Mental model",
+        "claimIds": []
+      },
+      {
+        "id": "mental-model",
+        "type": "paragraph",
+        "text": "Replace with independently researched, original instructional prose of meaningful depth.",
+        "claimIds": ["claim-1"]
+      },
+      {
+        "id": "workplace-workflow",
+        "type": "worked-example",
+        "body": "Replace with an evidence-based operational workflow, its assumptions, and verification steps.",
+        "claimIds": []
+      },
+      {
+        "id": "defense",
+        "type": "callout",
+        "body": "Replace with defensive visibility, remediation, recovery verification, and common failure modes.",
+        "claimIds": []
+      },
+      {
+        "id": "summary",
+        "type": "summary",
+        "body": "Replace with a concise, objective-aligned summary and clear verification criteria.",
+        "claimIds": []
+      }
+    ],
+    "keyTerms": ["replace-term-one", "replace-term-two", "replace-term-three"],
+    "workedExample": "Replace with a substantial authorized workplace scenario that requires evidence, judgment, and outcome verification.",
+    "check": {
+      "id": "server-assessment-id",
+      "question": "Replace with an objective-aligned question.",
+      "options": [
+        "Plausible distractor",
+        "Option requiring server-side verification",
+        "Plausible distractor"
+      ],
+      "gradingKeyRef": "server-assessment-id"
+    }
+  },
+  "reviewRequirements": [
+    "cybersecurity-subject-matter-expert",
+    "instructional-reviewer",
+    "accessibility-reviewer",
+    "licensing-reviewer"
+  ],
+  "notes": "Templates are never publishable as-is."
+}

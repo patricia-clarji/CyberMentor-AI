@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "sourceId": "rfc-9110",
+  "sourceTitle": "RFC 9110: HTTP Semantics",
+  "publisher": "RFC Editor",
+  "requestedUrl": "https://www.rfc-editor.org/rfc/rfc9110.html",
+  "finalUrl": "https://www.rfc-editor.org/rfc/rfc9110.html",
+  "retrievedAt": "2026-07-19T04:47:57.819Z",
+  "publicationDate": "2022-06-06",
+  "sourceVersion": "\"0d9f5fb8eb38d3c08b055f9b0671d68b\"",
+  "contentDigest": "d431760660ea44e130f6e919dab216df2d0b3a490567a98089267523368fe1e5",
+  "contentType": "text/html",
+  "byteLength": 1187554,
+  "httpStatus": 200,
+  "evidenceMatches": [],
+  "rawContentStored": false
+}

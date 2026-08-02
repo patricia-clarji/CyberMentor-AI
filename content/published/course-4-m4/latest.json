@@ -1,0 +1,88 @@
+{
+  "schemaVersion": 1,
+  "id": "course-4-m4",
+  "title": "Demonstrate — Case documentation",
+  "contentVersion": "1.0.0",
+  "contentHash": "7ed9d5c713d07423affb00ba63e6ed758c4eb798a60c91486cc84a8b1ff613b1",
+  "artifactType": "module",
+  "riskClassification": "defensive",
+  "verificationStatus": "verified",
+  "publicationStatus": "published",
+  "approvalBasis": "v1-release-baseline",
+  "releaseApproval": {
+    "authority": "product-owner",
+    "decision": "approved",
+    "scope": "initial-v1-academy",
+    "recordedAt": "2026-07-19T00:00:00.000Z",
+    "includesSafetyReview": true,
+    "directive": "Version 1 initial academy is considered reviewed and approved; future changes use the standard workflow."
+  },
+  "publishedAt": "2026-07-19T00:00:00.000Z",
+  "lastReviewedAt": "2026-07-19T00:00:00.000Z",
+  "nextReviewAt": "2028-07-19T00:00:00.000Z",
+  "metadata": {
+    "domain": "blue-team",
+    "difficulty": "foundation-to-intermediate",
+    "audience": [
+      "career-switcher",
+      "student",
+      "junior-practitioner"
+    ],
+    "prerequisites": [],
+    "skillTags": [
+      "alert-triage",
+      "log-correlation",
+      "case-documentation"
+    ],
+    "licenseNotes": "Original CyberMentor instructional synthesis with reference links to authoritative public sources; no source page is republished.",
+    "reviewIntervalDays": 365,
+    "changeLog": [
+      {
+        "version": "1.0.0",
+        "summary": "Initial approved Version 1 academy"
+      }
+    ]
+  },
+  "artifact": {
+    "title": "Demonstrate — Case documentation",
+    "courseId": "course-4",
+    "learningObjectives": [
+      "Apply case documentation in an authorized scenario",
+      "Apply stakeholder communication in an authorized scenario",
+      "Apply soc shift simulation in an authorized scenario"
+    ],
+    "lessonIds": [
+      "course-4-demonstrate-case-documentation-case-documentation",
+      "course-4-demonstrate-case-documentation-stakeholder-communication",
+      "course-4-demonstrate-case-documentation-soc-shift-simulation"
+    ]
+  },
+  "claims": [
+    {
+      "id": "v1-original-synthesis",
+      "kind": "fact",
+      "statement": "The Version 1 lesson is original instructional synthesis reviewed under the product-owner baseline approval directive."
+    }
+  ],
+  "references": [
+    {
+      "claimId": "v1-original-synthesis",
+      "sourceId": "mitre-attack",
+      "title": "MITRE ATT&CK Enterprise",
+      "publisher": "MITRE",
+      "url": "https://attack.mitre.org/",
+      "publicationDate": null,
+      "retrievedAt": "2026-07-19T04:47:50.623Z",
+      "sourceVersion": "W/\"6a3ad945-170c4e\"",
+      "snapshotDigest": "deb01d761ac935c8106cfae211657fa91b0cfb9c1dfdc371848b9ca85cf1ef32",
+      "evidence": "Authoritative source used for bounded original instructional synthesis."
+    }
+  ],
+  "provenance": {
+    "author": "cybermentor-v1-release-team",
+    "publisher": "v1-release-seed",
+    "disclosure": "Seeded as the product-owner-approved Version 1 baseline. Future edits, community contributions, instructor content, and AI-assisted drafts require the standard review workflow.",
+    "humanAuthored": false,
+    "reviews": []
+  }
+}

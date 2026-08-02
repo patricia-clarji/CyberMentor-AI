@@ -1,0 +1,198 @@
+{
+  "schemaVersion": 1,
+  "id": "course-12-understand-role-selection-evidence-planning",
+  "title": "Evidence planning",
+  "contentVersion": "1.0.0",
+  "contentHash": "15c37c057841fceea7cb5dcbf52427f74c51a2e71cf7ebd6b480ced3e1d794c7",
+  "artifactType": "lesson",
+  "riskClassification": "defensive",
+  "verificationStatus": "verified",
+  "publicationStatus": "published",
+  "approvalBasis": "v1-release-baseline",
+  "releaseApproval": {
+    "authority": "product-owner",
+    "decision": "approved",
+    "scope": "initial-v1-academy",
+    "recordedAt": "2026-07-19T00:00:00.000Z",
+    "includesSafetyReview": true,
+    "directive": "Version 1 initial academy is considered reviewed and approved; future changes use the standard workflow."
+  },
+  "publishedAt": "2026-07-19T00:00:00.000Z",
+  "lastReviewedAt": "2026-07-19T00:00:00.000Z",
+  "nextReviewAt": "2028-07-19T00:00:00.000Z",
+  "metadata": {
+    "domain": "career",
+    "difficulty": "foundation-to-intermediate",
+    "audience": [
+      "career-switcher",
+      "student",
+      "junior-practitioner"
+    ],
+    "prerequisites": [],
+    "skillTags": [
+      "case-documentation",
+      "security-foundations"
+    ],
+    "licenseNotes": "Original CyberMentor instructional synthesis with reference links to authoritative public sources; no source page is republished.",
+    "reviewIntervalDays": 365,
+    "changeLog": [
+      {
+        "version": "1.0.0",
+        "summary": "Initial approved Version 1 academy"
+      }
+    ]
+  },
+  "artifact": {
+    "courseId": "course-12",
+    "moduleId": "course-12-m1",
+    "lessonId": "course-12-understand-role-selection-evidence-planning",
+    "title": "Evidence planning",
+    "minutes": 36,
+    "objectives": [
+      "Explain evidence planning using a scoped evidence-to-decision model",
+      "Apply a safe, repeatable evidence planning workflow to a workplace simulation",
+      "Evaluate evidence and verify a defensive outcome related to evidence planning"
+    ],
+    "blocks": [
+      {
+        "id": "mental-model",
+        "type": "paragraph",
+        "text": "Evidence planning is taught here as an operational capability inside Cybersecurity Career and Interview Preparation, not as an isolated definition. Career readiness means producing credible evidence of judgment, communication, and repeatable technical work. Claims should be bounded, artifacts should protect sensitive data, and reflection should show what changed. In this module, your job is to build a reliable mental model. Start by naming the system or decision in scope, the assumptions you are making, and the outcome that would count as success. Then connect evidence planning to observable evidence and an accountable decision owner. This structure prevents vocabulary from becoming false confidence and makes later lab and project work reproducible.",
+        "claimIds": [
+          "v1-original-synthesis"
+        ]
+      },
+      {
+        "id": "operational-workflow",
+        "type": "paragraph",
+        "text": "Use a five-part workflow. First, define the authorized scope and the question you are trying to answer. Second, preserve a baseline so later changes can be explained or reversed. Third, collect the smallest sufficient evidence; for this course that commonly includes role requirements, skill mappings, sanitized work samples, project decisions, test results, feedback, and an improvement plan. Fourth, compare at least two plausible explanations and select a proportionate action. Fifth, verify the resulting state with a different observation where practical, record limitations, and identify who owns follow-up. The same workflow applies whether evidence planning is used for prevention, investigation, engineering, or communication.",
+        "claimIds": [
+          "v1-original-synthesis"
+        ]
+      },
+      {
+        "id": "evidence-standard",
+        "type": "callout",
+        "heading": "Evidence standard",
+        "body": "Evidence quality matters more than volume. Prefer records that identify source, time, affected entity, collection method, and relevant configuration or context. Separate direct observations from inferences, and do not silently discard contradictory data. A strong note explains why an artifact supports the conclusion, how it could be misleading, and what additional check would change confidence. For evidence planning, capture enough context that another learner can reproduce the reasoning without receiving a hidden answer or relying on the original operator’s memory.",
+        "claimIds": [
+          "v1-original-synthesis"
+        ]
+      },
+      {
+        "id": "decision-table",
+        "type": "comparison-table",
+        "heading": "From weak activity to professional evidence",
+        "columns": [
+          "Weak approach",
+          "Professional approach",
+          "Verification"
+        ],
+        "rows": [
+          [
+            "Act from an assumption",
+            "State scope and gather traceable evidence",
+            "Corroborate the key observation"
+          ],
+          [
+            "Make a broad change",
+            "Use a bounded, reversible action",
+            "Compare the resulting state with success criteria"
+          ],
+          [
+            "Report a tool label",
+            "Explain impact, confidence, and limitations",
+            "Retest and record residual risk"
+          ]
+        ],
+        "claimIds": []
+      },
+      {
+        "id": "worked-case",
+        "type": "worked-example",
+        "body": "Consider this approved workplace simulation: a learner prepares a role-aligned portfolio case study and interview brief for an entry-level security position. The team must reason about evidence planning. A careful analyst records the starting condition, identifies the relevant decision and evidence owners, gathers role requirements, skill mappings, sanitized work samples, project decisions, test results, feedback, and an improvement plan, and compares the observation with the expected state. The analyst applies one bounded change or recommendation, checks both the intended outcome and likely side effects, and records residual uncertainty. The final report describes what was observed, what was inferred, what was changed, how recovery or cleanup was verified, and what should be monitored next.",
+        "claimIds": [
+          "v1-original-synthesis"
+        ]
+      },
+      {
+        "id": "misconception",
+        "type": "misconception",
+        "body": "A common failure is listing tools without explaining decisions, copying proprietary material, overstating independence, or publishing sensitive evidence. That approach feels fast but breaks traceability and can increase impact. Instead, pause when scope, evidence origin, authorization, or the success criterion is unclear. Ask what an independent reviewer would need to reproduce the decision. Tool output, model output, alert names, and copied commands are inputs—not authority. The learner remains responsible for validating the result and staying inside the approved environment.",
+        "claimIds": [
+          "v1-original-synthesis"
+        ]
+      },
+      {
+        "id": "defensive-counterpart",
+        "type": "callout",
+        "heading": "Defense, authorization, and cleanup",
+        "body": "Defensive practice must accompany every concept: use original sanitized artifacts, explain scope and tradeoffs, map evidence to skills, seek feedback, and maintain an ethical learning plan. For dual-use subjects, all activity stays inside the supplied local simulation; never transfer targets, credentials, payloads, or techniques to public systems. Good work includes remediation and retesting, not merely identifying a weakness. It also protects sensitive evidence and explains uncertainty in language appropriate for technical and nontechnical stakeholders.",
+        "claimIds": [
+          "v1-original-synthesis"
+        ]
+      },
+      {
+        "id": "decision-practice",
+        "type": "interactive-decision",
+        "body": "Before continuing, write one direct observation, one hypothesis, one bounded action, and one independent verification step for evidence planning. If authorization or evidence is missing, the correct decision is to stop and obtain it.",
+        "claimIds": []
+      },
+      {
+        "id": "summary",
+        "type": "summary",
+        "body": "Evidence planning becomes job-ready evidence when the learner can define scope, preserve and interpret relevant observations, choose a proportionate action, verify the outcome, and communicate limitations. The quiz checks this reasoning; the course lab and project require the same chain in a larger scenario.",
+        "claimIds": [
+          "v1-original-synthesis"
+        ]
+      }
+    ],
+    "keyTerms": [
+      "Evidence planning",
+      "scope",
+      "evidence",
+      "verification",
+      "residual risk"
+    ],
+    "workedExample": "Consider this approved workplace simulation: a learner prepares a role-aligned portfolio case study and interview brief for an entry-level security position. The team must reason about evidence planning. A careful analyst records the starting condition, identifies the relevant decision and evidence owners, gathers role requirements, skill mappings, sanitized work samples, project decisions, test results, feedback, and an improvement plan, and compares the observation with the expected state. The analyst applies one bounded change or recommendation, checks both the intended outcome and likely side effects, and records residual uncertainty. The final report describes what was observed, what was inferred, what was changed, how recovery or cleanup was verified, and what should be monitored next.",
+    "check": {
+      "id": "course-12-m1-l3-check",
+      "question": "What is the strongest evidence standard when reasoning about Evidence planning?",
+      "options": [
+        "Treat tool output as conclusive because the tool is widely used.",
+        "Preserve traceable observations, distinguish facts from hypotheses, and corroborate important conclusions.",
+        "Prefer an undocumented recollection over timestamped source evidence.",
+        "Remove contradictory observations so the report remains simple."
+      ],
+      "gradingKeyRef": "course-12-m1-l3-check"
+    }
+  },
+  "claims": [
+    {
+      "id": "v1-original-synthesis",
+      "kind": "fact",
+      "statement": "The Version 1 lesson is original instructional synthesis reviewed under the product-owner baseline approval directive."
+    }
+  ],
+  "references": [
+    {
+      "claimId": "v1-original-synthesis",
+      "sourceId": "cisa-cpg",
+      "title": "Cross-Sector Cybersecurity Performance Goals",
+      "publisher": "Cybersecurity and Infrastructure Security Agency",
+      "url": "https://www.cisa.gov/cybersecurity-performance-goals",
+      "publicationDate": null,
+      "retrievedAt": "2026-07-19T04:47:48.009Z",
+      "sourceVersion": "d622511c90706353",
+      "snapshotDigest": "d622511c90706353c3ff89f2566cad35d1a5c357c4597f4db076e6e08d9b8341",
+      "evidence": "Authoritative source used for bounded original instructional synthesis."
+    }
+  ],
+  "provenance": {
+    "author": "cybermentor-v1-release-team",
+    "publisher": "v1-release-seed",
+    "disclosure": "Seeded as the product-owner-approved Version 1 baseline. Future edits, community contributions, instructor content, and AI-assisted drafts require the standard review workflow.",
+    "humanAuthored": false,
+    "reviews": []
+  }
+}

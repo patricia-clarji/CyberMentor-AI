@@ -1,0 +1,198 @@
+{
+  "schemaVersion": 1,
+  "id": "course-8-range-02",
+  "title": "Review a Session Cookie",
+  "contentVersion": "1.0.0",
+  "contentHash": "cd7b6e8799c79ce7a153030d46064b76c02002c4ece572a9f33595770f61f09c",
+  "artifactType": "lab",
+  "riskClassification": "dual-use",
+  "verificationStatus": "verified",
+  "publicationStatus": "published",
+  "approvalBasis": "v1-release-baseline",
+  "releaseApproval": {
+    "authority": "product-owner",
+    "decision": "approved",
+    "scope": "initial-v1-academy",
+    "recordedAt": "2026-07-19T00:00:00.000Z",
+    "includesSafetyReview": true,
+    "directive": "Version 1 initial academy is considered reviewed and approved; future changes use the standard workflow."
+  },
+  "publishedAt": "2026-07-19T00:00:00.000Z",
+  "lastReviewedAt": "2026-07-19T00:00:00.000Z",
+  "nextReviewAt": "2028-07-19T00:00:00.000Z",
+  "metadata": {
+    "domain": "web-security",
+    "difficulty": "foundation-to-intermediate",
+    "audience": [
+      "career-switcher",
+      "student",
+      "junior-practitioner"
+    ],
+    "prerequisites": [],
+    "skillTags": [
+      "http",
+      "tls",
+      "security-foundations"
+    ],
+    "licenseNotes": "Original CyberMentor instructional synthesis with reference links to authoritative public sources; no source page is republished.",
+    "reviewIntervalDays": 365,
+    "changeLog": [
+      {
+        "version": "1.0.0",
+        "summary": "Initial approved Version 1 academy"
+      }
+    ]
+  },
+  "artifact": {
+    "courseId": "course-8",
+    "title": "Review a Session Cookie",
+    "description": "Review a Session Cookie is an original artifact analysis that asks the learner to interpret bounded evidence and produce a server-verifiable result.",
+    "category": "Web Security",
+    "difficulty": "Easy",
+    "estimatedMinutes": 30,
+    "story": "Arbor Commerce has asked the learner to resolve a security decision using the supplied fictional record. The learner is part of an authorized internal training exercise and must preserve a clear evidence-to-decision chain.",
+    "businessContext": "Arbor Commerce needs a proportionate answer that supports continued operations, protects affected people and systems, and can be reviewed by another practitioner.",
+    "learningObjectives": [
+      "Apply Web Security reasoning to a bounded workplace record",
+      "Separate direct observation from interpretation",
+      "Submit concise evidence and verify the defensive outcome server-side"
+    ],
+    "prerequisites": [
+      "course-8"
+    ],
+    "requiredSkills": [
+      "web-security",
+      "http",
+      "authorization",
+      "secure-coding"
+    ],
+    "authorizedTarget": "Bundled fictional evidence and the CyberMentor local API only",
+    "scope": "Local browser simulation; no public target, external address, or arbitrary command execution",
+    "safetyClassification": "dual-use-local",
+    "rulesOfEngagement": [
+      "Use only the evidence displayed inside this activity.",
+      "Do not test, scan, contact, or submit identifiers for external systems.",
+      "Stop if the task appears to require data outside the supplied scenario."
+    ],
+    "environment": {
+      "type": "artifact-analysis",
+      "runtime": "bounded-artifact-workspace",
+      "isolated": true,
+      "networkAccess": false,
+      "externalTargets": false,
+      "arbitraryCommands": false,
+      "supportsPause": true,
+      "supportsReset": true,
+      "expirationMinutes": 90
+    },
+    "environmentStatus": "usable",
+    "instructions": [
+      "Read the story, business context, and supplied record before forming a conclusion.",
+      "Record the smallest evidence value that answers the task exactly.",
+      "Use progressive hints only when needed; hint dependency is recorded in the attempt.",
+      "Submit the evidence to the server, review the debrief after success, then write a reflection."
+    ],
+    "tasks": [
+      "A session cookie is sent over HTTPS but lacks the attribute that prevents JavaScript access. Submit the attribute.",
+      "State one direct observation and one defensive follow-up in your reflection."
+    ],
+    "expectedDeliverables": [
+      "Server-verified evidence value",
+      "Learner reflection separating observation from inference"
+    ],
+    "evidenceRequirement": "Submit the concise value requested by the supplied fictional record.",
+    "expectedEvidence": [
+      "HttpOnly"
+    ],
+    "validationLogic": {
+      "type": "normalized-equals",
+      "expectedValue": "HttpOnly"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "label": "Reminder",
+        "text": "Return to the exact question and identify the field or decision it requests."
+      },
+      {
+        "level": 2,
+        "label": "Concept",
+        "text": "Choose the browser attribute that restricts script access."
+      },
+      {
+        "level": 3,
+        "label": "Direction",
+        "text": "Exclude details that do not directly answer the requested evidence value."
+      },
+      {
+        "level": 4,
+        "label": "Partial solution",
+        "text": "The answer is a short security term or value."
+      },
+      {
+        "level": 5,
+        "label": "Walkthrough",
+        "text": "Read the supplied record, apply this reasoning: Choose the browser attribute that restricts script access. Then submit only the requested value."
+      }
+    ],
+    "solutionAccessPolicy": "The full expected value remains server-side. The detailed walkthrough unlocks only through progressive hint use.",
+    "debrief": "A defensible result for Review a Session Cookie begins with the supplied observation, applies a bounded Web Security concept, and records how the organization should verify or monitor the outcome. use secure defaults, server-side authorization, contextual encoding, validated input, safe session handling, logging, and regression tests.",
+    "reflectionPrompts": [
+      "Which observation most influenced your answer?",
+      "What alternative explanation did you rule out?",
+      "How would a defender verify the result in an authorized workplace?"
+    ],
+    "furtherReading": [
+      "OWASP Top Ten"
+    ],
+    "cleanupSteps": [
+      "Close the server-owned session when finished.",
+      "Remove any copied fictional evidence from shared notes."
+    ],
+    "defensiveExplanation": "use secure defaults, server-side authorization, contextual encoding, validated input, safe session handling, logging, and regression tests",
+    "portfolioSkills": [
+      "http",
+      "tls",
+      "security-foundations"
+    ],
+    "skillTags": [
+      "http",
+      "tls",
+      "security-foundations"
+    ],
+    "author": "CyberMentor AI Founding Curriculum Team",
+    "review": {
+      "technical": "seeded-initial-review",
+      "instructional": "seeded-initial-review",
+      "safety": "seeded-initial-review"
+    }
+  },
+  "claims": [
+    {
+      "id": "v1-original-synthesis",
+      "kind": "fact",
+      "statement": "The Version 1 lesson is original instructional synthesis reviewed under the product-owner baseline approval directive."
+    }
+  ],
+  "references": [
+    {
+      "claimId": "v1-original-synthesis",
+      "sourceId": "owasp-top-ten",
+      "title": "OWASP Top Ten",
+      "publisher": "OWASP Foundation",
+      "url": "https://owasp.org/www-project-top-ten/",
+      "publicationDate": "2021-09-24",
+      "retrievedAt": "2026-07-19T04:47:52.022Z",
+      "sourceVersion": "Wed, 24 Dec 2025 21:06:33 GMT",
+      "snapshotDigest": "7a77098218be5dfb1122b2d05b09a281b400ca9ef9e33642970f5094dac205a0",
+      "evidence": "Authoritative source used for bounded original instructional synthesis."
+    }
+  ],
+  "provenance": {
+    "author": "cybermentor-v1-release-team",
+    "publisher": "v1-release-seed",
+    "disclosure": "Seeded as the product-owner-approved Version 1 baseline. Future edits, community contributions, instructor content, and AI-assisted drafts require the standard review workflow.",
+    "humanAuthored": false,
+    "reviews": []
+  }
+}

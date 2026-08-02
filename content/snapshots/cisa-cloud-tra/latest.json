@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "sourceId": "cisa-cloud-tra",
+  "sourceTitle": "Cloud Security Technical Reference Architecture",
+  "publisher": "Cybersecurity and Infrastructure Security Agency",
+  "requestedUrl": "https://www.cisa.gov/sites/default/files/2023-05/Cloud%20Security%20Technical%20Reference%20Architecture%20v2.pdf",
+  "finalUrl": "https://www.cisa.gov/sites/default/files/2023-05/Cloud%20Security%20Technical%20Reference%20Architecture%20v2.pdf",
+  "retrievedAt": "2026-07-19T13:10:01.483Z",
+  "publicationDate": "2022-06-01",
+  "sourceVersion": "\"2994b9-5fbbf7391ab48\"",
+  "contentDigest": "d7950fca6fcc4bcf2f7314db6deb255770ecabdc27ddf382a9c92f7c7fa8dbff",
+  "contentType": "application/pdf",
+  "byteLength": 2725049,
+  "httpStatus": 200,
+  "evidenceMatches": [],
+  "rawContentStored": false
+}

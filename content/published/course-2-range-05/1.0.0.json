@@ -1,0 +1,197 @@
+{
+  "schemaVersion": 1,
+  "id": "course-2-range-05",
+  "title": "Choose a Segmentation Boundary",
+  "contentVersion": "1.0.0",
+  "contentHash": "ef3be2f929510ad9ed42a3104464974f9e8876b950a16254ce0820f7b0ecf692",
+  "artifactType": "lab",
+  "riskClassification": "defensive",
+  "verificationStatus": "verified",
+  "publicationStatus": "published",
+  "approvalBasis": "v1-release-baseline",
+  "releaseApproval": {
+    "authority": "product-owner",
+    "decision": "approved",
+    "scope": "initial-v1-academy",
+    "recordedAt": "2026-07-19T00:00:00.000Z",
+    "includesSafetyReview": true,
+    "directive": "Version 1 initial academy is considered reviewed and approved; future changes use the standard workflow."
+  },
+  "publishedAt": "2026-07-19T00:00:00.000Z",
+  "lastReviewedAt": "2026-07-19T00:00:00.000Z",
+  "nextReviewAt": "2028-07-19T00:00:00.000Z",
+  "metadata": {
+    "domain": "networking",
+    "difficulty": "foundation-to-intermediate",
+    "audience": [
+      "career-switcher",
+      "student",
+      "junior-practitioner"
+    ],
+    "prerequisites": [],
+    "skillTags": [
+      "networking",
+      "tcp-ip",
+      "packet-analysis"
+    ],
+    "licenseNotes": "Original CyberMentor instructional synthesis with reference links to authoritative public sources; no source page is republished.",
+    "reviewIntervalDays": 365,
+    "changeLog": [
+      {
+        "version": "1.0.0",
+        "summary": "Initial approved Version 1 academy"
+      }
+    ]
+  },
+  "artifact": {
+    "courseId": "course-2",
+    "title": "Choose a Segmentation Boundary",
+    "description": "Choose a Segmentation Boundary is an original interactive simulation that asks the learner to interpret bounded evidence and produce a server-verifiable result.",
+    "category": "Networking",
+    "difficulty": "Advanced",
+    "estimatedMinutes": 60,
+    "story": "Harbor Health has asked the learner to resolve a security decision using the supplied fictional record. The learner is part of an authorized internal training exercise and must preserve a clear evidence-to-decision chain.",
+    "businessContext": "Harbor Health needs a proportionate answer that supports continued operations, protects affected people and systems, and can be reviewed by another practitioner.",
+    "learningObjectives": [
+      "Apply Networking reasoning to a bounded workplace record",
+      "Separate direct observation from interpretation",
+      "Submit concise evidence and verify the defensive outcome server-side"
+    ],
+    "prerequisites": [
+      "course-2"
+    ],
+    "requiredSkills": [
+      "networking",
+      "tcp-ip",
+      "packet-analysis"
+    ],
+    "authorizedTarget": "Bundled fictional evidence and the CyberMentor local API only",
+    "scope": "Local browser simulation; no public target, external address, or arbitrary command execution",
+    "safetyClassification": "defensive-local",
+    "rulesOfEngagement": [
+      "Use only the evidence displayed inside this activity.",
+      "Do not test, scan, contact, or submit identifiers for external systems.",
+      "Stop if the task appears to require data outside the supplied scenario."
+    ],
+    "environment": {
+      "type": "interactive-simulation",
+      "runtime": "server-owned-browser-session",
+      "isolated": true,
+      "networkAccess": false,
+      "externalTargets": false,
+      "arbitraryCommands": false,
+      "supportsPause": true,
+      "supportsReset": true,
+      "expirationMinutes": 90
+    },
+    "environmentStatus": "usable",
+    "instructions": [
+      "Read the story, business context, and supplied record before forming a conclusion.",
+      "Record the smallest evidence value that answers the task exactly.",
+      "Use progressive hints only when needed; hint dependency is recorded in the attempt.",
+      "Submit the evidence to the server, review the debrief after success, then write a reflection."
+    ],
+    "tasks": [
+      "Clinical devices must reach the telemetry collector but not employee laptops. Submit the control concept that separates the device and employee networks.",
+      "State one direct observation and one defensive follow-up in your reflection."
+    ],
+    "expectedDeliverables": [
+      "Server-verified evidence value",
+      "Learner reflection separating observation from inference"
+    ],
+    "evidenceRequirement": "Submit the concise value requested by the supplied fictional record.",
+    "expectedEvidence": [
+      "segmentation"
+    ],
+    "validationLogic": {
+      "type": "normalized-equals",
+      "expectedValue": "segmentation"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "label": "Reminder",
+        "text": "Return to the exact question and identify the field or decision it requests."
+      },
+      {
+        "level": 2,
+        "label": "Concept",
+        "text": "Name the architecture control, not a vendor product."
+      },
+      {
+        "level": 3,
+        "label": "Direction",
+        "text": "Exclude details that do not directly answer the requested evidence value."
+      },
+      {
+        "level": 4,
+        "label": "Partial solution",
+        "text": "The answer is a short security term or value."
+      },
+      {
+        "level": 5,
+        "label": "Walkthrough",
+        "text": "Read the supplied record, apply this reasoning: Name the architecture control, not a vendor product. Then submit only the requested value."
+      }
+    ],
+    "solutionAccessPolicy": "The full expected value remains server-side. The detailed walkthrough unlocks only through progressive hint use.",
+    "debrief": "A defensible result for Choose a Segmentation Boundary begins with the supplied observation, applies a bounded Networking concept, and records how the organization should verify or monitor the outcome. use segmentation, least privilege, secure protocols, logging, baselines, and repeatable packet evidence.",
+    "reflectionPrompts": [
+      "Which observation most influenced your answer?",
+      "What alternative explanation did you rule out?",
+      "How would a defender verify the result in an authorized workplace?"
+    ],
+    "furtherReading": [
+      "Cross-Sector Cybersecurity Performance Goals"
+    ],
+    "cleanupSteps": [
+      "Close the server-owned session when finished.",
+      "Remove any copied fictional evidence from shared notes."
+    ],
+    "defensiveExplanation": "use segmentation, least privilege, secure protocols, logging, baselines, and repeatable packet evidence",
+    "portfolioSkills": [
+      "networking",
+      "tcp-ip",
+      "packet-analysis"
+    ],
+    "skillTags": [
+      "networking",
+      "tcp-ip",
+      "packet-analysis"
+    ],
+    "author": "CyberMentor AI Founding Curriculum Team",
+    "review": {
+      "technical": "seeded-initial-review",
+      "instructional": "seeded-initial-review",
+      "safety": "not-required"
+    }
+  },
+  "claims": [
+    {
+      "id": "v1-original-synthesis",
+      "kind": "fact",
+      "statement": "The Version 1 lesson is original instructional synthesis reviewed under the product-owner baseline approval directive."
+    }
+  ],
+  "references": [
+    {
+      "claimId": "v1-original-synthesis",
+      "sourceId": "cisa-cpg",
+      "title": "Cross-Sector Cybersecurity Performance Goals",
+      "publisher": "Cybersecurity and Infrastructure Security Agency",
+      "url": "https://www.cisa.gov/cybersecurity-performance-goals",
+      "publicationDate": null,
+      "retrievedAt": "2026-07-19T04:47:48.009Z",
+      "sourceVersion": "d622511c90706353",
+      "snapshotDigest": "d622511c90706353c3ff89f2566cad35d1a5c357c4597f4db076e6e08d9b8341",
+      "evidence": "Authoritative source used for bounded original instructional synthesis."
+    }
+  ],
+  "provenance": {
+    "author": "cybermentor-v1-release-team",
+    "publisher": "v1-release-seed",
+    "disclosure": "Seeded as the product-owner-approved Version 1 baseline. Future edits, community contributions, instructor content, and AI-assisted drafts require the standard review workflow.",
+    "humanAuthored": false,
+    "reviews": []
+  }
+}

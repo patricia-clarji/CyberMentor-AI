@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "canonicalTerms": [
+    {
+      "term": "multi-factor authentication",
+      "discouraged": [
+        "multi factor authentication",
+        "multifactor authorisation"
+      ]
+    },
+    {
+      "term": "least privilege",
+      "discouraged": ["minimal privilege principle"]
+    },
+    { "term": "incident response", "discouraged": ["incident reaction"] },
+    { "term": "cross-site scripting", "discouraged": ["cross site scripting"] }
+  ],
+  "deprecatedTerms": [
+    {
+      "term": "SSL certificate",
+      "replacement": "TLS certificate",
+      "severity": "warning"
+    }
+  ]
+}

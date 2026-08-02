@@ -1,0 +1,87 @@
+{
+  "schemaVersion": 1,
+  "id": "course-11-m1",
+  "title": "Understand — AI application architecture",
+  "contentVersion": "1.0.0",
+  "contentHash": "b2543e96e1b8efdf45d194fcf8be180a628a6fe363ab97004902d1e3f7d434e3",
+  "artifactType": "module",
+  "riskClassification": "dual-use",
+  "verificationStatus": "verified",
+  "publicationStatus": "published",
+  "approvalBasis": "v1-release-baseline",
+  "releaseApproval": {
+    "authority": "product-owner",
+    "decision": "approved",
+    "scope": "initial-v1-academy",
+    "recordedAt": "2026-07-19T00:00:00.000Z",
+    "includesSafetyReview": true,
+    "directive": "Version 1 initial academy is considered reviewed and approved; future changes use the standard workflow."
+  },
+  "publishedAt": "2026-07-19T00:00:00.000Z",
+  "lastReviewedAt": "2026-07-19T00:00:00.000Z",
+  "nextReviewAt": "2028-07-19T00:00:00.000Z",
+  "metadata": {
+    "domain": "emerging-tech",
+    "difficulty": "foundation-to-intermediate",
+    "audience": [
+      "career-switcher",
+      "student",
+      "junior-practitioner"
+    ],
+    "prerequisites": [],
+    "skillTags": [
+      "security-foundations",
+      "scripting"
+    ],
+    "licenseNotes": "Original CyberMentor instructional synthesis with reference links to authoritative public sources; no source page is republished.",
+    "reviewIntervalDays": 365,
+    "changeLog": [
+      {
+        "version": "1.0.0",
+        "summary": "Initial approved Version 1 academy"
+      }
+    ]
+  },
+  "artifact": {
+    "title": "Understand — AI application architecture",
+    "courseId": "course-11",
+    "learningObjectives": [
+      "Apply ai application architecture in an authorized scenario",
+      "Apply model threats in an authorized scenario",
+      "Apply ai threat modeling in an authorized scenario"
+    ],
+    "lessonIds": [
+      "course-11-understand-ai-application-architecture-ai-application-architecture",
+      "course-11-understand-ai-application-architecture-model-threats",
+      "course-11-understand-ai-application-architecture-ai-threat-modeling"
+    ]
+  },
+  "claims": [
+    {
+      "id": "v1-original-synthesis",
+      "kind": "fact",
+      "statement": "The Version 1 lesson is original instructional synthesis reviewed under the product-owner baseline approval directive."
+    }
+  ],
+  "references": [
+    {
+      "claimId": "v1-original-synthesis",
+      "sourceId": "nist-ai-rmf",
+      "title": "Artificial Intelligence Risk Management Framework",
+      "publisher": "National Institute of Standards and Technology",
+      "url": "https://www.nist.gov/itl/ai-risk-management-framework",
+      "publicationDate": "2023-01-26",
+      "retrievedAt": "2026-07-19T13:10:03.957Z",
+      "sourceVersion": "Sun, 19 Jul 2026 09:21:14 GMT",
+      "snapshotDigest": "f9552383a68119f2cf728d4498519e667a07aa6bb4653824c3a0fd6a644c1820",
+      "evidence": "Authoritative source used for bounded original instructional synthesis."
+    }
+  ],
+  "provenance": {
+    "author": "cybermentor-v1-release-team",
+    "publisher": "v1-release-seed",
+    "disclosure": "Seeded as the product-owner-approved Version 1 baseline. Future edits, community contributions, instructor content, and AI-assisted drafts require the standard review workflow.",
+    "humanAuthored": false,
+    "reviews": []
+  }
+}

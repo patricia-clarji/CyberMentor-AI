@@ -1,0 +1,53 @@
+name: Authoritative content refresh
+
+on:
+  schedule:
+    - cron: "17 5 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: authoritative-content-refresh
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm run content:refresh
+      - run: npm run content:validate
+      - name: Propose refreshed verification metadata
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REFRESH_BRANCH: automation/content-refresh-${{ github.run_id }}
+        run: |
+          git config user.name "cybermentor-content-bot"
+          git config user.email "content-bot@users.noreply.github.com"
+          git checkout -b "$REFRESH_BRANCH"
+          git add content/snapshots content/reports
+          if git diff --cached --quiet; then
+            echo "No verification metadata changed."
+            exit 0
+          fi
+          git commit -m "chore(content): refresh authoritative sources"
+          git push origin "$REFRESH_BRANCH"
+          gh pr create \
+            --title "chore(content): refresh authoritative source evidence" \
+            --body "Automated source retrieval and evidence validation. This does not publish learner content; human review remains required." \
+            --base "${{ github.event.repository.default_branch }}" \
+            --head "$REFRESH_BRANCH"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: content-verification-reports
+          path: content/reports/
+          retention-days: 30

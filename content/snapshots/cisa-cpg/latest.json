@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "sourceId": "cisa-cpg",
+  "sourceTitle": "Cross-Sector Cybersecurity Performance Goals",
+  "publisher": "Cybersecurity and Infrastructure Security Agency",
+  "requestedUrl": "https://www.cisa.gov/cybersecurity-performance-goals",
+  "finalUrl": "https://www.cisa.gov/cross-sector-cybersecurity-performance-goals/cross-sector-cybersecurity-performance-goals",
+  "retrievedAt": "2026-07-19T04:47:48.009Z",
+  "publicationDate": null,
+  "sourceVersion": "d622511c90706353",
+  "contentDigest": "d622511c90706353c3ff89f2566cad35d1a5c357c4597f4db076e6e08d9b8341",
+  "contentType": "text/html; charset=UTF-8",
+  "byteLength": 72625,
+  "httpStatus": 200,
+  "evidenceMatches": [],
+  "rawContentStored": false
+}

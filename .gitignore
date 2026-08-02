@@ -1,0 +1,17 @@
+node_modules/
+dist/
+.venv/
+backend/.venv/
+backend/cybermentor-dev.sqlite3
+.pytest_cache/
+.ruff_cache/
+__pycache__/
+*.pyc
+.env
+coverage/
+playwright-report/
+test-results/
+*.log
+*.tsbuildinfo
+vite.config.js
+vite.config.d.ts

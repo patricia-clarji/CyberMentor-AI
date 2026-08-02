@@ -1,0 +1,5 @@
+{
+  "schemaVersion": 1,
+  "reviewers": [],
+  "note": "Safe default: no reviewer identities are enrolled. Add real, accountable people through a protected repository change before recording approvals."
+}

@@ -1,0 +1,198 @@
+{
+  "schemaVersion": 1,
+  "id": "course-3-range-03",
+  "title": "Harden a Service Account Shell",
+  "contentVersion": "1.0.0",
+  "contentHash": "2605af965a38f70120cf3b33192331308a3f9a4199ecc4015f2cd612af463131",
+  "artifactType": "lab",
+  "riskClassification": "defensive",
+  "verificationStatus": "verified",
+  "publicationStatus": "published",
+  "approvalBasis": "v1-release-baseline",
+  "releaseApproval": {
+    "authority": "product-owner",
+    "decision": "approved",
+    "scope": "initial-v1-academy",
+    "recordedAt": "2026-07-19T00:00:00.000Z",
+    "includesSafetyReview": true,
+    "directive": "Version 1 initial academy is considered reviewed and approved; future changes use the standard workflow."
+  },
+  "publishedAt": "2026-07-19T00:00:00.000Z",
+  "lastReviewedAt": "2026-07-19T00:00:00.000Z",
+  "nextReviewAt": "2028-07-19T00:00:00.000Z",
+  "metadata": {
+    "domain": "linux",
+    "difficulty": "foundation-to-intermediate",
+    "audience": [
+      "career-switcher",
+      "student",
+      "junior-practitioner"
+    ],
+    "prerequisites": [],
+    "skillTags": [
+      "linux",
+      "linux-permissions",
+      "linux-logs"
+    ],
+    "licenseNotes": "Original CyberMentor instructional synthesis with reference links to authoritative public sources; no source page is republished.",
+    "reviewIntervalDays": 365,
+    "changeLog": [
+      {
+        "version": "1.0.0",
+        "summary": "Initial approved Version 1 academy"
+      }
+    ]
+  },
+  "artifact": {
+    "courseId": "course-3",
+    "title": "Harden a Service Account Shell",
+    "description": "Harden a Service Account Shell is an original secure configuration that asks the learner to interpret bounded evidence and produce a server-verifiable result.",
+    "category": "Linux",
+    "difficulty": "Intermediate",
+    "estimatedMinutes": 40,
+    "story": "Cobalt Cloud has asked the learner to resolve a security decision using the supplied fictional record. The learner is part of an authorized internal training exercise and must preserve a clear evidence-to-decision chain.",
+    "businessContext": "Cobalt Cloud needs a proportionate answer that supports continued operations, protects affected people and systems, and can be reviewed by another practitioner.",
+    "learningObjectives": [
+      "Apply Linux reasoning to a bounded workplace record",
+      "Separate direct observation from interpretation",
+      "Submit concise evidence and verify the defensive outcome server-side"
+    ],
+    "prerequisites": [
+      "course-3"
+    ],
+    "requiredSkills": [
+      "linux",
+      "linux-permissions",
+      "linux-logs",
+      "scripting"
+    ],
+    "authorizedTarget": "Bundled fictional evidence and the CyberMentor local API only",
+    "scope": "Local browser simulation; no public target, external address, or arbitrary command execution",
+    "safetyClassification": "defensive-local",
+    "rulesOfEngagement": [
+      "Use only the evidence displayed inside this activity.",
+      "Do not test, scan, contact, or submit identifiers for external systems.",
+      "Stop if the task appears to require data outside the supplied scenario."
+    ],
+    "environment": {
+      "type": "secure-configuration",
+      "runtime": "bounded-artifact-workspace",
+      "isolated": true,
+      "networkAccess": false,
+      "externalTargets": false,
+      "arbitraryCommands": false,
+      "supportsPause": true,
+      "supportsReset": true,
+      "expirationMinutes": 90
+    },
+    "environmentStatus": "usable",
+    "instructions": [
+      "Read the story, business context, and supplied record before forming a conclusion.",
+      "Record the smallest evidence value that answers the task exactly.",
+      "Use progressive hints only when needed; hint dependency is recorded in the attempt.",
+      "Submit the evidence to the server, review the debrief after success, then write a reflection."
+    ],
+    "tasks": [
+      "A non-interactive backup account currently uses /bin/bash. Submit the conventional shell path that prevents interactive login.",
+      "State one direct observation and one defensive follow-up in your reflection."
+    ],
+    "expectedDeliverables": [
+      "Server-verified evidence value",
+      "Learner reflection separating observation from inference"
+    ],
+    "evidenceRequirement": "Submit the concise value requested by the supplied fictional record.",
+    "expectedEvidence": [
+      "/usr/sbin/nologin"
+    ],
+    "validationLogic": {
+      "type": "normalized-equals",
+      "expectedValue": "/usr/sbin/nologin"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "label": "Reminder",
+        "text": "Return to the exact question and identify the field or decision it requests."
+      },
+      {
+        "level": 2,
+        "label": "Concept",
+        "text": "Choose a shell intended to deny interactive sessions."
+      },
+      {
+        "level": 3,
+        "label": "Direction",
+        "text": "Exclude details that do not directly answer the requested evidence value."
+      },
+      {
+        "level": 4,
+        "label": "Partial solution",
+        "text": "The answer is a short security term or value."
+      },
+      {
+        "level": 5,
+        "label": "Walkthrough",
+        "text": "Read the supplied record, apply this reasoning: Choose a shell intended to deny interactive sessions. Then submit only the requested value."
+      }
+    ],
+    "solutionAccessPolicy": "The full expected value remains server-side. The detailed walkthrough unlocks only through progressive hint use.",
+    "debrief": "A defensible result for Harden a Service Account Shell begins with the supplied observation, applies a bounded Linux concept, and records how the organization should verify or monitor the outcome. use least privilege, reviewed configuration, change control, logging, tested recovery, and explicit cleanup.",
+    "reflectionPrompts": [
+      "Which observation most influenced your answer?",
+      "What alternative explanation did you rule out?",
+      "How would a defender verify the result in an authorized workplace?"
+    ],
+    "furtherReading": [
+      "The Linux Kernel Documentation"
+    ],
+    "cleanupSteps": [
+      "Close the server-owned session when finished.",
+      "Remove any copied fictional evidence from shared notes."
+    ],
+    "defensiveExplanation": "use least privilege, reviewed configuration, change control, logging, tested recovery, and explicit cleanup",
+    "portfolioSkills": [
+      "linux",
+      "linux-permissions",
+      "linux-logs"
+    ],
+    "skillTags": [
+      "linux",
+      "linux-permissions",
+      "linux-logs"
+    ],
+    "author": "CyberMentor AI Founding Curriculum Team",
+    "review": {
+      "technical": "seeded-initial-review",
+      "instructional": "seeded-initial-review",
+      "safety": "not-required"
+    }
+  },
+  "claims": [
+    {
+      "id": "v1-original-synthesis",
+      "kind": "fact",
+      "statement": "The Version 1 lesson is original instructional synthesis reviewed under the product-owner baseline approval directive."
+    }
+  ],
+  "references": [
+    {
+      "claimId": "v1-original-synthesis",
+      "sourceId": "linux-kernel-docs",
+      "title": "The Linux Kernel Documentation",
+      "publisher": "The Linux Kernel Organization",
+      "url": "https://docs.kernel.org/",
+      "publicationDate": null,
+      "retrievedAt": "2026-07-19T04:47:54.794Z",
+      "sourceVersion": "Sun, 12 Jul 2026 21:54:28 GMT",
+      "snapshotDigest": "b5eaaabb59818b427ead78084d9bea961eea357e2dab2615f28e9aff74680873",
+      "evidence": "Authoritative source used for bounded original instructional synthesis."
+    }
+  ],
+  "provenance": {
+    "author": "cybermentor-v1-release-team",
+    "publisher": "v1-release-seed",
+    "disclosure": "Seeded as the product-owner-approved Version 1 baseline. Future edits, community contributions, instructor content, and AI-assisted drafts require the standard review workflow.",
+    "humanAuthored": false,
+    "reviews": []
+  }
+}

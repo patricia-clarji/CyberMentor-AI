@@ -1,0 +1,157 @@
+name: cybermentor
+
+services:
+  postgres:
+    image: pgvector/pgvector:pg16
+    environment:
+      POSTGRES_DB: cybermentor
+      POSTGRES_USER: cybermentor
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-local-development-only}
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U cybermentor -d cybermentor"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+
+  redis:
+    image: redis:7-alpine
+    command: ["redis-server", "--appendonly", "yes"]
+    volumes:
+      - redis_data:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+
+  mailpit:
+    image: axllent/mailpit:v1.27
+    ports:
+      - "8025:8025"
+    healthcheck:
+      test: ["CMD", "/mailpit", "readyz"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+
+  minio:
+    image: minio/minio:RELEASE.2025-07-23T15-54-02Z
+    command: server /data --console-address ":9001"
+    environment:
+      MINIO_ROOT_USER: ${MINIO_ROOT_USER:-cybermentor}
+      MINIO_ROOT_PASSWORD: ${MINIO_ROOT_PASSWORD:-local-development-only}
+    ports:
+      - "9001:9001"
+    volumes:
+      - minio_data:/data
+    healthcheck:
+      test: ["CMD", "mc", "ready", "local"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+
+  migrate:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+    command: ["alembic", "upgrade", "head"]
+    environment: &backend_environment
+      CYBERMENTOR_ENVIRONMENT: development
+      CYBERMENTOR_DATABASE_URL: postgresql+psycopg://cybermentor:${POSTGRES_PASSWORD:-local-development-only}@postgres:5432/cybermentor
+      CYBERMENTOR_REDIS_URL: redis://redis:6379/0
+      CYBERMENTOR_EMAIL_BACKEND: mailpit
+      CYBERMENTOR_MAILPIT_HOST: mailpit
+      CYBERMENTOR_FRONTEND_ORIGIN: http://localhost:8080
+      CYBERMENTOR_CONTENT_ROOT: /app/content/published
+    depends_on:
+      postgres:
+        condition: service_healthy
+
+  trusted-api:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+    environment: *backend_environment
+    depends_on:
+      migrate:
+        condition: service_completed_successfully
+      redis:
+        condition: service_healthy
+      mailpit:
+        condition: service_healthy
+    healthcheck:
+      test:
+        [
+          "CMD",
+          "python",
+          "-c",
+          "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/readyz')",
+        ]
+      interval: 10s
+      timeout: 5s
+      retries: 20
+
+  worker:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+    command:
+      [
+        "celery",
+        "-A",
+        "app.jobs.celery_app:celery_app",
+        "worker",
+        "--loglevel=INFO",
+        "--concurrency=2",
+      ]
+    environment: *backend_environment
+    depends_on:
+      migrate:
+        condition: service_completed_successfully
+      redis:
+        condition: service_healthy
+    restart: unless-stopped
+    security_opt: ["no-new-privileges:true"]
+
+  legacy-api:
+    build: .
+    command: ["node", "server/server.mjs", "--api-only"]
+    environment:
+      HOST: 0.0.0.0
+      PORT: 8787
+    read_only: true
+    security_opt: ["no-new-privileges:true"]
+    healthcheck:
+      test:
+        [
+          "CMD",
+          "node",
+          "-e",
+          "fetch('http://127.0.0.1:8787/readyz').then(r=>{if(!r.ok)process.exit(1)})",
+        ]
+      interval: 10s
+      timeout: 5s
+      retries: 20
+
+  web:
+    build: .
+    ports:
+      - "8080:8080"
+    environment:
+      TRUSTED_API_ORIGIN: http://trusted-api:8000
+      LEGACY_API_ORIGIN: http://legacy-api:8787
+    depends_on:
+      trusted-api:
+        condition: service_healthy
+      legacy-api:
+        condition: service_healthy
+    restart: unless-stopped
+    read_only: true
+    security_opt: ["no-new-privileges:true"]
+
+volumes:
+  postgres_data:
+  redis_data:
+  minio_data:

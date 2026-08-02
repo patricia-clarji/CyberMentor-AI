@@ -1,0 +1,215 @@
+{
+  "schemaVersion": 1,
+  "version": "1.0.0",
+  "status": "draft-taxonomy",
+  "notice": "Architecture metadata only until the taxonomy receives human subject-matter and instructional review.",
+  "skills": [
+    {
+      "id": "networking",
+      "name": "Networking",
+      "domain": "networking",
+      "description": "Foundational network concepts and evidence-based troubleshooting.",
+      "difficulty": "foundation",
+      "parentSkillId": null,
+      "prerequisites": []
+    },
+    {
+      "id": "osi-model",
+      "name": "OSI model",
+      "domain": "networking",
+      "description": "Reasoning about network behavior through the OSI reference layers.",
+      "difficulty": "foundation",
+      "parentSkillId": "networking",
+      "prerequisites": []
+    },
+    {
+      "id": "tcp-ip",
+      "name": "TCP/IP",
+      "domain": "networking",
+      "description": "Interpreting TCP/IP communication and protocol behavior.",
+      "difficulty": "foundation",
+      "parentSkillId": "networking",
+      "prerequisites": ["osi-model"]
+    },
+    {
+      "id": "subnetting",
+      "name": "Subnetting",
+      "domain": "networking",
+      "description": "Calculating and validating IPv4 network boundaries and address ranges.",
+      "difficulty": "guided",
+      "parentSkillId": "networking",
+      "prerequisites": ["tcp-ip"]
+    },
+    {
+      "id": "dns",
+      "name": "DNS",
+      "domain": "networking",
+      "description": "Analyzing name-resolution behavior and security-relevant DNS evidence.",
+      "difficulty": "guided",
+      "parentSkillId": "networking",
+      "prerequisites": ["tcp-ip"]
+    },
+    {
+      "id": "http",
+      "name": "HTTP",
+      "domain": "web",
+      "description": "Interpreting HTTP requests, responses, state, and security controls.",
+      "difficulty": "guided",
+      "parentSkillId": "networking",
+      "prerequisites": ["tcp-ip"]
+    },
+    {
+      "id": "tls",
+      "name": "TLS",
+      "domain": "web",
+      "description": "Reasoning about transport security, certificates, and connection evidence.",
+      "difficulty": "standard",
+      "parentSkillId": "networking",
+      "prerequisites": ["http"]
+    },
+    {
+      "id": "packet-analysis",
+      "name": "Packet analysis",
+      "domain": "networking",
+      "description": "Examining packet captures to support defensible technical conclusions.",
+      "difficulty": "standard",
+      "parentSkillId": "networking",
+      "prerequisites": ["tcp-ip"]
+    },
+    {
+      "id": "linux",
+      "name": "Linux",
+      "domain": "linux",
+      "description": "Foundational Linux operation in an authorized learning environment.",
+      "difficulty": "foundation",
+      "parentSkillId": null,
+      "prerequisites": []
+    },
+    {
+      "id": "linux-filesystem",
+      "name": "Linux filesystem",
+      "domain": "linux",
+      "description": "Navigating and reasoning about Linux filesystem structure.",
+      "difficulty": "foundation",
+      "parentSkillId": "linux",
+      "prerequisites": ["linux"]
+    },
+    {
+      "id": "shell-navigation",
+      "name": "Shell navigation",
+      "domain": "linux",
+      "description": "Using the shell to navigate and inspect an authorized local system.",
+      "difficulty": "guided",
+      "parentSkillId": "linux",
+      "prerequisites": ["linux-filesystem"]
+    },
+    {
+      "id": "linux-permissions",
+      "name": "Linux permissions",
+      "domain": "linux",
+      "description": "Interpreting and safely managing Linux ownership and access permissions.",
+      "difficulty": "guided",
+      "parentSkillId": "linux",
+      "prerequisites": ["linux-filesystem"]
+    },
+    {
+      "id": "linux-processes",
+      "name": "Linux process management",
+      "domain": "linux",
+      "description": "Inspecting and managing process state in a controlled environment.",
+      "difficulty": "standard",
+      "parentSkillId": "linux",
+      "prerequisites": ["shell-navigation"]
+    },
+    {
+      "id": "linux-logs",
+      "name": "Linux logs",
+      "domain": "linux",
+      "description": "Locating and interpreting Linux logs for operational and security evidence.",
+      "difficulty": "standard",
+      "parentSkillId": "linux",
+      "prerequisites": ["shell-navigation"]
+    },
+    {
+      "id": "linux-hardening",
+      "name": "Linux hardening",
+      "domain": "linux",
+      "description": "Applying and verifying defensive Linux configuration controls.",
+      "difficulty": "advanced",
+      "parentSkillId": "linux",
+      "prerequisites": ["linux-permissions", "linux-processes", "linux-logs"]
+    },
+    {
+      "id": "security-foundations",
+      "name": "Security foundations",
+      "domain": "foundations",
+      "description": "Core security principles, risk reasoning, and defensive validation.",
+      "difficulty": "foundation",
+      "parentSkillId": null,
+      "prerequisites": []
+    },
+    {
+      "id": "alert-triage",
+      "name": "Alert triage",
+      "domain": "soc",
+      "description": "Prioritizing alerts and recording evidence-based triage decisions.",
+      "difficulty": "guided",
+      "parentSkillId": "security-foundations",
+      "prerequisites": ["security-foundations"]
+    },
+    {
+      "id": "log-correlation",
+      "name": "Log correlation",
+      "domain": "soc",
+      "description": "Connecting events across sources to test an investigation hypothesis.",
+      "difficulty": "standard",
+      "parentSkillId": "security-foundations",
+      "prerequisites": ["linux-logs", "alert-triage"]
+    },
+    {
+      "id": "ioc-analysis",
+      "name": "IOC analysis",
+      "domain": "soc",
+      "description": "Evaluating indicators of compromise with context and confidence.",
+      "difficulty": "standard",
+      "parentSkillId": "security-foundations",
+      "prerequisites": ["alert-triage"]
+    },
+    {
+      "id": "attack-mapping",
+      "name": "MITRE ATT&CK mapping",
+      "domain": "soc",
+      "description": "Mapping supported observations to ATT&CK techniques without overstating certainty.",
+      "difficulty": "standard",
+      "parentSkillId": "security-foundations",
+      "prerequisites": ["alert-triage"]
+    },
+    {
+      "id": "case-documentation",
+      "name": "Case documentation",
+      "domain": "soc",
+      "description": "Producing clear, reproducible security investigation records.",
+      "difficulty": "standard",
+      "parentSkillId": "security-foundations",
+      "prerequisites": ["alert-triage"]
+    },
+    {
+      "id": "scripting",
+      "name": "Scripting",
+      "domain": "programming",
+      "description": "Using small, reviewed programs to automate repeatable security tasks.",
+      "difficulty": "guided",
+      "parentSkillId": null,
+      "prerequisites": []
+    },
+    {
+      "id": "cloud-basics",
+      "name": "Cloud basics",
+      "domain": "cloud",
+      "description": "Foundational cloud service, identity, network, and shared-responsibility concepts.",
+      "difficulty": "guided",
+      "parentSkillId": "security-foundations",
+      "prerequisites": ["networking", "security-foundations"]
+    }
+  ]
+}

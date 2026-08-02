@@ -1,0 +1,64 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://cybermentor.local/schema/practical-lab.json",
+  "title": "CyberMentor trusted practical lab",
+  "type": "object",
+  "required": [
+    "id",
+    "version",
+    "title",
+    "labType",
+    "category",
+    "difficulty",
+    "estimatedMinutes",
+    "prerequisites",
+    "linkedSkills",
+    "objectives",
+    "scenario",
+    "learnerInstructions",
+    "availableTools",
+    "virtualEnvironment",
+    "validation",
+    "hints",
+    "reflectionQuestions",
+    "completionCriteria",
+    "generatedEvidence",
+    "portfolioEligibility",
+    "expertSolution"
+  ],
+  "properties": {
+    "id": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+    "version": { "type": "string", "pattern": "^\\d+\\.\\d+\\.\\d+$" },
+    "labType": {
+      "enum": [
+        "guided",
+        "independent",
+        "investigation",
+        "incident-response",
+        "detection",
+        "secure-configuration",
+        "threat-hunting"
+      ]
+    },
+    "estimatedMinutes": { "type": "integer", "minimum": 10 },
+    "prerequisites": { "type": "array" },
+    "linkedSkills": { "type": "array", "minItems": 1, "uniqueItems": true },
+    "objectives": { "type": "array", "minItems": 2 },
+    "availableTools": { "type": "array", "minItems": 1, "uniqueItems": true },
+    "virtualEnvironment": {
+      "type": "object",
+      "required": ["cwd", "files", "processes", "connections"],
+      "properties": {
+        "files": { "type": "array" },
+        "processes": { "type": "array" },
+        "connections": { "type": "array" }
+      }
+    },
+    "validation": {
+      "type": "object",
+      "required": ["requiredCommands", "submissionFields"]
+    },
+    "hints": { "type": "array", "minItems": 5, "maxItems": 5 },
+    "portfolioEligibility": { "type": "boolean" }
+  }
+}

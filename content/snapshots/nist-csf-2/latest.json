@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "sourceId": "nist-csf-2",
+  "sourceTitle": "Cybersecurity Framework 2.0",
+  "publisher": "National Institute of Standards and Technology",
+  "requestedUrl": "https://www.nist.gov/cyberframework",
+  "finalUrl": "https://www.nist.gov/cyberframework",
+  "retrievedAt": "2026-07-19T04:47:46.280Z",
+  "publicationDate": "2024-02-26",
+  "sourceVersion": "Sun, 19 Jul 2026 01:35:51 GMT",
+  "contentDigest": "bd1b37234f3eff33ffa6df98251929f513f657ac923913b71749e5e206020d97",
+  "contentType": "text/html; charset=UTF-8",
+  "byteLength": 89729,
+  "httpStatus": 200,
+  "evidenceMatches": [
+    {
+      "draftId": "pipeline-validation-fixture",
+      "claimId": "claim-1",
+      "evidenceHash": "7142677af90e8811a1550876ef3d650e6101074197829efaff04471bbea749da",
+      "matched": true,
+      "requiresManualReview": false
+    }
+  ],
+  "rawContentStored": false
+}

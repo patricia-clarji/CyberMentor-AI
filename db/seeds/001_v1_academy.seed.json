@@ -1,0 +1,2434 @@
+{
+  "schemaVersion": 1,
+  "seedId": "v1-initial-academy",
+  "version": "1.0.0",
+  "approvalBasis": "v1-release-baseline",
+  "generatedAt": "2026-08-02T08:27:37.601Z",
+  "courses": [
+    {
+      "id": "course-1",
+      "publicationVersion": "1.0.0"
+    },
+    {
+      "id": "course-2",
+      "publicationVersion": "1.0.0"
+    },
+    {
+      "id": "course-3",
+      "publicationVersion": "1.0.0"
+    },
+    {
+      "id": "course-4",
+      "publicationVersion": "1.0.0"
+    },
+    {
+      "id": "course-5",
+      "publicationVersion": "1.0.0"
+    },
+    {
+      "id": "course-6",
+      "publicationVersion": "1.0.0"
+    },
+    {
+      "id": "course-7",
+      "publicationVersion": "1.0.0"
+    },
+    {
+      "id": "course-8",
+      "publicationVersion": "1.0.0"
+    },
+    {
+      "id": "course-9",
+      "publicationVersion": "1.0.0"
+    },
+    {
+      "id": "course-10",
+      "publicationVersion": "1.0.0"
+    },
+    {
+      "id": "course-11",
+      "publicationVersion": "1.0.0"
+    },
+    {
+      "id": "course-12",
+      "publicationVersion": "1.0.0"
+    }
+  ],
+  "modules": [
+    {
+      "id": "course-1-m1",
+      "courseId": "course-1"
+    },
+    {
+      "id": "course-1-m2",
+      "courseId": "course-1"
+    },
+    {
+      "id": "course-1-m3",
+      "courseId": "course-1"
+    },
+    {
+      "id": "course-1-m4",
+      "courseId": "course-1"
+    },
+    {
+      "id": "course-2-m1",
+      "courseId": "course-2"
+    },
+    {
+      "id": "course-2-m2",
+      "courseId": "course-2"
+    },
+    {
+      "id": "course-2-m3",
+      "courseId": "course-2"
+    },
+    {
+      "id": "course-2-m4",
+      "courseId": "course-2"
+    },
+    {
+      "id": "course-3-m1",
+      "courseId": "course-3"
+    },
+    {
+      "id": "course-3-m2",
+      "courseId": "course-3"
+    },
+    {
+      "id": "course-3-m3",
+      "courseId": "course-3"
+    },
+    {
+      "id": "course-3-m4",
+      "courseId": "course-3"
+    },
+    {
+      "id": "course-4-m1",
+      "courseId": "course-4"
+    },
+    {
+      "id": "course-4-m2",
+      "courseId": "course-4"
+    },
+    {
+      "id": "course-4-m3",
+      "courseId": "course-4"
+    },
+    {
+      "id": "course-4-m4",
+      "courseId": "course-4"
+    },
+    {
+      "id": "course-5-m1",
+      "courseId": "course-5"
+    },
+    {
+      "id": "course-5-m2",
+      "courseId": "course-5"
+    },
+    {
+      "id": "course-5-m3",
+      "courseId": "course-5"
+    },
+    {
+      "id": "course-5-m4",
+      "courseId": "course-5"
+    },
+    {
+      "id": "course-6-m1",
+      "courseId": "course-6"
+    },
+    {
+      "id": "course-6-m2",
+      "courseId": "course-6"
+    },
+    {
+      "id": "course-6-m3",
+      "courseId": "course-6"
+    },
+    {
+      "id": "course-6-m4",
+      "courseId": "course-6"
+    },
+    {
+      "id": "course-7-m1",
+      "courseId": "course-7"
+    },
+    {
+      "id": "course-7-m2",
+      "courseId": "course-7"
+    },
+    {
+      "id": "course-7-m3",
+      "courseId": "course-7"
+    },
+    {
+      "id": "course-7-m4",
+      "courseId": "course-7"
+    },
+    {
+      "id": "course-8-m1",
+      "courseId": "course-8"
+    },
+    {
+      "id": "course-8-m2",
+      "courseId": "course-8"
+    },
+    {
+      "id": "course-8-m3",
+      "courseId": "course-8"
+    },
+    {
+      "id": "course-8-m4",
+      "courseId": "course-8"
+    },
+    {
+      "id": "course-9-m1",
+      "courseId": "course-9"
+    },
+    {
+      "id": "course-9-m2",
+      "courseId": "course-9"
+    },
+    {
+      "id": "course-9-m3",
+      "courseId": "course-9"
+    },
+    {
+      "id": "course-9-m4",
+      "courseId": "course-9"
+    },
+    {
+      "id": "course-10-m1",
+      "courseId": "course-10"
+    },
+    {
+      "id": "course-10-m2",
+      "courseId": "course-10"
+    },
+    {
+      "id": "course-10-m3",
+      "courseId": "course-10"
+    },
+    {
+      "id": "course-10-m4",
+      "courseId": "course-10"
+    },
+    {
+      "id": "course-11-m1",
+      "courseId": "course-11"
+    },
+    {
+      "id": "course-11-m2",
+      "courseId": "course-11"
+    },
+    {
+      "id": "course-11-m3",
+      "courseId": "course-11"
+    },
+    {
+      "id": "course-11-m4",
+      "courseId": "course-11"
+    },
+    {
+      "id": "course-12-m1",
+      "courseId": "course-12"
+    },
+    {
+      "id": "course-12-m2",
+      "courseId": "course-12"
+    },
+    {
+      "id": "course-12-m3",
+      "courseId": "course-12"
+    },
+    {
+      "id": "course-12-m4",
+      "courseId": "course-12"
+    }
+  ],
+  "lessons": [
+    {
+      "id": "course-1-understand-security-goals-security-goals",
+      "courseId": "course-1",
+      "moduleId": "course-1-m1"
+    },
+    {
+      "id": "course-1-understand-security-goals-assets-threats-vulnerabilities",
+      "courseId": "course-1",
+      "moduleId": "course-1-m1"
+    },
+    {
+      "id": "course-1-understand-security-goals-risk-decisions",
+      "courseId": "course-1",
+      "moduleId": "course-1-m1"
+    },
+    {
+      "id": "course-1-observe-identity-access-identity-access",
+      "courseId": "course-1",
+      "moduleId": "course-1-m2"
+    },
+    {
+      "id": "course-1-observe-identity-access-defense-in-depth",
+      "courseId": "course-1",
+      "moduleId": "course-1-m2"
+    },
+    {
+      "id": "course-1-observe-identity-access-security-controls",
+      "courseId": "course-1",
+      "moduleId": "course-1-m2"
+    },
+    {
+      "id": "course-1-practice-attack-surface-attack-surface",
+      "courseId": "course-1",
+      "moduleId": "course-1-m3"
+    },
+    {
+      "id": "course-1-practice-attack-surface-threat-modeling",
+      "courseId": "course-1",
+      "moduleId": "course-1-m3"
+    },
+    {
+      "id": "course-1-practice-attack-surface-common-attack-patterns",
+      "courseId": "course-1",
+      "moduleId": "course-1-m3"
+    },
+    {
+      "id": "course-1-demonstrate-frameworks-ethics-frameworks-ethics",
+      "courseId": "course-1",
+      "moduleId": "course-1-m4"
+    },
+    {
+      "id": "course-1-demonstrate-frameworks-ethics-security-careers",
+      "courseId": "course-1",
+      "moduleId": "course-1-m4"
+    },
+    {
+      "id": "course-1-demonstrate-frameworks-ethics-security-program-briefing",
+      "courseId": "course-1",
+      "moduleId": "course-1-m4"
+    },
+    {
+      "id": "course-2-understand-osi-tcp-ip-osi-tcp-ip",
+      "courseId": "course-2",
+      "moduleId": "course-2-m1"
+    },
+    {
+      "id": "course-2-understand-osi-tcp-ip-ethernet-mac-arp",
+      "courseId": "course-2",
+      "moduleId": "course-2-m1"
+    },
+    {
+      "id": "course-2-understand-osi-tcp-ip-ipv4-ipv6-subnetting",
+      "courseId": "course-2",
+      "moduleId": "course-2-m1"
+    },
+    {
+      "id": "course-2-observe-routing-nat-routing-nat",
+      "courseId": "course-2",
+      "moduleId": "course-2-m2"
+    },
+    {
+      "id": "course-2-observe-routing-nat-tcp-udp",
+      "courseId": "course-2",
+      "moduleId": "course-2-m2"
+    },
+    {
+      "id": "course-2-observe-routing-nat-dns-dhcp",
+      "courseId": "course-2",
+      "moduleId": "course-2-m2"
+    },
+    {
+      "id": "course-2-practice-http-tls-http-tls",
+      "courseId": "course-2",
+      "moduleId": "course-2-m3"
+    },
+    {
+      "id": "course-2-practice-http-tls-firewalls",
+      "courseId": "course-2",
+      "moduleId": "course-2-m3"
+    },
+    {
+      "id": "course-2-practice-http-tls-network-segmentation",
+      "courseId": "course-2",
+      "moduleId": "course-2-m3"
+    },
+    {
+      "id": "course-2-demonstrate-packet-analysis-packet-analysis",
+      "courseId": "course-2",
+      "moduleId": "course-2-m4"
+    },
+    {
+      "id": "course-2-demonstrate-packet-analysis-network-attack-patterns",
+      "courseId": "course-2",
+      "moduleId": "course-2-m4"
+    },
+    {
+      "id": "course-2-demonstrate-packet-analysis-defensive-investigation",
+      "courseId": "course-2",
+      "moduleId": "course-2-m4"
+    },
+    {
+      "id": "course-3-understand-shell-filesystem-shell-filesystem",
+      "courseId": "course-3",
+      "moduleId": "course-3-m1"
+    },
+    {
+      "id": "course-3-understand-shell-filesystem-users-groups",
+      "courseId": "course-3",
+      "moduleId": "course-3-m1"
+    },
+    {
+      "id": "course-3-understand-shell-filesystem-permissions",
+      "courseId": "course-3",
+      "moduleId": "course-3-m1"
+    },
+    {
+      "id": "course-3-observe-processes-services-processes-services",
+      "courseId": "course-3",
+      "moduleId": "course-3-m2"
+    },
+    {
+      "id": "course-3-observe-processes-services-package-management",
+      "courseId": "course-3",
+      "moduleId": "course-3-m2"
+    },
+    {
+      "id": "course-3-observe-processes-services-networking-commands",
+      "courseId": "course-3",
+      "moduleId": "course-3-m2"
+    },
+    {
+      "id": "course-3-practice-linux-logs-linux-logs",
+      "courseId": "course-3",
+      "moduleId": "course-3-m3"
+    },
+    {
+      "id": "course-3-practice-linux-logs-bash-foundations",
+      "courseId": "course-3",
+      "moduleId": "course-3-m3"
+    },
+    {
+      "id": "course-3-practice-linux-logs-safe-troubleshooting",
+      "courseId": "course-3",
+      "moduleId": "course-3-m3"
+    },
+    {
+      "id": "course-3-demonstrate-system-hardening-system-hardening",
+      "courseId": "course-3",
+      "moduleId": "course-3-m4"
+    },
+    {
+      "id": "course-3-demonstrate-system-hardening-configuration-review",
+      "courseId": "course-3",
+      "moduleId": "course-3-m4"
+    },
+    {
+      "id": "course-3-demonstrate-system-hardening-incident-investigation",
+      "courseId": "course-3",
+      "moduleId": "course-3-m4"
+    },
+    {
+      "id": "course-4-understand-soc-mission-roles-soc-mission-roles",
+      "courseId": "course-4",
+      "moduleId": "course-4-m1"
+    },
+    {
+      "id": "course-4-understand-soc-mission-roles-events-alerts-logs",
+      "courseId": "course-4",
+      "moduleId": "course-4-m1"
+    },
+    {
+      "id": "course-4-understand-soc-mission-roles-siem-fundamentals",
+      "courseId": "course-4",
+      "moduleId": "course-4-m1"
+    },
+    {
+      "id": "course-4-observe-detection-rules-detection-rules",
+      "courseId": "course-4",
+      "moduleId": "course-4-m2"
+    },
+    {
+      "id": "course-4-observe-detection-rules-ioc-versus-behavior",
+      "courseId": "course-4",
+      "moduleId": "course-4-m2"
+    },
+    {
+      "id": "course-4-observe-detection-rules-mitre-att-ck-mapping",
+      "courseId": "course-4",
+      "moduleId": "course-4-m2"
+    },
+    {
+      "id": "course-4-practice-triage-workflow-triage-workflow",
+      "courseId": "course-4",
+      "moduleId": "course-4-m3"
+    },
+    {
+      "id": "course-4-practice-triage-workflow-false-positives",
+      "courseId": "course-4",
+      "moduleId": "course-4-m3"
+    },
+    {
+      "id": "course-4-practice-triage-workflow-escalation-decisions",
+      "courseId": "course-4",
+      "moduleId": "course-4-m3"
+    },
+    {
+      "id": "course-4-demonstrate-case-documentation-case-documentation",
+      "courseId": "course-4",
+      "moduleId": "course-4-m4"
+    },
+    {
+      "id": "course-4-demonstrate-case-documentation-stakeholder-communication",
+      "courseId": "course-4",
+      "moduleId": "course-4-m4"
+    },
+    {
+      "id": "course-4-demonstrate-case-documentation-soc-shift-simulation",
+      "courseId": "course-4",
+      "moduleId": "course-4-m4"
+    },
+    {
+      "id": "course-5-understand-preparation-preparation",
+      "courseId": "course-5",
+      "moduleId": "course-5-m1"
+    },
+    {
+      "id": "course-5-understand-preparation-detection-analysis",
+      "courseId": "course-5",
+      "moduleId": "course-5-m1"
+    },
+    {
+      "id": "course-5-understand-preparation-evidence-preservation",
+      "courseId": "course-5",
+      "moduleId": "course-5-m1"
+    },
+    {
+      "id": "course-5-observe-scoping-incidents-scoping-incidents",
+      "courseId": "course-5",
+      "moduleId": "course-5-m2"
+    },
+    {
+      "id": "course-5-observe-scoping-incidents-containment-strategy",
+      "courseId": "course-5",
+      "moduleId": "course-5-m2"
+    },
+    {
+      "id": "course-5-observe-scoping-incidents-eradication",
+      "courseId": "course-5",
+      "moduleId": "course-5-m2"
+    },
+    {
+      "id": "course-5-practice-recovery-recovery",
+      "courseId": "course-5",
+      "moduleId": "course-5-m3"
+    },
+    {
+      "id": "course-5-practice-recovery-ransomware-response",
+      "courseId": "course-5",
+      "moduleId": "course-5-m3"
+    },
+    {
+      "id": "course-5-practice-recovery-account-compromise",
+      "courseId": "course-5",
+      "moduleId": "course-5-m3"
+    },
+    {
+      "id": "course-5-demonstrate-communication-communication",
+      "courseId": "course-5",
+      "moduleId": "course-5-m4"
+    },
+    {
+      "id": "course-5-demonstrate-communication-lessons-learned",
+      "courseId": "course-5",
+      "moduleId": "course-5-m4"
+    },
+    {
+      "id": "course-5-demonstrate-communication-playbook-exercise",
+      "courseId": "course-5",
+      "moduleId": "course-5-m4"
+    },
+    {
+      "id": "course-6-understand-forensic-principles-forensic-principles",
+      "courseId": "course-6",
+      "moduleId": "course-6-m1"
+    },
+    {
+      "id": "course-6-understand-forensic-principles-evidence-integrity",
+      "courseId": "course-6",
+      "moduleId": "course-6-m1"
+    },
+    {
+      "id": "course-6-understand-forensic-principles-chain-of-custody",
+      "courseId": "course-6",
+      "moduleId": "course-6-m1"
+    },
+    {
+      "id": "course-6-observe-disk-file-systems-disk-file-systems",
+      "courseId": "course-6",
+      "moduleId": "course-6-m2"
+    },
+    {
+      "id": "course-6-observe-disk-file-systems-hashing",
+      "courseId": "course-6",
+      "moduleId": "course-6-m2"
+    },
+    {
+      "id": "course-6-observe-disk-file-systems-metadata",
+      "courseId": "course-6",
+      "moduleId": "course-6-m2"
+    },
+    {
+      "id": "course-6-practice-timeline-analysis-timeline-analysis",
+      "courseId": "course-6",
+      "moduleId": "course-6-m3"
+    },
+    {
+      "id": "course-6-practice-timeline-analysis-windows-linux-artifacts",
+      "courseId": "course-6",
+      "moduleId": "course-6-m3"
+    },
+    {
+      "id": "course-6-practice-timeline-analysis-browser-artifacts",
+      "courseId": "course-6",
+      "moduleId": "course-6-m3"
+    },
+    {
+      "id": "course-6-demonstrate-memory-overview-memory-overview",
+      "courseId": "course-6",
+      "moduleId": "course-6-m4"
+    },
+    {
+      "id": "course-6-demonstrate-memory-overview-evidence-synthesis",
+      "courseId": "course-6",
+      "moduleId": "course-6-m4"
+    },
+    {
+      "id": "course-6-demonstrate-memory-overview-forensic-reporting",
+      "courseId": "course-6",
+      "moduleId": "course-6-m4"
+    },
+    {
+      "id": "course-7-understand-authorization-scope-authorization-scope",
+      "courseId": "course-7",
+      "moduleId": "course-7-m1"
+    },
+    {
+      "id": "course-7-understand-authorization-scope-rules-of-engagement",
+      "courseId": "course-7",
+      "moduleId": "course-7-m1"
+    },
+    {
+      "id": "course-7-understand-authorization-scope-assessment-methodology",
+      "courseId": "course-7",
+      "moduleId": "course-7-m1"
+    },
+    {
+      "id": "course-7-observe-lab-reconnaissance-lab-reconnaissance",
+      "courseId": "course-7",
+      "moduleId": "course-7-m2"
+    },
+    {
+      "id": "course-7-observe-lab-reconnaissance-safe-enumeration",
+      "courseId": "course-7",
+      "moduleId": "course-7-m2"
+    },
+    {
+      "id": "course-7-observe-lab-reconnaissance-vulnerability-validation",
+      "courseId": "course-7",
+      "moduleId": "course-7-m2"
+    },
+    {
+      "id": "course-7-practice-exploitation-concepts-exploitation-concepts",
+      "courseId": "course-7",
+      "moduleId": "course-7-m3"
+    },
+    {
+      "id": "course-7-practice-exploitation-concepts-privilege-boundaries",
+      "courseId": "course-7",
+      "moduleId": "course-7-m3"
+    },
+    {
+      "id": "course-7-practice-exploitation-concepts-lateral-movement-concepts",
+      "courseId": "course-7",
+      "moduleId": "course-7-m3"
+    },
+    {
+      "id": "course-7-demonstrate-risk-communication-risk-communication",
+      "courseId": "course-7",
+      "moduleId": "course-7-m4"
+    },
+    {
+      "id": "course-7-demonstrate-risk-communication-remediation",
+      "courseId": "course-7",
+      "moduleId": "course-7-m4"
+    },
+    {
+      "id": "course-7-demonstrate-risk-communication-retesting-reporting",
+      "courseId": "course-7",
+      "moduleId": "course-7-m4"
+    },
+    {
+      "id": "course-8-understand-web-architecture-web-architecture",
+      "courseId": "course-8",
+      "moduleId": "course-8-m1"
+    },
+    {
+      "id": "course-8-understand-web-architecture-http-cookies-sessions",
+      "courseId": "course-8",
+      "moduleId": "course-8-m1"
+    },
+    {
+      "id": "course-8-understand-web-architecture-authentication",
+      "courseId": "course-8",
+      "moduleId": "course-8-m1"
+    },
+    {
+      "id": "course-8-observe-authorization-authorization",
+      "courseId": "course-8",
+      "moduleId": "course-8-m2"
+    },
+    {
+      "id": "course-8-observe-authorization-input-validation",
+      "courseId": "course-8",
+      "moduleId": "course-8-m2"
+    },
+    {
+      "id": "course-8-observe-authorization-sql-injection",
+      "courseId": "course-8",
+      "moduleId": "course-8-m2"
+    },
+    {
+      "id": "course-8-practice-cross-site-scripting-cross-site-scripting",
+      "courseId": "course-8",
+      "moduleId": "course-8-m3"
+    },
+    {
+      "id": "course-8-practice-cross-site-scripting-csrf",
+      "courseId": "course-8",
+      "moduleId": "course-8-m3"
+    },
+    {
+      "id": "course-8-practice-cross-site-scripting-ssrf-concepts",
+      "courseId": "course-8",
+      "moduleId": "course-8-m3"
+    },
+    {
+      "id": "course-8-demonstrate-file-upload-risk-file-upload-risk",
+      "courseId": "course-8",
+      "moduleId": "course-8-m4"
+    },
+    {
+      "id": "course-8-demonstrate-file-upload-risk-security-headers",
+      "courseId": "course-8",
+      "moduleId": "course-8-m4"
+    },
+    {
+      "id": "course-8-demonstrate-file-upload-risk-owasp-risk-review",
+      "courseId": "course-8",
+      "moduleId": "course-8-m4"
+    },
+    {
+      "id": "course-9-understand-python-foundations-python-foundations",
+      "courseId": "course-9",
+      "moduleId": "course-9-m1"
+    },
+    {
+      "id": "course-9-understand-python-foundations-files-paths",
+      "courseId": "course-9",
+      "moduleId": "course-9-m1"
+    },
+    {
+      "id": "course-9-understand-python-foundations-json-csv",
+      "courseId": "course-9",
+      "moduleId": "course-9-m1"
+    },
+    {
+      "id": "course-9-observe-regular-expressions-regular-expressions",
+      "courseId": "course-9",
+      "moduleId": "course-9-m2"
+    },
+    {
+      "id": "course-9-observe-regular-expressions-parsing-logs",
+      "courseId": "course-9",
+      "moduleId": "course-9-m2"
+    },
+    {
+      "id": "course-9-observe-regular-expressions-error-handling",
+      "courseId": "course-9",
+      "moduleId": "course-9-m2"
+    },
+    {
+      "id": "course-9-practice-http-clients-http-clients",
+      "courseId": "course-9",
+      "moduleId": "course-9-m3"
+    },
+    {
+      "id": "course-9-practice-http-clients-hashing",
+      "courseId": "course-9",
+      "moduleId": "course-9-m3"
+    },
+    {
+      "id": "course-9-practice-http-clients-safe-api-use",
+      "courseId": "course-9",
+      "moduleId": "course-9-m3"
+    },
+    {
+      "id": "course-9-demonstrate-cli-tools-cli-tools",
+      "courseId": "course-9",
+      "moduleId": "course-9-m4"
+    },
+    {
+      "id": "course-9-demonstrate-cli-tools-testing",
+      "courseId": "course-9",
+      "moduleId": "course-9-m4"
+    },
+    {
+      "id": "course-9-demonstrate-cli-tools-secure-defensive-automation",
+      "courseId": "course-9",
+      "moduleId": "course-9-m4"
+    },
+    {
+      "id": "course-10-understand-shared-responsibility-shared-responsibility",
+      "courseId": "course-10",
+      "moduleId": "course-10-m1"
+    },
+    {
+      "id": "course-10-understand-shared-responsibility-cloud-iam",
+      "courseId": "course-10",
+      "moduleId": "course-10-m1"
+    },
+    {
+      "id": "course-10-understand-shared-responsibility-cloud-networking",
+      "courseId": "course-10",
+      "moduleId": "course-10-m1"
+    },
+    {
+      "id": "course-10-observe-storage-security-storage-security",
+      "courseId": "course-10",
+      "moduleId": "course-10-m2"
+    },
+    {
+      "id": "course-10-observe-storage-security-secrets",
+      "courseId": "course-10",
+      "moduleId": "course-10-m2"
+    },
+    {
+      "id": "course-10-observe-storage-security-encryption-keys",
+      "courseId": "course-10",
+      "moduleId": "course-10-m2"
+    },
+    {
+      "id": "course-10-practice-logging-monitoring-logging-monitoring",
+      "courseId": "course-10",
+      "moduleId": "course-10-m3"
+    },
+    {
+      "id": "course-10-practice-logging-monitoring-misconfiguration",
+      "courseId": "course-10",
+      "moduleId": "course-10-m3"
+    },
+    {
+      "id": "course-10-practice-logging-monitoring-workload-identity",
+      "courseId": "course-10",
+      "moduleId": "course-10-m3"
+    },
+    {
+      "id": "course-10-demonstrate-containers-containers",
+      "courseId": "course-10",
+      "moduleId": "course-10-m4"
+    },
+    {
+      "id": "course-10-demonstrate-containers-cloud-incident-response",
+      "courseId": "course-10",
+      "moduleId": "course-10-m4"
+    },
+    {
+      "id": "course-10-demonstrate-containers-multi-cloud-principles",
+      "courseId": "course-10",
+      "moduleId": "course-10-m4"
+    },
+    {
+      "id": "course-11-understand-ai-application-architecture-ai-application-architecture",
+      "courseId": "course-11",
+      "moduleId": "course-11-m1"
+    },
+    {
+      "id": "course-11-understand-ai-application-architecture-model-threats",
+      "courseId": "course-11",
+      "moduleId": "course-11-m1"
+    },
+    {
+      "id": "course-11-understand-ai-application-architecture-ai-threat-modeling",
+      "courseId": "course-11",
+      "moduleId": "course-11-m1"
+    },
+    {
+      "id": "course-11-observe-prompt-injection-prompt-injection",
+      "courseId": "course-11",
+      "moduleId": "course-11-m2"
+    },
+    {
+      "id": "course-11-observe-prompt-injection-indirect-injection",
+      "courseId": "course-11",
+      "moduleId": "course-11-m2"
+    },
+    {
+      "id": "course-11-observe-prompt-injection-data-leakage",
+      "courseId": "course-11",
+      "moduleId": "course-11-m2"
+    },
+    {
+      "id": "course-11-practice-rag-poisoning-rag-poisoning",
+      "courseId": "course-11",
+      "moduleId": "course-11-m3"
+    },
+    {
+      "id": "course-11-practice-rag-poisoning-tool-abuse",
+      "courseId": "course-11",
+      "moduleId": "course-11-m3"
+    },
+    {
+      "id": "course-11-practice-rag-poisoning-excessive-agency",
+      "courseId": "course-11",
+      "moduleId": "course-11-m3"
+    },
+    {
+      "id": "course-11-demonstrate-output-handling-output-handling",
+      "courseId": "course-11",
+      "moduleId": "course-11-m4"
+    },
+    {
+      "id": "course-11-demonstrate-output-handling-guardrails-monitoring",
+      "courseId": "course-11",
+      "moduleId": "course-11-m4"
+    },
+    {
+      "id": "course-11-demonstrate-output-handling-ai-red-team-evaluation",
+      "courseId": "course-11",
+      "moduleId": "course-11-m4"
+    },
+    {
+      "id": "course-12-understand-role-selection-role-selection",
+      "courseId": "course-12",
+      "moduleId": "course-12-m1"
+    },
+    {
+      "id": "course-12-understand-role-selection-skill-mapping",
+      "courseId": "course-12",
+      "moduleId": "course-12-m1"
+    },
+    {
+      "id": "course-12-understand-role-selection-evidence-planning",
+      "courseId": "course-12",
+      "moduleId": "course-12-m1"
+    },
+    {
+      "id": "course-12-observe-resume-projects-resume-projects",
+      "courseId": "course-12",
+      "moduleId": "course-12-m2"
+    },
+    {
+      "id": "course-12-observe-resume-projects-portfolio-design",
+      "courseId": "course-12",
+      "moduleId": "course-12-m2"
+    },
+    {
+      "id": "course-12-observe-resume-projects-professional-reports",
+      "courseId": "course-12",
+      "moduleId": "course-12-m2"
+    },
+    {
+      "id": "course-12-practice-technical-interviews-technical-interviews",
+      "courseId": "course-12",
+      "moduleId": "course-12-m3"
+    },
+    {
+      "id": "course-12-practice-technical-interviews-behavioral-interviews",
+      "courseId": "course-12",
+      "moduleId": "course-12-m3"
+    },
+    {
+      "id": "course-12-practice-technical-interviews-reasoning-aloud",
+      "courseId": "course-12",
+      "moduleId": "course-12-m3"
+    },
+    {
+      "id": "course-12-demonstrate-ethical-job-search-ethical-job-search",
+      "courseId": "course-12",
+      "moduleId": "course-12-m4"
+    },
+    {
+      "id": "course-12-demonstrate-ethical-job-search-continuous-learning",
+      "courseId": "course-12",
+      "moduleId": "course-12-m4"
+    },
+    {
+      "id": "course-12-demonstrate-ethical-job-search-career-action-plan",
+      "courseId": "course-12",
+      "moduleId": "course-12-m4"
+    }
+  ],
+  "questions": [
+    {
+      "id": "course-1-m1-l1-check",
+      "lessonId": "course-1-understand-security-goals-security-goals"
+    },
+    {
+      "id": "course-1-m1-l2-check",
+      "lessonId": "course-1-understand-security-goals-assets-threats-vulnerabilities"
+    },
+    {
+      "id": "course-1-m1-l3-check",
+      "lessonId": "course-1-understand-security-goals-risk-decisions"
+    },
+    {
+      "id": "course-1-m2-l1-check",
+      "lessonId": "course-1-observe-identity-access-identity-access"
+    },
+    {
+      "id": "course-1-m2-l2-check",
+      "lessonId": "course-1-observe-identity-access-defense-in-depth"
+    },
+    {
+      "id": "course-1-m2-l3-check",
+      "lessonId": "course-1-observe-identity-access-security-controls"
+    },
+    {
+      "id": "course-1-m3-l1-check",
+      "lessonId": "course-1-practice-attack-surface-attack-surface"
+    },
+    {
+      "id": "course-1-m3-l2-check",
+      "lessonId": "course-1-practice-attack-surface-threat-modeling"
+    },
+    {
+      "id": "course-1-m3-l3-check",
+      "lessonId": "course-1-practice-attack-surface-common-attack-patterns"
+    },
+    {
+      "id": "course-1-m4-l1-check",
+      "lessonId": "course-1-demonstrate-frameworks-ethics-frameworks-ethics"
+    },
+    {
+      "id": "course-1-m4-l2-check",
+      "lessonId": "course-1-demonstrate-frameworks-ethics-security-careers"
+    },
+    {
+      "id": "course-1-m4-l3-check",
+      "lessonId": "course-1-demonstrate-frameworks-ethics-security-program-briefing"
+    },
+    {
+      "id": "course-2-m1-l1-check",
+      "lessonId": "course-2-understand-osi-tcp-ip-osi-tcp-ip"
+    },
+    {
+      "id": "course-2-m1-l2-check",
+      "lessonId": "course-2-understand-osi-tcp-ip-ethernet-mac-arp"
+    },
+    {
+      "id": "course-2-m1-l3-check",
+      "lessonId": "course-2-understand-osi-tcp-ip-ipv4-ipv6-subnetting"
+    },
+    {
+      "id": "course-2-m2-l1-check",
+      "lessonId": "course-2-observe-routing-nat-routing-nat"
+    },
+    {
+      "id": "course-2-m2-l2-check",
+      "lessonId": "course-2-observe-routing-nat-tcp-udp"
+    },
+    {
+      "id": "course-2-m2-l3-check",
+      "lessonId": "course-2-observe-routing-nat-dns-dhcp"
+    },
+    {
+      "id": "course-2-m3-l1-check",
+      "lessonId": "course-2-practice-http-tls-http-tls"
+    },
+    {
+      "id": "course-2-m3-l2-check",
+      "lessonId": "course-2-practice-http-tls-firewalls"
+    },
+    {
+      "id": "course-2-m3-l3-check",
+      "lessonId": "course-2-practice-http-tls-network-segmentation"
+    },
+    {
+      "id": "course-2-m4-l1-check",
+      "lessonId": "course-2-demonstrate-packet-analysis-packet-analysis"
+    },
+    {
+      "id": "course-2-m4-l2-check",
+      "lessonId": "course-2-demonstrate-packet-analysis-network-attack-patterns"
+    },
+    {
+      "id": "course-2-m4-l3-check",
+      "lessonId": "course-2-demonstrate-packet-analysis-defensive-investigation"
+    },
+    {
+      "id": "course-3-m1-l1-check",
+      "lessonId": "course-3-understand-shell-filesystem-shell-filesystem"
+    },
+    {
+      "id": "course-3-m1-l2-check",
+      "lessonId": "course-3-understand-shell-filesystem-users-groups"
+    },
+    {
+      "id": "course-3-m1-l3-check",
+      "lessonId": "course-3-understand-shell-filesystem-permissions"
+    },
+    {
+      "id": "course-3-m2-l1-check",
+      "lessonId": "course-3-observe-processes-services-processes-services"
+    },
+    {
+      "id": "course-3-m2-l2-check",
+      "lessonId": "course-3-observe-processes-services-package-management"
+    },
+    {
+      "id": "course-3-m2-l3-check",
+      "lessonId": "course-3-observe-processes-services-networking-commands"
+    },
+    {
+      "id": "course-3-m3-l1-check",
+      "lessonId": "course-3-practice-linux-logs-linux-logs"
+    },
+    {
+      "id": "course-3-m3-l2-check",
+      "lessonId": "course-3-practice-linux-logs-bash-foundations"
+    },
+    {
+      "id": "course-3-m3-l3-check",
+      "lessonId": "course-3-practice-linux-logs-safe-troubleshooting"
+    },
+    {
+      "id": "course-3-m4-l1-check",
+      "lessonId": "course-3-demonstrate-system-hardening-system-hardening"
+    },
+    {
+      "id": "course-3-m4-l2-check",
+      "lessonId": "course-3-demonstrate-system-hardening-configuration-review"
+    },
+    {
+      "id": "course-3-m4-l3-check",
+      "lessonId": "course-3-demonstrate-system-hardening-incident-investigation"
+    },
+    {
+      "id": "course-4-m1-l1-check",
+      "lessonId": "course-4-understand-soc-mission-roles-soc-mission-roles"
+    },
+    {
+      "id": "course-4-m1-l2-check",
+      "lessonId": "course-4-understand-soc-mission-roles-events-alerts-logs"
+    },
+    {
+      "id": "course-4-m1-l3-check",
+      "lessonId": "course-4-understand-soc-mission-roles-siem-fundamentals"
+    },
+    {
+      "id": "course-4-m2-l1-check",
+      "lessonId": "course-4-observe-detection-rules-detection-rules"
+    },
+    {
+      "id": "course-4-m2-l2-check",
+      "lessonId": "course-4-observe-detection-rules-ioc-versus-behavior"
+    },
+    {
+      "id": "course-4-m2-l3-check",
+      "lessonId": "course-4-observe-detection-rules-mitre-att-ck-mapping"
+    },
+    {
+      "id": "course-4-m3-l1-check",
+      "lessonId": "course-4-practice-triage-workflow-triage-workflow"
+    },
+    {
+      "id": "course-4-m3-l2-check",
+      "lessonId": "course-4-practice-triage-workflow-false-positives"
+    },
+    {
+      "id": "course-4-m3-l3-check",
+      "lessonId": "course-4-practice-triage-workflow-escalation-decisions"
+    },
+    {
+      "id": "course-4-m4-l1-check",
+      "lessonId": "course-4-demonstrate-case-documentation-case-documentation"
+    },
+    {
+      "id": "course-4-m4-l2-check",
+      "lessonId": "course-4-demonstrate-case-documentation-stakeholder-communication"
+    },
+    {
+      "id": "course-4-m4-l3-check",
+      "lessonId": "course-4-demonstrate-case-documentation-soc-shift-simulation"
+    },
+    {
+      "id": "course-5-m1-l1-check",
+      "lessonId": "course-5-understand-preparation-preparation"
+    },
+    {
+      "id": "course-5-m1-l2-check",
+      "lessonId": "course-5-understand-preparation-detection-analysis"
+    },
+    {
+      "id": "course-5-m1-l3-check",
+      "lessonId": "course-5-understand-preparation-evidence-preservation"
+    },
+    {
+      "id": "course-5-m2-l1-check",
+      "lessonId": "course-5-observe-scoping-incidents-scoping-incidents"
+    },
+    {
+      "id": "course-5-m2-l2-check",
+      "lessonId": "course-5-observe-scoping-incidents-containment-strategy"
+    },
+    {
+      "id": "course-5-m2-l3-check",
+      "lessonId": "course-5-observe-scoping-incidents-eradication"
+    },
+    {
+      "id": "course-5-m3-l1-check",
+      "lessonId": "course-5-practice-recovery-recovery"
+    },
+    {
+      "id": "course-5-m3-l2-check",
+      "lessonId": "course-5-practice-recovery-ransomware-response"
+    },
+    {
+      "id": "course-5-m3-l3-check",
+      "lessonId": "course-5-practice-recovery-account-compromise"
+    },
+    {
+      "id": "course-5-m4-l1-check",
+      "lessonId": "course-5-demonstrate-communication-communication"
+    },
+    {
+      "id": "course-5-m4-l2-check",
+      "lessonId": "course-5-demonstrate-communication-lessons-learned"
+    },
+    {
+      "id": "course-5-m4-l3-check",
+      "lessonId": "course-5-demonstrate-communication-playbook-exercise"
+    },
+    {
+      "id": "course-6-m1-l1-check",
+      "lessonId": "course-6-understand-forensic-principles-forensic-principles"
+    },
+    {
+      "id": "course-6-m1-l2-check",
+      "lessonId": "course-6-understand-forensic-principles-evidence-integrity"
+    },
+    {
+      "id": "course-6-m1-l3-check",
+      "lessonId": "course-6-understand-forensic-principles-chain-of-custody"
+    },
+    {
+      "id": "course-6-m2-l1-check",
+      "lessonId": "course-6-observe-disk-file-systems-disk-file-systems"
+    },
+    {
+      "id": "course-6-m2-l2-check",
+      "lessonId": "course-6-observe-disk-file-systems-hashing"
+    },
+    {
+      "id": "course-6-m2-l3-check",
+      "lessonId": "course-6-observe-disk-file-systems-metadata"
+    },
+    {
+      "id": "course-6-m3-l1-check",
+      "lessonId": "course-6-practice-timeline-analysis-timeline-analysis"
+    },
+    {
+      "id": "course-6-m3-l2-check",
+      "lessonId": "course-6-practice-timeline-analysis-windows-linux-artifacts"
+    },
+    {
+      "id": "course-6-m3-l3-check",
+      "lessonId": "course-6-practice-timeline-analysis-browser-artifacts"
+    },
+    {
+      "id": "course-6-m4-l1-check",
+      "lessonId": "course-6-demonstrate-memory-overview-memory-overview"
+    },
+    {
+      "id": "course-6-m4-l2-check",
+      "lessonId": "course-6-demonstrate-memory-overview-evidence-synthesis"
+    },
+    {
+      "id": "course-6-m4-l3-check",
+      "lessonId": "course-6-demonstrate-memory-overview-forensic-reporting"
+    },
+    {
+      "id": "course-7-m1-l1-check",
+      "lessonId": "course-7-understand-authorization-scope-authorization-scope"
+    },
+    {
+      "id": "course-7-m1-l2-check",
+      "lessonId": "course-7-understand-authorization-scope-rules-of-engagement"
+    },
+    {
+      "id": "course-7-m1-l3-check",
+      "lessonId": "course-7-understand-authorization-scope-assessment-methodology"
+    },
+    {
+      "id": "course-7-m2-l1-check",
+      "lessonId": "course-7-observe-lab-reconnaissance-lab-reconnaissance"
+    },
+    {
+      "id": "course-7-m2-l2-check",
+      "lessonId": "course-7-observe-lab-reconnaissance-safe-enumeration"
+    },
+    {
+      "id": "course-7-m2-l3-check",
+      "lessonId": "course-7-observe-lab-reconnaissance-vulnerability-validation"
+    },
+    {
+      "id": "course-7-m3-l1-check",
+      "lessonId": "course-7-practice-exploitation-concepts-exploitation-concepts"
+    },
+    {
+      "id": "course-7-m3-l2-check",
+      "lessonId": "course-7-practice-exploitation-concepts-privilege-boundaries"
+    },
+    {
+      "id": "course-7-m3-l3-check",
+      "lessonId": "course-7-practice-exploitation-concepts-lateral-movement-concepts"
+    },
+    {
+      "id": "course-7-m4-l1-check",
+      "lessonId": "course-7-demonstrate-risk-communication-risk-communication"
+    },
+    {
+      "id": "course-7-m4-l2-check",
+      "lessonId": "course-7-demonstrate-risk-communication-remediation"
+    },
+    {
+      "id": "course-7-m4-l3-check",
+      "lessonId": "course-7-demonstrate-risk-communication-retesting-reporting"
+    },
+    {
+      "id": "course-8-m1-l1-check",
+      "lessonId": "course-8-understand-web-architecture-web-architecture"
+    },
+    {
+      "id": "course-8-m1-l2-check",
+      "lessonId": "course-8-understand-web-architecture-http-cookies-sessions"
+    },
+    {
+      "id": "course-8-m1-l3-check",
+      "lessonId": "course-8-understand-web-architecture-authentication"
+    },
+    {
+      "id": "course-8-m2-l1-check",
+      "lessonId": "course-8-observe-authorization-authorization"
+    },
+    {
+      "id": "course-8-m2-l2-check",
+      "lessonId": "course-8-observe-authorization-input-validation"
+    },
+    {
+      "id": "course-8-m2-l3-check",
+      "lessonId": "course-8-observe-authorization-sql-injection"
+    },
+    {
+      "id": "course-8-m3-l1-check",
+      "lessonId": "course-8-practice-cross-site-scripting-cross-site-scripting"
+    },
+    {
+      "id": "course-8-m3-l2-check",
+      "lessonId": "course-8-practice-cross-site-scripting-csrf"
+    },
+    {
+      "id": "course-8-m3-l3-check",
+      "lessonId": "course-8-practice-cross-site-scripting-ssrf-concepts"
+    },
+    {
+      "id": "course-8-m4-l1-check",
+      "lessonId": "course-8-demonstrate-file-upload-risk-file-upload-risk"
+    },
+    {
+      "id": "course-8-m4-l2-check",
+      "lessonId": "course-8-demonstrate-file-upload-risk-security-headers"
+    },
+    {
+      "id": "course-8-m4-l3-check",
+      "lessonId": "course-8-demonstrate-file-upload-risk-owasp-risk-review"
+    },
+    {
+      "id": "course-9-m1-l1-check",
+      "lessonId": "course-9-understand-python-foundations-python-foundations"
+    },
+    {
+      "id": "course-9-m1-l2-check",
+      "lessonId": "course-9-understand-python-foundations-files-paths"
+    },
+    {
+      "id": "course-9-m1-l3-check",
+      "lessonId": "course-9-understand-python-foundations-json-csv"
+    },
+    {
+      "id": "course-9-m2-l1-check",
+      "lessonId": "course-9-observe-regular-expressions-regular-expressions"
+    },
+    {
+      "id": "course-9-m2-l2-check",
+      "lessonId": "course-9-observe-regular-expressions-parsing-logs"
+    },
+    {
+      "id": "course-9-m2-l3-check",
+      "lessonId": "course-9-observe-regular-expressions-error-handling"
+    },
+    {
+      "id": "course-9-m3-l1-check",
+      "lessonId": "course-9-practice-http-clients-http-clients"
+    },
+    {
+      "id": "course-9-m3-l2-check",
+      "lessonId": "course-9-practice-http-clients-hashing"
+    },
+    {
+      "id": "course-9-m3-l3-check",
+      "lessonId": "course-9-practice-http-clients-safe-api-use"
+    },
+    {
+      "id": "course-9-m4-l1-check",
+      "lessonId": "course-9-demonstrate-cli-tools-cli-tools"
+    },
+    {
+      "id": "course-9-m4-l2-check",
+      "lessonId": "course-9-demonstrate-cli-tools-testing"
+    },
+    {
+      "id": "course-9-m4-l3-check",
+      "lessonId": "course-9-demonstrate-cli-tools-secure-defensive-automation"
+    },
+    {
+      "id": "course-10-m1-l1-check",
+      "lessonId": "course-10-understand-shared-responsibility-shared-responsibility"
+    },
+    {
+      "id": "course-10-m1-l2-check",
+      "lessonId": "course-10-understand-shared-responsibility-cloud-iam"
+    },
+    {
+      "id": "course-10-m1-l3-check",
+      "lessonId": "course-10-understand-shared-responsibility-cloud-networking"
+    },
+    {
+      "id": "course-10-m2-l1-check",
+      "lessonId": "course-10-observe-storage-security-storage-security"
+    },
+    {
+      "id": "course-10-m2-l2-check",
+      "lessonId": "course-10-observe-storage-security-secrets"
+    },
+    {
+      "id": "course-10-m2-l3-check",
+      "lessonId": "course-10-observe-storage-security-encryption-keys"
+    },
+    {
+      "id": "course-10-m3-l1-check",
+      "lessonId": "course-10-practice-logging-monitoring-logging-monitoring"
+    },
+    {
+      "id": "course-10-m3-l2-check",
+      "lessonId": "course-10-practice-logging-monitoring-misconfiguration"
+    },
+    {
+      "id": "course-10-m3-l3-check",
+      "lessonId": "course-10-practice-logging-monitoring-workload-identity"
+    },
+    {
+      "id": "course-10-m4-l1-check",
+      "lessonId": "course-10-demonstrate-containers-containers"
+    },
+    {
+      "id": "course-10-m4-l2-check",
+      "lessonId": "course-10-demonstrate-containers-cloud-incident-response"
+    },
+    {
+      "id": "course-10-m4-l3-check",
+      "lessonId": "course-10-demonstrate-containers-multi-cloud-principles"
+    },
+    {
+      "id": "course-11-m1-l1-check",
+      "lessonId": "course-11-understand-ai-application-architecture-ai-application-architecture"
+    },
+    {
+      "id": "course-11-m1-l2-check",
+      "lessonId": "course-11-understand-ai-application-architecture-model-threats"
+    },
+    {
+      "id": "course-11-m1-l3-check",
+      "lessonId": "course-11-understand-ai-application-architecture-ai-threat-modeling"
+    },
+    {
+      "id": "course-11-m2-l1-check",
+      "lessonId": "course-11-observe-prompt-injection-prompt-injection"
+    },
+    {
+      "id": "course-11-m2-l2-check",
+      "lessonId": "course-11-observe-prompt-injection-indirect-injection"
+    },
+    {
+      "id": "course-11-m2-l3-check",
+      "lessonId": "course-11-observe-prompt-injection-data-leakage"
+    },
+    {
+      "id": "course-11-m3-l1-check",
+      "lessonId": "course-11-practice-rag-poisoning-rag-poisoning"
+    },
+    {
+      "id": "course-11-m3-l2-check",
+      "lessonId": "course-11-practice-rag-poisoning-tool-abuse"
+    },
+    {
+      "id": "course-11-m3-l3-check",
+      "lessonId": "course-11-practice-rag-poisoning-excessive-agency"
+    },
+    {
+      "id": "course-11-m4-l1-check",
+      "lessonId": "course-11-demonstrate-output-handling-output-handling"
+    },
+    {
+      "id": "course-11-m4-l2-check",
+      "lessonId": "course-11-demonstrate-output-handling-guardrails-monitoring"
+    },
+    {
+      "id": "course-11-m4-l3-check",
+      "lessonId": "course-11-demonstrate-output-handling-ai-red-team-evaluation"
+    },
+    {
+      "id": "course-12-m1-l1-check",
+      "lessonId": "course-12-understand-role-selection-role-selection"
+    },
+    {
+      "id": "course-12-m1-l2-check",
+      "lessonId": "course-12-understand-role-selection-skill-mapping"
+    },
+    {
+      "id": "course-12-m1-l3-check",
+      "lessonId": "course-12-understand-role-selection-evidence-planning"
+    },
+    {
+      "id": "course-12-m2-l1-check",
+      "lessonId": "course-12-observe-resume-projects-resume-projects"
+    },
+    {
+      "id": "course-12-m2-l2-check",
+      "lessonId": "course-12-observe-resume-projects-portfolio-design"
+    },
+    {
+      "id": "course-12-m2-l3-check",
+      "lessonId": "course-12-observe-resume-projects-professional-reports"
+    },
+    {
+      "id": "course-12-m3-l1-check",
+      "lessonId": "course-12-practice-technical-interviews-technical-interviews"
+    },
+    {
+      "id": "course-12-m3-l2-check",
+      "lessonId": "course-12-practice-technical-interviews-behavioral-interviews"
+    },
+    {
+      "id": "course-12-m3-l3-check",
+      "lessonId": "course-12-practice-technical-interviews-reasoning-aloud"
+    },
+    {
+      "id": "course-12-m4-l1-check",
+      "lessonId": "course-12-demonstrate-ethical-job-search-ethical-job-search"
+    },
+    {
+      "id": "course-12-m4-l2-check",
+      "lessonId": "course-12-demonstrate-ethical-job-search-continuous-learning"
+    },
+    {
+      "id": "course-12-m4-l3-check",
+      "lessonId": "course-12-demonstrate-ethical-job-search-career-action-plan"
+    }
+  ],
+  "labs": [
+    {
+      "id": "course-1-range-01",
+      "courseId": "course-1",
+      "category": "Security Awareness",
+      "environmentType": "awareness-simulation",
+      "environmentStatus": "usable"
+    },
+    {
+      "id": "course-1-range-02",
+      "courseId": "course-1",
+      "category": "Authentication",
+      "environmentType": "awareness-simulation",
+      "environmentStatus": "usable"
+    },
+    {
+      "id": "course-1-range-03",
+      "courseId": "course-1",
+      "category": "Email Analysis",
+      "environmentType": "awareness-simulation",
+      "environmentStatus": "usable"
+    },
+    {
+      "id": "course-1-range-04",
+      "courseId": "course-1",
+      "category": "Security Awareness",
+      "environmentType": "awareness-simulation",
+      "environmentStatus": "usable"
+    },
+    {
+      "id": "course-1-range-05",
+      "courseId": "course-1",
+      "category": "Security Awareness",
+      "environmentType": "awareness-simulation",
+      "environmentStatus": "usable"
+    },
+    {
+      "id": "course-1-range-06",
+      "courseId": "course-1",
+      "category": "Security Awareness",
+      "environmentType": "awareness-simulation",
+      "environmentStatus": "usable"
+    },
+    {
+      "id": "course-1-range-07",
+      "courseId": "course-1",
+      "category": "Security Awareness",
+      "environmentType": "awareness-simulation",
+      "environmentStatus": "usable"
+    },
+    {
+      "id": "course-1-range-08",
+      "courseId": "course-1",
+      "category": "Authentication",
+      "environmentType": "awareness-simulation",
+      "environmentStatus": "usable"
+    },
+    {
+      "id": "course-1-range-09",
+      "courseId": "course-1",
+      "category": "AI Security",
+      "environmentType": "awareness-simulation",
+      "environmentStatus": "usable"
+    },
+    {
+      "id": "course-1-range-10",
+      "courseId": "course-1",
+      "category": "Security Awareness",
+      "environmentType": "awareness-simulation",
+      "environmentStatus": "usable"
+    },
+    {
+      "id": "course-2-range-01",
+      "courseId": "course-2",
+      "category": "TCP/IP",
+      "environmentType": "interactive-simulation",
+      "environmentStatus": "usable"
+    },
+    {
+      "id": "course-2-range-02",
+      "courseId": "course-2",
+      "category": "Network Forensics",
+      "environmentType": "artifact-analysis",
+      "environmentStatus": "usable"
+    },
+    {
+      "id": "course-2-range-03",
+      "courseId": "course-2",
+      "category": "Firewalls",
+      "environmentType": "secure-configuration",
+      "environmentStatus": "usable"
+    },
+    {
+      "id": "course-2-range-04",
+      "courseId": "course-2",
+      "category": "Packet Analysis",
+      "environmentType": "artifact-analysis",
+      "environmentStatus": "usable"
+    },
+    {
+      "id": "course-2-range-05",
+      "courseId": "course-2",
+      "category": "Networking",
+      "environmentType": "interactive-simulation",
+      "environmentStatus": "usable"
+    },
+    {
+      "id": "course-2-range-06",
+      "courseId": "course-2",
+      "category": "Wireshark",
+      "environmentType": "secure-configuration",
+      "environmentStatus": "usable"
+    },
+    {
+      "id": "course-3-range-01",
+      "courseId": "course-3",
+      "category": "Linux",
+      "environmentType": "interactive-simulation",
+      "environmentStatus": "usable"
+    },
+    {
+      "id": "course-3-range-02",
+      "courseId": "course-3",
+      "category": "Linux",
+      "environmentType": "artifact-analysis",
+      "environmentStatus": "usable"
+    },
+    {
+      "id": "course-3-range-03",
+      "courseId": "course-3",
+      "category": "Linux",
+      "environmentType": "secure-configuration",
+      "environmentStatus": "usable"
+    },
+    {
+      "id": "course-3-range-04",
+      "courseId": "course-3",
+      "category": "Linux",
+      "environmentType": "artifact-analysis",
+      "environmentStatus": "usable"
+    },
+    {
+      "id": "course-3-range-05",
+      "courseId": "course-3",
+      "category": "Bash",
+      "environmentType": "interactive-simulation",
+      "environmentStatus": "usable"
+    },
+    {
+      "id": "course-3-range-06",
+      "courseId": "course-3",
+      "category": "Linux",
+      "environmentType": "secure-configuration",
+      "environmentStatus": "usable"
+    },
+    {
+      "id": "course-4-range-01",
+      "courseId": "course-4",
+      "category": "SIEM",
+      "environmentType": "interactive-simulation",
+      "environmentStatus": "usable"
+    },
+    {
+      "id": "course-4-range-02",
+      "courseId": "course-4",
+      "category": "SOC Analyst",
+      "environmentType": "artifact-analysis",
+      "environmentStatus": "usable"
+    },
+    {
+      "id": "course-4-range-03",
+      "courseId": "course-4",
+      "category": "Blue Team",
+      "environmentType": "secure-configuration",
+      "environmentStatus": "usable"
+    },
+    {
+      "id": "course-4-range-04",
+      "courseId": "course-4",
+      "category": "IDS/IPS",
+      "environmentType": "artifact-analysis",
+      "environmentStatus": "usable"
+    },
+    {
+      "id": "course-4-range-05",
+      "courseId": "course-4",
+      "category": "SIEM",
+      "environmentType": "interactive-simulation",
+      "environmentStatus": "usable"
+    },
+    {
+      "id": "course-4-range-06",
+      "courseId": "course-4",
+      "category": "SOC Analyst",
+      "environmentType": "secure-configuration",
+      "environmentStatus": "usable"
+    },
+    {
+      "id": "course-5-range-01",
+      "courseId": "course-5",
+      "category": "Incident Response",
+      "environmentType": "interactive-simulation",
+      "environmentStatus": "usable"
+    },
+    {
+      "id": "course-5-range-02",
+      "courseId": "course-5",
+      "category": "Incident Response",
+      "environmentType": "artifact-analysis",
+      "environmentStatus": "usable"
+    },
+    {
+      "id": "course-5-range-03",
+      "courseId": "course-5",
+      "category": "Authentication",
+      "environmentType": "secure-configuration",
+      "environmentStatus": "usable"
+    },
+    {
+      "id": "course-5-range-04",
+      "courseId": "course-5",
+      "category": "Incident Response",
+      "environmentType": "artifact-analysis",
+      "environmentStatus": "usable"
+    },
+    {
+      "id": "course-5-range-05",
+      "courseId": "course-5",
+      "category": "Risk",
+      "environmentType": "interactive-simulation",
+      "environmentStatus": "usable"
+    },
+    {
+      "id": "course-5-range-06",
+      "courseId": "course-5",
+      "category": "Incident Response",
+      "environmentType": "secure-configuration",
+      "environmentStatus": "usable"
+    },
+    {
+      "id": "course-6-range-01",
+      "courseId": "course-6",
+      "category": "Disk Forensics",
+      "environmentType": "interactive-simulation",
+      "environmentStatus": "usable"
+    },
+    {
+      "id": "course-6-range-02",
+      "courseId": "course-6",
+      "category": "Digital Forensics",
+      "environmentType": "artifact-analysis",
+      "environmentStatus": "usable"
+    },
+    {
+      "id": "course-6-range-03",
+      "courseId": "course-6",
+      "category": "Digital Forensics",
+      "environmentType": "secure-configuration",
+      "environmentStatus": "usable"
+    },
+    {
+      "id": "course-6-range-04",
+      "courseId": "course-6",
+      "category": "Browser Forensics",
+      "environmentType": "artifact-analysis",
+      "environmentStatus": "usable"
+    },
+    {
+      "id": "course-6-range-05",
+      "courseId": "course-6",
+      "category": "Memory Forensics",
+      "environmentType": "interactive-simulation",
+      "environmentStatus": "usable"
+    },
+    {
+      "id": "course-6-range-06",
+      "courseId": "course-6",
+      "category": "Digital Forensics",
+      "environmentType": "secure-configuration",
+      "environmentStatus": "usable"
+    },
+    {
+      "id": "course-7-range-01",
+      "courseId": "course-7",
+      "category": "Authorized Red Team Foundations",
+      "environmentType": "interactive-simulation",
+      "environmentStatus": "usable"
+    },
+    {
+      "id": "course-7-range-02",
+      "courseId": "course-7",
+      "category": "Governance",
+      "environmentType": "artifact-analysis",
+      "environmentStatus": "usable"
+    },
+    {
+      "id": "course-7-range-03",
+      "courseId": "course-7",
+      "category": "Purple Team",
+      "environmentType": "secure-configuration",
+      "environmentStatus": "usable"
+    },
+    {
+      "id": "course-7-range-04",
+      "courseId": "course-7",
+      "category": "Authorized Red Team Foundations",
+      "environmentType": "artifact-analysis",
+      "environmentStatus": "usable"
+    },
+    {
+      "id": "course-7-range-05",
+      "courseId": "course-7",
+      "category": "Purple Team",
+      "environmentType": "interactive-simulation",
+      "environmentStatus": "usable"
+    },
+    {
+      "id": "course-7-range-06",
+      "courseId": "course-7",
+      "category": "Application Security",
+      "environmentType": "secure-configuration",
+      "environmentStatus": "usable"
+    },
+    {
+      "id": "course-8-range-01",
+      "courseId": "course-8",
+      "category": "Authorization",
+      "environmentType": "interactive-simulation",
+      "environmentStatus": "usable"
+    },
+    {
+      "id": "course-8-range-02",
+      "courseId": "course-8",
+      "category": "Web Security",
+      "environmentType": "artifact-analysis",
+      "environmentStatus": "usable"
+    },
+    {
+      "id": "course-8-range-03",
+      "courseId": "course-8",
+      "category": "Secure Coding",
+      "environmentType": "secure-configuration",
+      "environmentStatus": "usable"
+    },
+    {
+      "id": "course-8-range-04",
+      "courseId": "course-8",
+      "category": "Web Security",
+      "environmentType": "artifact-analysis",
+      "environmentStatus": "usable"
+    },
+    {
+      "id": "course-8-range-05",
+      "courseId": "course-8",
+      "category": "Application Security",
+      "environmentType": "interactive-simulation",
+      "environmentStatus": "usable"
+    },
+    {
+      "id": "course-8-range-06",
+      "courseId": "course-8",
+      "category": "Authorization",
+      "environmentType": "secure-configuration",
+      "environmentStatus": "usable"
+    },
+    {
+      "id": "course-9-range-01",
+      "courseId": "course-9",
+      "category": "Python",
+      "environmentType": "interactive-simulation",
+      "environmentStatus": "usable"
+    },
+    {
+      "id": "course-9-range-02",
+      "courseId": "course-9",
+      "category": "Python",
+      "environmentType": "artifact-analysis",
+      "environmentStatus": "usable"
+    },
+    {
+      "id": "course-9-range-03",
+      "courseId": "course-9",
+      "category": "Secure Coding",
+      "environmentType": "secure-configuration",
+      "environmentStatus": "usable"
+    },
+    {
+      "id": "course-9-range-04",
+      "courseId": "course-9",
+      "category": "Python",
+      "environmentType": "artifact-analysis",
+      "environmentStatus": "usable"
+    },
+    {
+      "id": "course-9-range-05",
+      "courseId": "course-9",
+      "category": "Python",
+      "environmentType": "interactive-simulation",
+      "environmentStatus": "usable"
+    },
+    {
+      "id": "course-9-range-06",
+      "courseId": "course-9",
+      "category": "Secure Coding",
+      "environmentType": "secure-configuration",
+      "environmentStatus": "usable"
+    },
+    {
+      "id": "course-10-range-01",
+      "courseId": "course-10",
+      "category": "Cloud Security",
+      "environmentType": "interactive-simulation",
+      "environmentStatus": "usable"
+    },
+    {
+      "id": "course-10-range-02",
+      "courseId": "course-10",
+      "category": "AWS",
+      "environmentType": "artifact-analysis",
+      "environmentStatus": "usable"
+    },
+    {
+      "id": "course-10-range-03",
+      "courseId": "course-10",
+      "category": "Docker",
+      "environmentType": "secure-configuration",
+      "environmentStatus": "usable"
+    },
+    {
+      "id": "course-10-range-04",
+      "courseId": "course-10",
+      "category": "Kubernetes",
+      "environmentType": "artifact-analysis",
+      "environmentStatus": "usable"
+    },
+    {
+      "id": "course-10-range-05",
+      "courseId": "course-10",
+      "category": "Azure",
+      "environmentType": "interactive-simulation",
+      "environmentStatus": "usable"
+    },
+    {
+      "id": "course-10-range-06",
+      "courseId": "course-10",
+      "category": "DevSecOps",
+      "environmentType": "secure-configuration",
+      "environmentStatus": "usable"
+    },
+    {
+      "id": "course-11-range-01",
+      "courseId": "course-11",
+      "category": "Prompt Injection Defense",
+      "environmentType": "interactive-simulation",
+      "environmentStatus": "usable"
+    },
+    {
+      "id": "course-11-range-02",
+      "courseId": "course-11",
+      "category": "AI Security",
+      "environmentType": "artifact-analysis",
+      "environmentStatus": "usable"
+    },
+    {
+      "id": "course-11-range-03",
+      "courseId": "course-11",
+      "category": "LLM Security",
+      "environmentType": "secure-configuration",
+      "environmentStatus": "usable"
+    },
+    {
+      "id": "course-11-range-04",
+      "courseId": "course-11",
+      "category": "AI Security",
+      "environmentType": "artifact-analysis",
+      "environmentStatus": "usable"
+    },
+    {
+      "id": "course-11-range-05",
+      "courseId": "course-11",
+      "category": "LLM Security",
+      "environmentType": "interactive-simulation",
+      "environmentStatus": "usable"
+    },
+    {
+      "id": "course-11-range-06",
+      "courseId": "course-11",
+      "category": "AI Security",
+      "environmentType": "secure-configuration",
+      "environmentStatus": "usable"
+    },
+    {
+      "id": "course-12-range-01",
+      "courseId": "course-12",
+      "category": "Interview Practice",
+      "environmentType": "career-simulation",
+      "environmentStatus": "usable"
+    },
+    {
+      "id": "course-12-range-02",
+      "courseId": "course-12",
+      "category": "Interview Practice",
+      "environmentType": "career-simulation",
+      "environmentStatus": "usable"
+    },
+    {
+      "id": "course-12-range-03",
+      "courseId": "course-12",
+      "category": "Career Readiness",
+      "environmentType": "career-simulation",
+      "environmentStatus": "usable"
+    },
+    {
+      "id": "course-12-range-04",
+      "courseId": "course-12",
+      "category": "Career Readiness",
+      "environmentType": "career-simulation",
+      "environmentStatus": "usable"
+    },
+    {
+      "id": "course-12-range-05",
+      "courseId": "course-12",
+      "category": "Interview Practice",
+      "environmentType": "career-simulation",
+      "environmentStatus": "usable"
+    },
+    {
+      "id": "course-12-range-06",
+      "courseId": "course-12",
+      "category": "Interview Practice",
+      "environmentType": "career-simulation",
+      "environmentStatus": "usable"
+    },
+    {
+      "id": "course-12-range-07",
+      "courseId": "course-12",
+      "category": "Career Readiness",
+      "environmentType": "career-simulation",
+      "environmentStatus": "usable"
+    },
+    {
+      "id": "course-12-range-08",
+      "courseId": "course-12",
+      "category": "Interview Practice",
+      "environmentType": "career-simulation",
+      "environmentStatus": "usable"
+    },
+    {
+      "id": "course-12-range-09",
+      "courseId": "course-12",
+      "category": "Career Readiness",
+      "environmentType": "career-simulation",
+      "environmentStatus": "usable"
+    },
+    {
+      "id": "course-12-range-10",
+      "courseId": "course-12",
+      "category": "Career Readiness",
+      "environmentType": "career-simulation",
+      "environmentStatus": "usable"
+    }
+  ],
+  "projects": [
+    {
+      "id": "course-1-project",
+      "courseId": "course-1",
+      "rubricId": "course-1-rubric"
+    },
+    {
+      "id": "course-2-project",
+      "courseId": "course-2",
+      "rubricId": "course-2-rubric"
+    },
+    {
+      "id": "course-3-project",
+      "courseId": "course-3",
+      "rubricId": "course-3-rubric"
+    },
+    {
+      "id": "course-4-project",
+      "courseId": "course-4",
+      "rubricId": "course-4-rubric"
+    },
+    {
+      "id": "course-5-project",
+      "courseId": "course-5",
+      "rubricId": "course-5-rubric"
+    },
+    {
+      "id": "course-6-project",
+      "courseId": "course-6",
+      "rubricId": "course-6-rubric"
+    },
+    {
+      "id": "course-7-project",
+      "courseId": "course-7",
+      "rubricId": "course-7-rubric"
+    },
+    {
+      "id": "course-8-project",
+      "courseId": "course-8",
+      "rubricId": "course-8-rubric"
+    },
+    {
+      "id": "course-9-project",
+      "courseId": "course-9",
+      "rubricId": "course-9-rubric"
+    },
+    {
+      "id": "course-10-project",
+      "courseId": "course-10",
+      "rubricId": "course-10-rubric"
+    },
+    {
+      "id": "course-11-project",
+      "courseId": "course-11",
+      "rubricId": "course-11-rubric"
+    },
+    {
+      "id": "course-12-project",
+      "courseId": "course-12",
+      "rubricId": "course-12-rubric"
+    }
+  ],
+  "rubrics": [
+    {
+      "id": "course-1-rubric",
+      "courseId": "course-1"
+    },
+    {
+      "id": "course-2-rubric",
+      "courseId": "course-2"
+    },
+    {
+      "id": "course-3-rubric",
+      "courseId": "course-3"
+    },
+    {
+      "id": "course-4-rubric",
+      "courseId": "course-4"
+    },
+    {
+      "id": "course-5-rubric",
+      "courseId": "course-5"
+    },
+    {
+      "id": "course-6-rubric",
+      "courseId": "course-6"
+    },
+    {
+      "id": "course-7-rubric",
+      "courseId": "course-7"
+    },
+    {
+      "id": "course-8-rubric",
+      "courseId": "course-8"
+    },
+    {
+      "id": "course-9-rubric",
+      "courseId": "course-9"
+    },
+    {
+      "id": "course-10-rubric",
+      "courseId": "course-10"
+    },
+    {
+      "id": "course-11-rubric",
+      "courseId": "course-11"
+    },
+    {
+      "id": "course-12-rubric",
+      "courseId": "course-12"
+    }
+  ],
+  "completionRules": [
+    {
+      "id": "course-1-completion",
+      "courseId": "course-1"
+    },
+    {
+      "id": "course-2-completion",
+      "courseId": "course-2"
+    },
+    {
+      "id": "course-3-completion",
+      "courseId": "course-3"
+    },
+    {
+      "id": "course-4-completion",
+      "courseId": "course-4"
+    },
+    {
+      "id": "course-5-completion",
+      "courseId": "course-5"
+    },
+    {
+      "id": "course-6-completion",
+      "courseId": "course-6"
+    },
+    {
+      "id": "course-7-completion",
+      "courseId": "course-7"
+    },
+    {
+      "id": "course-8-completion",
+      "courseId": "course-8"
+    },
+    {
+      "id": "course-9-completion",
+      "courseId": "course-9"
+    },
+    {
+      "id": "course-10-completion",
+      "courseId": "course-10"
+    },
+    {
+      "id": "course-11-completion",
+      "courseId": "course-11"
+    },
+    {
+      "id": "course-12-completion",
+      "courseId": "course-12"
+    }
+  ],
+  "practiceActivities": [
+    {
+      "id": "course-1-practice-1",
+      "courseId": "course-1"
+    },
+    {
+      "id": "course-1-practice-2",
+      "courseId": "course-1"
+    },
+    {
+      "id": "course-2-practice-1",
+      "courseId": "course-2"
+    },
+    {
+      "id": "course-2-practice-2",
+      "courseId": "course-2"
+    },
+    {
+      "id": "course-3-practice-1",
+      "courseId": "course-3"
+    },
+    {
+      "id": "course-3-practice-2",
+      "courseId": "course-3"
+    },
+    {
+      "id": "course-4-practice-1",
+      "courseId": "course-4"
+    },
+    {
+      "id": "course-4-practice-2",
+      "courseId": "course-4"
+    },
+    {
+      "id": "course-5-practice-1",
+      "courseId": "course-5"
+    },
+    {
+      "id": "course-5-practice-2",
+      "courseId": "course-5"
+    },
+    {
+      "id": "course-6-practice-1",
+      "courseId": "course-6"
+    },
+    {
+      "id": "course-6-practice-2",
+      "courseId": "course-6"
+    },
+    {
+      "id": "course-7-practice-1",
+      "courseId": "course-7"
+    },
+    {
+      "id": "course-7-practice-2",
+      "courseId": "course-7"
+    },
+    {
+      "id": "course-8-practice-1",
+      "courseId": "course-8"
+    },
+    {
+      "id": "course-8-practice-2",
+      "courseId": "course-8"
+    },
+    {
+      "id": "course-9-practice-1",
+      "courseId": "course-9"
+    },
+    {
+      "id": "course-9-practice-2",
+      "courseId": "course-9"
+    },
+    {
+      "id": "course-10-practice-1",
+      "courseId": "course-10"
+    },
+    {
+      "id": "course-10-practice-2",
+      "courseId": "course-10"
+    },
+    {
+      "id": "course-11-practice-1",
+      "courseId": "course-11"
+    },
+    {
+      "id": "course-11-practice-2",
+      "courseId": "course-11"
+    },
+    {
+      "id": "course-12-practice-1",
+      "courseId": "course-12"
+    },
+    {
+      "id": "course-12-practice-2",
+      "courseId": "course-12"
+    }
+  ],
+  "labCategories": [
+    "Networking",
+    "Linux",
+    "Windows",
+    "Active Directory",
+    "Python",
+    "PowerShell",
+    "Bash",
+    "Packet Analysis",
+    "Wireshark",
+    "TCP/IP",
+    "Firewalls",
+    "IDS/IPS",
+    "SIEM",
+    "Threat Hunting",
+    "Incident Response",
+    "Digital Forensics",
+    "Disk Forensics",
+    "Memory Forensics",
+    "Network Forensics",
+    "Browser Forensics",
+    "Email Analysis",
+    "Malware Analysis",
+    "Static Analysis",
+    "Dynamic Analysis",
+    "Reverse Engineering Foundations",
+    "OSINT",
+    "Threat Intelligence",
+    "Cloud Security",
+    "AWS",
+    "Azure",
+    "Google Cloud",
+    "Containers",
+    "Docker",
+    "Kubernetes",
+    "DevSecOps",
+    "Web Security",
+    "API Security",
+    "Authentication",
+    "Authorization",
+    "Cryptography",
+    "Secure Coding",
+    "Application Security",
+    "Mobile Security",
+    "Wireless Security",
+    "IoT Security",
+    "Industrial Security",
+    "AI Security",
+    "LLM Security",
+    "Prompt Injection Defense",
+    "SOC Analyst",
+    "Blue Team",
+    "Purple Team",
+    "Authorized Red Team Foundations",
+    "Governance",
+    "Risk",
+    "Compliance",
+    "Security Awareness",
+    "Interview Practice",
+    "Career Readiness"
+  ]
+}

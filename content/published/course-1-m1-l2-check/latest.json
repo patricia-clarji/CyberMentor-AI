@@ -1,0 +1,95 @@
+{
+  "schemaVersion": 1,
+  "id": "course-1-m1-l2-check",
+  "title": "Assets, threats & vulnerabilities knowledge check",
+  "contentVersion": "1.0.0",
+  "contentHash": "dea4bb3e1fcaa035e8b7e2f63e56e51e1f25333c53ac78857ba0d222e64e8a9c",
+  "artifactType": "question",
+  "riskClassification": "defensive",
+  "verificationStatus": "verified",
+  "publicationStatus": "published",
+  "approvalBasis": "v1-release-baseline",
+  "releaseApproval": {
+    "authority": "product-owner",
+    "decision": "approved",
+    "scope": "initial-v1-academy",
+    "recordedAt": "2026-07-19T00:00:00.000Z",
+    "includesSafetyReview": true,
+    "directive": "Version 1 initial academy is considered reviewed and approved; future changes use the standard workflow."
+  },
+  "publishedAt": "2026-07-19T00:00:00.000Z",
+  "lastReviewedAt": "2026-07-19T00:00:00.000Z",
+  "nextReviewAt": "2028-07-19T00:00:00.000Z",
+  "metadata": {
+    "domain": "foundations",
+    "difficulty": "foundation-to-intermediate",
+    "audience": [
+      "career-switcher",
+      "student",
+      "junior-practitioner"
+    ],
+    "prerequisites": [],
+    "skillTags": [
+      "security-foundations"
+    ],
+    "licenseNotes": "Original CyberMentor instructional synthesis with reference links to authoritative public sources; no source page is republished.",
+    "reviewIntervalDays": 365,
+    "changeLog": [
+      {
+        "version": "1.0.0",
+        "summary": "Initial approved Version 1 academy"
+      }
+    ]
+  },
+  "artifact": {
+    "prompt": "What is the strongest evidence standard when reasoning about Assets, threats & vulnerabilities?",
+    "options": [
+      "Treat tool output as conclusive because the tool is widely used.",
+      "Preserve traceable observations, distinguish facts from hypotheses, and corroborate important conclusions.",
+      "Prefer an undocumented recollection over timestamped source evidence.",
+      "Remove contradictory observations so the report remains simple."
+    ],
+    "correctOption": 1,
+    "explanation": "Preserve traceable observations, distinguish facts from hypotheses, and corroborate important conclusions. This preserves a reviewable path from evidence to decision and outcome.",
+    "distractorExplanations": {
+      "0": "That choice weakens the evidence-to-decision chain for Assets, threats & vulnerabilities. Revisit the scoped workflow in Cybersecurity Foundations.",
+      "2": "That choice weakens the evidence-to-decision chain for Assets, threats & vulnerabilities. Revisit the scoped workflow in Cybersecurity Foundations.",
+      "3": "That choice weakens the evidence-to-decision chain for Assets, threats & vulnerabilities. Revisit the scoped workflow in Cybersecurity Foundations."
+    },
+    "learningObjectiveId": "course-1-understand-security-goals-assets-threats-vulnerabilities-objective-1",
+    "skillTags": [
+      "security-foundations"
+    ],
+    "difficulty": "foundation",
+    "assessmentUse": "quiz",
+    "evidenceWeight": 1
+  },
+  "claims": [
+    {
+      "id": "v1-original-synthesis",
+      "kind": "fact",
+      "statement": "The Version 1 lesson is original instructional synthesis reviewed under the product-owner baseline approval directive."
+    }
+  ],
+  "references": [
+    {
+      "claimId": "v1-original-synthesis",
+      "sourceId": "nist-csf-2",
+      "title": "Cybersecurity Framework 2.0",
+      "publisher": "National Institute of Standards and Technology",
+      "url": "https://www.nist.gov/cyberframework",
+      "publicationDate": "2024-02-26",
+      "retrievedAt": "2026-07-19T04:47:46.280Z",
+      "sourceVersion": "Sun, 19 Jul 2026 01:35:51 GMT",
+      "snapshotDigest": "bd1b37234f3eff33ffa6df98251929f513f657ac923913b71749e5e206020d97",
+      "evidence": "Authoritative source used for bounded original instructional synthesis."
+    }
+  ],
+  "provenance": {
+    "author": "cybermentor-v1-release-team",
+    "publisher": "v1-release-seed",
+    "disclosure": "Seeded as the product-owner-approved Version 1 baseline. Future edits, community contributions, instructor content, and AI-assisted drafts require the standard review workflow.",
+    "humanAuthored": false,
+    "reviews": []
+  }
+}

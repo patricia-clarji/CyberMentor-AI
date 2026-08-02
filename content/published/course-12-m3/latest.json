@@ -1,0 +1,87 @@
+{
+  "schemaVersion": 1,
+  "id": "course-12-m3",
+  "title": "Practice — Technical interviews",
+  "contentVersion": "1.0.0",
+  "contentHash": "df6e4a500fbf3fea36d8305cb718e743c2ed9ecc59945bd9145ec9fb5c8df395",
+  "artifactType": "module",
+  "riskClassification": "defensive",
+  "verificationStatus": "verified",
+  "publicationStatus": "published",
+  "approvalBasis": "v1-release-baseline",
+  "releaseApproval": {
+    "authority": "product-owner",
+    "decision": "approved",
+    "scope": "initial-v1-academy",
+    "recordedAt": "2026-07-19T00:00:00.000Z",
+    "includesSafetyReview": true,
+    "directive": "Version 1 initial academy is considered reviewed and approved; future changes use the standard workflow."
+  },
+  "publishedAt": "2026-07-19T00:00:00.000Z",
+  "lastReviewedAt": "2026-07-19T00:00:00.000Z",
+  "nextReviewAt": "2028-07-19T00:00:00.000Z",
+  "metadata": {
+    "domain": "career",
+    "difficulty": "foundation-to-intermediate",
+    "audience": [
+      "career-switcher",
+      "student",
+      "junior-practitioner"
+    ],
+    "prerequisites": [],
+    "skillTags": [
+      "case-documentation",
+      "security-foundations"
+    ],
+    "licenseNotes": "Original CyberMentor instructional synthesis with reference links to authoritative public sources; no source page is republished.",
+    "reviewIntervalDays": 365,
+    "changeLog": [
+      {
+        "version": "1.0.0",
+        "summary": "Initial approved Version 1 academy"
+      }
+    ]
+  },
+  "artifact": {
+    "title": "Practice — Technical interviews",
+    "courseId": "course-12",
+    "learningObjectives": [
+      "Apply technical interviews in an authorized scenario",
+      "Apply behavioral interviews in an authorized scenario",
+      "Apply reasoning aloud in an authorized scenario"
+    ],
+    "lessonIds": [
+      "course-12-practice-technical-interviews-technical-interviews",
+      "course-12-practice-technical-interviews-behavioral-interviews",
+      "course-12-practice-technical-interviews-reasoning-aloud"
+    ]
+  },
+  "claims": [
+    {
+      "id": "v1-original-synthesis",
+      "kind": "fact",
+      "statement": "The Version 1 lesson is original instructional synthesis reviewed under the product-owner baseline approval directive."
+    }
+  ],
+  "references": [
+    {
+      "claimId": "v1-original-synthesis",
+      "sourceId": "cisa-cpg",
+      "title": "Cross-Sector Cybersecurity Performance Goals",
+      "publisher": "Cybersecurity and Infrastructure Security Agency",
+      "url": "https://www.cisa.gov/cybersecurity-performance-goals",
+      "publicationDate": null,
+      "retrievedAt": "2026-07-19T04:47:48.009Z",
+      "sourceVersion": "d622511c90706353",
+      "snapshotDigest": "d622511c90706353c3ff89f2566cad35d1a5c357c4597f4db076e6e08d9b8341",
+      "evidence": "Authoritative source used for bounded original instructional synthesis."
+    }
+  ],
+  "provenance": {
+    "author": "cybermentor-v1-release-team",
+    "publisher": "v1-release-seed",
+    "disclosure": "Seeded as the product-owner-approved Version 1 baseline. Future edits, community contributions, instructor content, and AI-assisted drafts require the standard review workflow.",
+    "humanAuthored": false,
+    "reviews": []
+  }
+}

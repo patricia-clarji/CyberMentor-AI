@@ -1,0 +1,109 @@
+{
+  "schemaVersion": 1,
+  "id": "course-2-rubric",
+  "title": "Networking for Cybersecurity project rubric",
+  "contentVersion": "1.0.0",
+  "contentHash": "16a3a0c66f4423dee344e416125125a5f770eda214b2e0b80a3eb5065d0649f2",
+  "artifactType": "rubric",
+  "riskClassification": "defensive",
+  "verificationStatus": "verified",
+  "publicationStatus": "published",
+  "approvalBasis": "v1-release-baseline",
+  "releaseApproval": {
+    "authority": "product-owner",
+    "decision": "approved",
+    "scope": "initial-v1-academy",
+    "recordedAt": "2026-07-19T00:00:00.000Z",
+    "includesSafetyReview": true,
+    "directive": "Version 1 initial academy is considered reviewed and approved; future changes use the standard workflow."
+  },
+  "publishedAt": "2026-07-19T00:00:00.000Z",
+  "lastReviewedAt": "2026-07-19T00:00:00.000Z",
+  "nextReviewAt": "2028-07-19T00:00:00.000Z",
+  "metadata": {
+    "domain": "networking",
+    "difficulty": "foundation-to-intermediate",
+    "audience": [
+      "career-switcher",
+      "student",
+      "junior-practitioner"
+    ],
+    "prerequisites": [],
+    "skillTags": [
+      "networking",
+      "tcp-ip",
+      "packet-analysis"
+    ],
+    "licenseNotes": "Original CyberMentor instructional synthesis with reference links to authoritative public sources; no source page is republished.",
+    "reviewIntervalDays": 365,
+    "changeLog": [
+      {
+        "version": "1.0.0",
+        "summary": "Initial approved Version 1 academy"
+      }
+    ]
+  },
+  "artifact": {
+    "title": "Networking for Cybersecurity workplace project rubric",
+    "criteria": [
+      {
+        "criterion": "Scope and assumptions",
+        "weight": 20,
+        "exemplary": "Defines authorization, assets, assumptions, constraints, and success criteria precisely.",
+        "meets": "Defines the main scope and assumptions with minor gaps that do not invalidate the work."
+      },
+      {
+        "criterion": "Evidence and reasoning",
+        "weight": 30,
+        "exemplary": "Uses traceable evidence, considers alternatives, and clearly separates observation from inference.",
+        "meets": "Uses relevant evidence and provides a defensible reasoning chain."
+      },
+      {
+        "criterion": "Defensive action and verification",
+        "weight": 30,
+        "exemplary": "Proposes bounded remediation, validates outcome and side effects, and records residual risk.",
+        "meets": "Proposes a proportionate action and verifies the intended result."
+      },
+      {
+        "criterion": "Professional communication",
+        "weight": 20,
+        "exemplary": "Produces a concise, reproducible report suited to technical and business stakeholders.",
+        "meets": "Communicates the decision, evidence, outcome, and limitations clearly."
+      }
+    ],
+    "performanceLevels": [
+      "developing",
+      "meets",
+      "exemplary"
+    ],
+    "passingRule": "Meet or exceed every criterion with a total score of at least 70%."
+  },
+  "claims": [
+    {
+      "id": "v1-original-synthesis",
+      "kind": "fact",
+      "statement": "The Version 1 lesson is original instructional synthesis reviewed under the product-owner baseline approval directive."
+    }
+  ],
+  "references": [
+    {
+      "claimId": "v1-original-synthesis",
+      "sourceId": "cisa-cpg",
+      "title": "Cross-Sector Cybersecurity Performance Goals",
+      "publisher": "Cybersecurity and Infrastructure Security Agency",
+      "url": "https://www.cisa.gov/cybersecurity-performance-goals",
+      "publicationDate": null,
+      "retrievedAt": "2026-07-19T04:47:48.009Z",
+      "sourceVersion": "d622511c90706353",
+      "snapshotDigest": "d622511c90706353c3ff89f2566cad35d1a5c357c4597f4db076e6e08d9b8341",
+      "evidence": "Authoritative source used for bounded original instructional synthesis."
+    }
+  ],
+  "provenance": {
+    "author": "cybermentor-v1-release-team",
+    "publisher": "v1-release-seed",
+    "disclosure": "Seeded as the product-owner-approved Version 1 baseline. Future edits, community contributions, instructor content, and AI-assisted drafts require the standard review workflow.",
+    "humanAuthored": false,
+    "reviews": []
+  }
+}

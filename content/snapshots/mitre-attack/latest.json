@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "sourceId": "mitre-attack",
+  "sourceTitle": "MITRE ATT&CK Enterprise",
+  "publisher": "MITRE",
+  "requestedUrl": "https://attack.mitre.org/",
+  "finalUrl": "https://attack.mitre.org/",
+  "retrievedAt": "2026-07-19T04:47:50.623Z",
+  "publicationDate": "Tue, 23 Jun 2026 19:06:45 GMT",
+  "sourceVersion": "W/\"6a3ad945-170c4e\"",
+  "contentDigest": "deb01d761ac935c8106cfae211657fa91b0cfb9c1dfdc371848b9ca85cf1ef32",
+  "contentType": "text/html; charset=utf-8",
+  "byteLength": 1510478,
+  "httpStatus": 200,
+  "evidenceMatches": [],
+  "rawContentStored": false
+}

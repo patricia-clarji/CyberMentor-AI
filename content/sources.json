@@ -1,0 +1,118 @@
+{
+  "schemaVersion": 1,
+  "sources": [
+    {
+      "id": "nist-csf-2",
+      "title": "Cybersecurity Framework 2.0",
+      "publisher": "National Institute of Standards and Technology",
+      "publicationDate": "2024-02-26",
+      "url": "https://www.nist.gov/cyberframework",
+      "authority": "government-standard",
+      "contentType": "html",
+      "maxAgeDays": 30,
+      "allowedHosts": ["www.nist.gov", "nist.gov"],
+      "reproductionPolicy": "Reference and short evidence excerpts only; do not republish the source.",
+      "enabled": true
+    },
+    {
+      "id": "cisa-cpg",
+      "title": "Cross-Sector Cybersecurity Performance Goals",
+      "publisher": "Cybersecurity and Infrastructure Security Agency",
+      "url": "https://www.cisa.gov/cybersecurity-performance-goals",
+      "authority": "government-guidance",
+      "contentType": "html",
+      "maxAgeDays": 30,
+      "allowedHosts": ["www.cisa.gov", "cisa.gov"],
+      "reproductionPolicy": "Reference and short evidence excerpts only; do not republish the source.",
+      "enabled": true
+    },
+    {
+      "id": "mitre-attack",
+      "title": "MITRE ATT&CK Enterprise",
+      "publisher": "MITRE",
+      "url": "https://attack.mitre.org/",
+      "authority": "recognized-framework",
+      "contentType": "html",
+      "maxAgeDays": 14,
+      "allowedHosts": ["attack.mitre.org"],
+      "reproductionPolicy": "Respect MITRE terms; store metadata and short evidence excerpts only.",
+      "enabled": true
+    },
+    {
+      "id": "owasp-top-ten",
+      "title": "OWASP Top Ten",
+      "publisher": "OWASP Foundation",
+      "publicationDate": "2021-09-24",
+      "url": "https://owasp.org/www-project-top-ten/",
+      "authority": "recognized-community-standard",
+      "contentType": "html",
+      "maxAgeDays": 30,
+      "allowedHosts": ["owasp.org"],
+      "reproductionPolicy": "Respect OWASP licensing and attribution; store metadata and short evidence excerpts only.",
+      "enabled": true
+    },
+    {
+      "id": "python-3-docs",
+      "title": "Python 3 Documentation",
+      "publisher": "Python Software Foundation",
+      "url": "https://docs.python.org/3/",
+      "authority": "official-vendor-documentation",
+      "contentType": "html",
+      "maxAgeDays": 14,
+      "allowedHosts": ["docs.python.org"],
+      "reproductionPolicy": "Respect PSF documentation license; store metadata and short evidence excerpts only.",
+      "enabled": true
+    },
+    {
+      "id": "linux-kernel-docs",
+      "title": "The Linux Kernel Documentation",
+      "publisher": "The Linux Kernel Organization",
+      "url": "https://docs.kernel.org/",
+      "authority": "official-project-documentation",
+      "contentType": "html",
+      "maxAgeDays": 14,
+      "allowedHosts": ["docs.kernel.org"],
+      "reproductionPolicy": "Respect project documentation licensing; store metadata and short evidence excerpts only.",
+      "enabled": true
+    },
+    {
+      "id": "rfc-9110",
+      "title": "RFC 9110: HTTP Semantics",
+      "publisher": "RFC Editor",
+      "publicationDate": "2022-06-06",
+      "url": "https://www.rfc-editor.org/rfc/rfc9110.html",
+      "authority": "internet-standard",
+      "contentType": "html",
+      "maxAgeDays": 90,
+      "allowedHosts": ["www.rfc-editor.org", "rfc-editor.org"],
+      "reproductionPolicy": "Follow RFC document rights; store metadata and short evidence excerpts only.",
+      "enabled": true
+    },
+    {
+      "id": "cisa-cloud-tra",
+      "title": "Cloud Security Technical Reference Architecture",
+      "publisher": "Cybersecurity and Infrastructure Security Agency",
+      "publicationDate": "2022-06-01",
+      "url": "https://www.cisa.gov/sites/default/files/2023-05/Cloud%20Security%20Technical%20Reference%20Architecture%20v2.pdf",
+      "authority": "government-guidance",
+      "contentType": "pdf",
+      "maxAgeDays": 90,
+      "allowedHosts": ["www.cisa.gov", "cisa.gov"],
+      "reproductionPolicy": "Reference only; do not republish the source document.",
+      "enabled": true
+    },
+    {
+      "id": "nist-ai-rmf",
+      "title": "Artificial Intelligence Risk Management Framework",
+      "publisher": "National Institute of Standards and Technology",
+      "publicationDate": "2023-01-26",
+      "url": "https://www.nist.gov/itl/ai-risk-management-framework",
+      "authority": "government-standard",
+      "contentType": "html",
+      "maxAgeDays": 30,
+      "allowedHosts": ["www.nist.gov", "nist.gov"],
+      "reproductionPolicy": "Reference and short evidence excerpts only; do not republish the source.",
+      "enabled": true
+    }
+  ]
+}

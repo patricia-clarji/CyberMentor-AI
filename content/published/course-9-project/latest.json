@@ -1,0 +1,143 @@
+{
+  "schemaVersion": 1,
+  "id": "course-9-project",
+  "title": "Python for Cybersecurity workplace project",
+  "contentVersion": "1.0.0",
+  "contentHash": "5f0fad092abc59571c0d5aaf144e16f02db81b21910262f772be73f9736e7af1",
+  "artifactType": "project",
+  "riskClassification": "defensive",
+  "verificationStatus": "verified",
+  "publicationStatus": "published",
+  "approvalBasis": "v1-release-baseline",
+  "releaseApproval": {
+    "authority": "product-owner",
+    "decision": "approved",
+    "scope": "initial-v1-academy",
+    "recordedAt": "2026-07-19T00:00:00.000Z",
+    "includesSafetyReview": true,
+    "directive": "Version 1 initial academy is considered reviewed and approved; future changes use the standard workflow."
+  },
+  "publishedAt": "2026-07-19T00:00:00.000Z",
+  "lastReviewedAt": "2026-07-19T00:00:00.000Z",
+  "nextReviewAt": "2028-07-19T00:00:00.000Z",
+  "metadata": {
+    "domain": "engineering",
+    "difficulty": "foundation-to-intermediate",
+    "audience": [
+      "career-switcher",
+      "student",
+      "junior-practitioner"
+    ],
+    "prerequisites": [],
+    "skillTags": [
+      "scripting",
+      "linux-logs"
+    ],
+    "licenseNotes": "Original CyberMentor instructional synthesis with reference links to authoritative public sources; no source page is republished.",
+    "reviewIntervalDays": 365,
+    "changeLog": [
+      {
+        "version": "1.0.0",
+        "summary": "Initial approved Version 1 academy"
+      }
+    ]
+  },
+  "artifact": {
+    "courseId": "course-9",
+    "title": "Build a tested command-line log triage tool.",
+    "scenario": "an analyst builds a local command-line tool to triage a mixed set of JSON and text log records",
+    "requirements": [
+      "Define scope, authorization, assumptions, and measurable success criteria.",
+      "Collect and interpret sample inputs, parser decisions, validation failures, structured output, tests, logs, and reproducible command usage.",
+      "Compare at least two response or design options and explain the tradeoff.",
+      "Recommend a bounded defensive action and a verification plan.",
+      "Document limitations, residual risk, cleanup, and next steps."
+    ],
+    "deliverables": [
+      "Executive summary",
+      "Technical evidence appendix",
+      "Decision and remediation record",
+      "Verification and reflection section"
+    ],
+    "milestones": [
+      "Scope and evidence plan",
+      "Analysis draft",
+      "Defensive recommendation",
+      "Final verified report"
+    ],
+    "rubric": [
+      {
+        "criterion": "Scope and assumptions",
+        "weight": 20,
+        "exemplary": "Defines authorization, assets, assumptions, constraints, and success criteria precisely.",
+        "meets": "Defines the main scope and assumptions with minor gaps that do not invalidate the work."
+      },
+      {
+        "criterion": "Evidence and reasoning",
+        "weight": 30,
+        "exemplary": "Uses traceable evidence, considers alternatives, and clearly separates observation from inference.",
+        "meets": "Uses relevant evidence and provides a defensible reasoning chain."
+      },
+      {
+        "criterion": "Defensive action and verification",
+        "weight": 30,
+        "exemplary": "Proposes bounded remediation, validates outcome and side effects, and records residual risk.",
+        "meets": "Proposes a proportionate action and verifies the intended result."
+      },
+      {
+        "criterion": "Professional communication",
+        "weight": 20,
+        "exemplary": "Produces a concise, reproducible report suited to technical and business stakeholders.",
+        "meets": "Communicates the decision, evidence, outcome, and limitations clearly."
+      }
+    ],
+    "rubricId": "course-9-rubric",
+    "expectedEvidence": [
+      "A traceable evidence-to-decision narrative",
+      "At least one explicit verification result",
+      "A statement of limitations and residual risk"
+    ],
+    "minimumEvidenceLength": 180,
+    "learnerConstraints": [
+      "Use only bundled fictional or personally owned authorized evidence.",
+      "Remove secrets, personal data, and real target identifiers.",
+      "Do not reproduce proprietary course or employer material."
+    ],
+    "mentorBoundaries": [
+      "Sentinel may explain concepts and question assumptions.",
+      "Sentinel may not write the final submission or provide graded answers."
+    ],
+    "skillTags": [
+      "scripting",
+      "linux-logs"
+    ]
+  },
+  "claims": [
+    {
+      "id": "v1-original-synthesis",
+      "kind": "fact",
+      "statement": "The Version 1 lesson is original instructional synthesis reviewed under the product-owner baseline approval directive."
+    }
+  ],
+  "references": [
+    {
+      "claimId": "v1-original-synthesis",
+      "sourceId": "python-3-docs",
+      "title": "Python 3 Documentation",
+      "publisher": "Python Software Foundation",
+      "url": "https://docs.python.org/3/",
+      "publicationDate": null,
+      "retrievedAt": "2026-07-19T04:47:52.677Z",
+      "sourceVersion": "\"6a5bdce7-4987\"",
+      "snapshotDigest": "f7833e2039c1c1a9571aa6ec0e66517baef1e3bb2a2ce6fab565b9575b96189b",
+      "evidence": "Authoritative source used for bounded original instructional synthesis."
+    }
+  ],
+  "provenance": {
+    "author": "cybermentor-v1-release-team",
+    "publisher": "v1-release-seed",
+    "disclosure": "Seeded as the product-owner-approved Version 1 baseline. Future edits, community contributions, instructor content, and AI-assisted drafts require the standard review workflow.",
+    "humanAuthored": false,
+    "reviews": []
+  }
+}

@@ -1,0 +1,202 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://cybermentor.local/schema/content-draft.json",
+  "title": "CyberMentor content draft",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "artifactType",
+    "id",
+    "title",
+    "contentVersion",
+    "status",
+    "origin",
+    "author",
+    "provenance",
+    "claims",
+    "reviewRequirements"
+  ],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "artifactType": {
+      "enum": [
+        "course",
+        "module",
+        "lesson",
+        "question",
+        "lab",
+        "scenario",
+        "project",
+        "rubric",
+        "glossary-entry",
+        "certification-mapping",
+        "completion-rule",
+        "explanation-variant",
+        "practice-activity",
+        "validation-fixture"
+      ]
+    },
+    "id": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+    "title": { "type": "string", "minLength": 3 },
+    "contentVersion": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+\\.\\d+([+-][a-zA-Z0-9.-]+)?$"
+    },
+    "status": {
+      "enum": ["draft", "in-review", "approved", "rejected", "published"]
+    },
+    "origin": { "enum": ["human-authored", "ai-assisted"] },
+    "author": { "type": "string", "minLength": 1 },
+    "metadata": {
+      "type": "object",
+      "required": [
+        "domain",
+        "difficulty",
+        "audience",
+        "prerequisites",
+        "skillTags",
+        "licenseNotes",
+        "reviewIntervalDays",
+        "changeLog"
+      ]
+    },
+    "provenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["humanAuthored", "disclosure"],
+      "properties": {
+        "humanAuthored": { "type": "boolean" },
+        "disclosure": { "type": "string", "minLength": 20 }
+      }
+    },
+    "claims": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["id", "kind", "statement", "citations"],
+        "properties": {
+          "id": { "type": "string", "minLength": 1 },
+          "kind": { "enum": ["fact", "command"] },
+          "statement": { "type": "string", "minLength": 20 },
+          "commandVerification": { "type": "object" },
+          "citations": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "object",
+              "required": ["sourceId", "evidence", "locator"],
+              "properties": {
+                "sourceId": { "type": "string" },
+                "evidence": { "type": "string" },
+                "locator": { "type": "string" }
+              }
+            }
+          }
+        }
+      }
+    },
+    "reviewRequirements": {
+      "type": "array",
+      "items": { "type": "string" },
+      "uniqueItems": true
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "artifactType": { "not": { "const": "validation-fixture" } }
+        },
+        "required": ["artifactType"]
+      },
+      "then": {
+        "required": [
+          "metadata",
+          "createdAt",
+          "updatedAt",
+          "riskClassification"
+        ],
+        "properties": {
+          "reviewRequirements": {
+            "allOf": [
+              {
+                "contains": {
+                  "const": "cybersecurity-subject-matter-expert"
+                }
+              },
+              { "contains": { "const": "instructional-reviewer" } },
+              { "contains": { "const": "accessibility-reviewer" } },
+              { "contains": { "const": "licensing-reviewer" } }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": { "origin": { "const": "ai-assisted" } },
+        "required": ["origin"]
+      },
+      "then": {
+        "required": ["aiDisclosure", "draftLabel"],
+        "properties": {
+          "draftLabel": {
+            "const": "DRAFT — AI-ASSISTED — NOT REVIEWED"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "riskClassification": { "const": "dual-use" }
+        },
+        "required": ["riskClassification"]
+      },
+      "then": {
+        "required": ["safety"],
+        "properties": {
+          "reviewRequirements": {
+            "contains": { "const": "safety-reviewer" }
+          },
+          "safety": {
+            "type": "object",
+            "required": [
+              "authorizedLocalOnly",
+              "defensiveCounterpart",
+              "cleanupRequired"
+            ],
+            "properties": {
+              "authorizedLocalOnly": { "const": true },
+              "defensiveCounterpart": { "const": true },
+              "cleanupRequired": { "const": true }
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": { "artifactType": { "const": "lesson" } },
+        "required": ["artifactType"]
+      },
+      "then": {
+        "required": ["courseId", "moduleId", "lessonId", "lesson"],
+        "properties": {
+          "lesson": {
+            "type": "object",
+            "required": [
+              "minutes",
+              "objectives",
+              "blocks",
+              "keyTerms",
+              "workedExample",
+              "check"
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

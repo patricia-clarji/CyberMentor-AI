@@ -1,0 +1,194 @@
+{
+  "schemaVersion": 1,
+  "id": "course-11-range-04",
+  "title": "Detect Retrieval Poisoning",
+  "contentVersion": "1.0.0",
+  "contentHash": "c1ba4d9cbda24414714e09663a4d19d0107891a6d716b3ca520e4f47b39af293",
+  "artifactType": "lab",
+  "riskClassification": "dual-use",
+  "verificationStatus": "verified",
+  "publicationStatus": "published",
+  "approvalBasis": "v1-release-baseline",
+  "releaseApproval": {
+    "authority": "product-owner",
+    "decision": "approved",
+    "scope": "initial-v1-academy",
+    "recordedAt": "2026-07-19T00:00:00.000Z",
+    "includesSafetyReview": true,
+    "directive": "Version 1 initial academy is considered reviewed and approved; future changes use the standard workflow."
+  },
+  "publishedAt": "2026-07-19T00:00:00.000Z",
+  "lastReviewedAt": "2026-07-19T00:00:00.000Z",
+  "nextReviewAt": "2028-07-19T00:00:00.000Z",
+  "metadata": {
+    "domain": "ai-security",
+    "difficulty": "foundation-to-intermediate",
+    "audience": [
+      "career-switcher",
+      "student",
+      "junior-practitioner"
+    ],
+    "prerequisites": [],
+    "skillTags": [
+      "security-foundations",
+      "scripting"
+    ],
+    "licenseNotes": "Original CyberMentor instructional synthesis with reference links to authoritative public sources; no source page is republished.",
+    "reviewIntervalDays": 365,
+    "changeLog": [
+      {
+        "version": "1.0.0",
+        "summary": "Initial approved Version 1 academy"
+      }
+    ]
+  },
+  "artifact": {
+    "courseId": "course-11",
+    "title": "Detect Retrieval Poisoning",
+    "description": "Detect Retrieval Poisoning is an original artifact analysis that asks the learner to interpret bounded evidence and produce a server-verifiable result.",
+    "category": "AI Security",
+    "difficulty": "Intermediate",
+    "estimatedMinutes": 50,
+    "story": "Orbit Research has asked the learner to resolve a security decision using the supplied fictional record. The learner is part of an authorized internal training exercise and must preserve a clear evidence-to-decision chain.",
+    "businessContext": "Orbit Research needs a proportionate answer that supports continued operations, protects affected people and systems, and can be reviewed by another practitioner.",
+    "learningObjectives": [
+      "Apply AI Security reasoning to a bounded workplace record",
+      "Separate direct observation from interpretation",
+      "Submit concise evidence and verify the defensive outcome server-side"
+    ],
+    "prerequisites": [
+      "course-11"
+    ],
+    "requiredSkills": [
+      "ai-security",
+      "llm-security",
+      "prompt-injection-defense"
+    ],
+    "authorizedTarget": "Bundled fictional evidence and the CyberMentor local API only",
+    "scope": "Local browser simulation; no public target, external address, or arbitrary command execution",
+    "safetyClassification": "dual-use-local",
+    "rulesOfEngagement": [
+      "Use only the evidence displayed inside this activity.",
+      "Do not test, scan, contact, or submit identifiers for external systems.",
+      "Stop if the task appears to require data outside the supplied scenario."
+    ],
+    "environment": {
+      "type": "artifact-analysis",
+      "runtime": "bounded-artifact-workspace",
+      "isolated": true,
+      "networkAccess": false,
+      "externalTargets": false,
+      "arbitraryCommands": false,
+      "supportsPause": true,
+      "supportsReset": true,
+      "expirationMinutes": 90
+    },
+    "environmentStatus": "usable",
+    "instructions": [
+      "Read the story, business context, and supplied record before forming a conclusion.",
+      "Record the smallest evidence value that answers the task exactly.",
+      "Use progressive hints only when needed; hint dependency is recorded in the attempt.",
+      "Submit the evidence to the server, review the debrief after success, then write a reflection."
+    ],
+    "tasks": [
+      "One new document conflicts with five approved sources and contains hidden instructions. Submit the content status it should receive pending review.",
+      "State one direct observation and one defensive follow-up in your reflection."
+    ],
+    "expectedDeliverables": [
+      "Server-verified evidence value",
+      "Learner reflection separating observation from inference"
+    ],
+    "evidenceRequirement": "Submit the concise value requested by the supplied fictional record.",
+    "expectedEvidence": [
+      "quarantine"
+    ],
+    "validationLogic": {
+      "type": "normalized-equals",
+      "expectedValue": "quarantine"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "label": "Reminder",
+        "text": "Return to the exact question and identify the field or decision it requests."
+      },
+      {
+        "level": 2,
+        "label": "Concept",
+        "text": "Do not promote anomalous untrusted content into the approved corpus."
+      },
+      {
+        "level": 3,
+        "label": "Direction",
+        "text": "Exclude details that do not directly answer the requested evidence value."
+      },
+      {
+        "level": 4,
+        "label": "Partial solution",
+        "text": "The answer is a short security term or value."
+      },
+      {
+        "level": 5,
+        "label": "Walkthrough",
+        "text": "Read the supplied record, apply this reasoning: Do not promote anomalous untrusted content into the approved corpus. Then submit only the requested value."
+      }
+    ],
+    "solutionAccessPolicy": "The full expected value remains server-side. The detailed walkthrough unlocks only through progressive hint use.",
+    "debrief": "A defensible result for Detect Retrieval Poisoning begins with the supplied observation, applies a bounded AI Security concept, and records how the organization should verify or monitor the outcome. separate instructions from data, enforce tool authorization in code, minimize retrieved data, validate output, evaluate attacks, and monitor abuse.",
+    "reflectionPrompts": [
+      "Which observation most influenced your answer?",
+      "What alternative explanation did you rule out?",
+      "How would a defender verify the result in an authorized workplace?"
+    ],
+    "furtherReading": [
+      "Artificial Intelligence Risk Management Framework"
+    ],
+    "cleanupSteps": [
+      "Close the server-owned session when finished.",
+      "Remove any copied fictional evidence from shared notes."
+    ],
+    "defensiveExplanation": "separate instructions from data, enforce tool authorization in code, minimize retrieved data, validate output, evaluate attacks, and monitor abuse",
+    "portfolioSkills": [
+      "security-foundations",
+      "scripting"
+    ],
+    "skillTags": [
+      "security-foundations",
+      "scripting"
+    ],
+    "author": "CyberMentor AI Founding Curriculum Team",
+    "review": {
+      "technical": "seeded-initial-review",
+      "instructional": "seeded-initial-review",
+      "safety": "seeded-initial-review"
+    }
+  },
+  "claims": [
+    {
+      "id": "v1-original-synthesis",
+      "kind": "fact",
+      "statement": "The Version 1 lesson is original instructional synthesis reviewed under the product-owner baseline approval directive."
+    }
+  ],
+  "references": [
+    {
+      "claimId": "v1-original-synthesis",
+      "sourceId": "nist-ai-rmf",
+      "title": "Artificial Intelligence Risk Management Framework",
+      "publisher": "National Institute of Standards and Technology",
+      "url": "https://www.nist.gov/itl/ai-risk-management-framework",
+      "publicationDate": "2023-01-26",
+      "retrievedAt": "2026-07-19T13:10:03.957Z",
+      "sourceVersion": "Sun, 19 Jul 2026 09:21:14 GMT",
+      "snapshotDigest": "f9552383a68119f2cf728d4498519e667a07aa6bb4653824c3a0fd6a644c1820",
+      "evidence": "Authoritative source used for bounded original instructional synthesis."
+    }
+  ],
+  "provenance": {
+    "author": "cybermentor-v1-release-team",
+    "publisher": "v1-release-seed",
+    "disclosure": "Seeded as the product-owner-approved Version 1 baseline. Future edits, community contributions, instructor content, and AI-assisted drafts require the standard review workflow.",
+    "humanAuthored": false,
+    "reviews": []
+  }
+}

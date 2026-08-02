@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "artifactType": "validation-fixture",
+  "id": "pipeline-validation-fixture",
+  "courseId": "internal-content-quality",
+  "moduleId": "source-verification",
+  "lessonId": "authoritative-source-fixture",
+  "title": "Authoritative source verification fixture",
+  "contentVersion": "0.1.0",
+  "status": "draft",
+  "origin": "human-authored",
+  "author": "content-pipeline-team",
+  "provenance": {
+    "humanAuthored": true,
+    "disclosure": "Written by a human as a non-published pipeline validation fixture; no generative model produced the claim."
+  },
+  "createdAt": "2026-07-19T00:00:00.000Z",
+  "updatedAt": "2026-07-19T00:00:00.000Z",
+  "claims": [
+    {
+      "id": "claim-1",
+      "kind": "fact",
+      "statement": "NIST presents the Cybersecurity Framework as a resource for managing cybersecurity risk.",
+      "citations": [
+        {
+          "sourceId": "nist-csf-2",
+          "evidence": "Helping organizations to better understand and improve their management of cybersecurity risk",
+          "locator": "Cybersecurity Framework page introduction"
+        }
+      ]
+    }
+  ],
+  "reviewRequirements": [
+    "cybersecurity-subject-matter-expert",
+    "instructional-reviewer"
+  ],
+  "notes": "Non-published fixture used to exercise ingestion and evidence matching. It is not learner content."
+}

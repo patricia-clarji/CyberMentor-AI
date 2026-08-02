@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-19T13:10:03.962Z",
+  "command": "refresh",
+  "results": [
+    {
+      "sourceId": "nist-ai-rmf",
+      "status": "retrieved",
+      "sourceVersion": "Sun, 19 Jul 2026 09:21:14 GMT",
+      "contentDigest": "f9552383a68119f2cf728d4498519e667a07aa6bb4653824c3a0fd6a644c1820",
+      "evidenceMatches": []
+    }
+  ]
+}

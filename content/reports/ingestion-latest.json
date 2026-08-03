@@ -1,13 +1,77 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-19T13:10:03.962Z",
+  "generatedAt": "2026-08-03T08:42:22.831Z",
   "command": "refresh",
   "results": [
     {
+      "sourceId": "nist-csf-2",
+      "status": "retrieved",
+      "sourceVersion": "Mon, 03 Aug 2026 07:50:39 GMT",
+      "contentDigest": "65802ea00b25d5d48a5ba69f2792c266efd44e25927dce9cef67e675ba5769a0",
+      "evidenceMatches": [
+        {
+          "draftId": "pipeline-validation-fixture",
+          "claimId": "claim-1",
+          "evidenceHash": "7142677af90e8811a1550876ef3d650e6101074197829efaff04471bbea749da",
+          "matched": true,
+          "requiresManualReview": false
+        }
+      ]
+    },
+    {
+      "sourceId": "cisa-cpg",
+      "status": "retrieved",
+      "sourceVersion": "356390aac781acc1",
+      "contentDigest": "356390aac781acc17f4d75341b2ead60e3c792aa32371988af96f7fbf925d6a2",
+      "evidenceMatches": []
+    },
+    {
+      "sourceId": "mitre-attack",
+      "status": "retrieved",
+      "sourceVersion": "W/\"6a60d35e-170bff\"",
+      "contentDigest": "eb011a685d6fe3b7229fe943b56d0ba5b8b5004f9a997fcc9d18d2417170d087",
+      "evidenceMatches": []
+    },
+    {
+      "sourceId": "owasp-top-ten",
+      "status": "retrieved",
+      "sourceVersion": "Wed, 24 Dec 2025 21:06:33 GMT",
+      "contentDigest": "6e6761d45d45b7028310cd476b27cf8db9976afc1b3848027fab8650daaf1f48",
+      "evidenceMatches": []
+    },
+    {
+      "sourceId": "python-3-docs",
+      "status": "retrieved",
+      "sourceVersion": "\"6a704ffe-4987\"",
+      "contentDigest": "ad2ade4c1e08f49a5468e1cf451f59ea0784e0e7e94dca7df65a7163b96a7f53",
+      "evidenceMatches": []
+    },
+    {
+      "sourceId": "linux-kernel-docs",
+      "status": "retrieved",
+      "sourceVersion": "Sun, 02 Aug 2026 23:34:53 GMT",
+      "contentDigest": "46d87b36ba4e61dc94843aa171afbe2d8447c415e5a25aa5035ca054e844bf4a",
+      "evidenceMatches": []
+    },
+    {
+      "sourceId": "rfc-9110",
+      "status": "retrieved",
+      "sourceVersion": "\"0d9f5fb8eb38d3c08b055f9b0671d68b\"",
+      "contentDigest": "d431760660ea44e130f6e919dab216df2d0b3a490567a98089267523368fe1e5",
+      "evidenceMatches": []
+    },
+    {
+      "sourceId": "cisa-cloud-tra",
+      "status": "retrieved",
+      "sourceVersion": "\"2994b9-5fbbf7391ab48\"",
+      "contentDigest": "d7950fca6fcc4bcf2f7314db6deb255770ecabdc27ddf382a9c92f7c7fa8dbff",
+      "evidenceMatches": []
+    },
+    {
       "sourceId": "nist-ai-rmf",
       "status": "retrieved",
-      "sourceVersion": "Sun, 19 Jul 2026 09:21:14 GMT",
-      "contentDigest": "f9552383a68119f2cf728d4498519e667a07aa6bb4653824c3a0fd6a644c1820",
+      "sourceVersion": "Mon, 03 Aug 2026 07:50:40 GMT",
+      "contentDigest": "a65464da7b32ffe0538a2a9c817bc97950cdcfb6ba6d1df9c3284d0a6d63535a",
       "evidenceMatches": []
     }
   ]

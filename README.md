@@ -19,6 +19,18 @@ To verify a running development instance:
 npm run verify:live
 ```
 
+## AI/ML submission artifacts
+
+The final fellowship materials are [the 4-page project report](docs/SUBMISSION_REPORT.md), [the proposal](docs/SUBMISSION_PROPOSAL.md), [dataset documentation](docs/DATASETS.md), and the [NLP/model pipeline](docs/ai/NLP_AND_MODEL_PIPELINE.md). A reproducible dependency-free logistic-regression learner-skill baseline is under `ml/`:
+
+```bash
+npm run ml:train
+python ml/infer.py "I need help with Linux permissions and chmod"
+npm run ml:test
+```
+
+The model uses clearly labeled synthetic demo data; its saved holdout metrics are not claims about Lebanese learners.
+
 The live gate checks the web/API, all 144 lesson publications, grading-key privacy, 80 labs, 12 projects, server-side quiz grading, range launch, cross-owner denial, progressive hints, wrong-answer rejection, reset, correct verification, project submission, and cold-start adaptive recommendations.
 
 ## Included academy

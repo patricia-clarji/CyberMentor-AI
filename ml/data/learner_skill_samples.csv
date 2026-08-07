@@ -1,0 +1,45 @@
+text,label
+I can explain IP addresses subnets and how packets move between networks,networking
+I understand TCP handshakes ports DNS and basic firewall rules,networking
+I can read a packet capture and identify a suspicious connection,networking
+I know how routing tables and network segmentation reduce exposure,networking
+I can use Linux files permissions processes and basic shell commands,linux
+I understand chmod chown users groups and least privilege on Linux,linux
+I can inspect logs with grep journalctl and tail on a Linux host,linux
+I know how services processes and file ownership affect Linux security,linux
+I can identify phishing indicators and triage alerts in a SOC,soc
+I understand IOC enrichment severity escalation and incident scope,soc
+I can compare authentication logs and decide whether an alert needs escalation,soc
+I know the difference between detection evidence containment and recovery,soc
+I can explain confidentiality integrity availability and common security controls,foundations
+I understand risk assets threats vulnerabilities and defense in depth,foundations
+I can describe least privilege patching backups and security awareness,foundations
+I know why policies logging and access reviews support a security program,foundations
+I want to practice subnetting and understand network traffic better,networking
+My weak area is Linux permissions and reading command output,linux
+I need practice investigating alerts and writing a short incident timeline,soc
+I am new to cybersecurity and need the basic vocabulary and security principles,foundations
+I want to learn network protocols routing and defensive network monitoring,networking
+My networking goal is to understand TCP UDP DNS and firewall traffic,networking
+I can explain a subnet and recognize unusual network connections,networking
+I need more practice with packets ports and network segmentation,networking
+I want to learn Linux command line process inspection and permissions,linux
+My Linux weakness is shell commands users groups and file access,linux
+I can investigate a Linux log and secure a service with least privilege,linux
+I need more practice with chmod processes and Linux host evidence,linux
+I want to learn SOC alert triage incident response and evidence,soc
+My SOC weakness is prioritizing alerts and documenting incident scope,soc
+I can explain an IOC and decide when a SOC analyst should escalate,soc
+I need more practice with log investigation containment and recovery,soc
+I want to learn cybersecurity risk controls and security principles,foundations
+My foundations weakness is understanding vulnerabilities threats and assets,foundations
+I can explain defense in depth least privilege and security policy,foundations
+I need more practice with CIA risk assessment and security controls,foundations
+I need to understand how trust boundaries and access decisions protect systems,foundations
+I want practice distinguishing a threat from a vulnerability and choosing a control,foundations
+I need help reading DNS answers and spotting an unusual connection pattern,networking
+I want to practice reasoning about packet flow when a firewall rule blocks traffic,networking
+I need to understand Linux service state ownership and audit output,linux
+I want practice finding suspicious activity in authentication and system logs,linux
+I need to practice ranking alerts by evidence impact and confidence,soc
+I want help writing a concise incident handoff from several related alerts,soc

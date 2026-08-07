@@ -1,3 +1,4 @@
+import hashlib
 import uuid
 from datetime import UTC, datetime
 
@@ -16,12 +17,14 @@ from app.learning.diagnostic import (
     rebuild_roadmap,
     record_skill_evidence,
 )
+from app.learning.skill_classifier import predict
 from app.learning.soc_profile import SOC_PROFILE_VERSION
 from app.models.assessment import AssessmentAttempt, QuestionResponse
-from app.models.learning import DiagnosticAttempt, LearnerProfile
+from app.models.learning import DiagnosticAttempt, LearnerProfile, Skill, SkillEvidence
 from app.schemas.diagnostic import (
     DiagnosticAnswerRequest,
     DiagnosticAnswerResponse,
+    DiagnosticStartRequest,
     DiagnosticStartResponse,
 )
 
@@ -30,6 +33,7 @@ router = APIRouter(prefix="/diagnostic", tags=["diagnostic"])
 
 @router.post("/start", response_model=DiagnosticStartResponse, status_code=201)
 def start_diagnostic(
+    payload: DiagnosticStartRequest | None = None,
     auth: AuthContext = Depends(require_csrf),
     db: DatabaseSession = Depends(get_db),
 ) -> DiagnosticStartResponse:
@@ -56,6 +60,31 @@ def start_diagnostic(
             status="started",
         )
     )
+    if payload and payload.self_assessment_text:
+        signal = predict(payload.self_assessment_text)
+        if signal:
+            skill_key, confidence = signal
+            skill = db.scalar(select(Skill).where(Skill.stable_key == skill_key))
+            if skill:
+                digest = hashlib.sha256(
+                    payload.self_assessment_text.strip().encode("utf-8")
+                ).hexdigest()
+                db.add(
+                    SkillEvidence(
+                        organization_id=auth.organization_id,
+                        user_id=auth.user.id,
+                        skill_id=skill.id,
+                        source_type="ml_self_assessment",
+                        source_id=str(attempt.id),
+                        source_version="skill-classifier-1.0.0",
+                        score=confidence,
+                        independence=0.0,
+                        hints_used=0,
+                        attempts=1,
+                        occurred_at=now,
+                        provenance_hash=digest,
+                    )
+                )
     db.commit()
     question, question_version = questions[0]
     return DiagnosticStartResponse(

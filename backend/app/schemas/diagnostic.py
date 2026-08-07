@@ -20,6 +20,10 @@ class DiagnosticStartResponse(BaseModel):
     question: DiagnosticQuestionResponse
 
 
+class DiagnosticStartRequest(BaseModel):
+    self_assessment_text: str | None = Field(default=None, max_length=4000)
+
+
 class DiagnosticAnswerRequest(BaseModel):
     response: dict[str, Any] = Field(default_factory=dict)
 

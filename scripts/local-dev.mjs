@@ -21,6 +21,18 @@ const venvPython = resolve(
 );
 const viteEntry = resolve(root, "node_modules", "vite", "bin", "vite.js");
 const requiredNode = { major: 22, minor: 12 };
+const inheritedPortOverrides = new Set(
+  [
+    "CYBERMENTOR_WEB_PORT",
+    "CYBERMENTOR_TRUSTED_API_PORT",
+    "CYBERMENTOR_LEGACY_API_PORT",
+  ].filter((name) => process.env[name] !== undefined),
+);
+const defaultPorts = {
+  frontend: 5173,
+  "trusted API": 8010,
+  "content API": 8787,
+};
 const pythonCandidates = isWindows
   ? [
       { command: "py", args: ["-3.13"] },
@@ -306,9 +318,38 @@ async function preflightPorts(configuration) {
   ];
   const unavailable = [];
   for (const [name, port] of services) {
-    if (!(await portAvailable(configuration.host, port))) {
+    if (await portAvailable(configuration.host, port)) continue;
+    const environmentName = {
+      frontend: "CYBERMENTOR_WEB_PORT",
+      "trusted API": "CYBERMENTOR_TRUSTED_API_PORT",
+      "content API": "CYBERMENTOR_LEGACY_API_PORT",
+    }[name];
+    if (
+      inheritedPortOverrides.has(environmentName) ||
+      Number(process.env[environmentName]) !== defaultPorts[name]
+    ) {
       unavailable.push(`${name} ${configuration.host}:${port}`);
+      continue;
     }
+    let fallback = null;
+    for (let candidate = port + 1; candidate <= port + 20; candidate += 1) {
+      if (await portAvailable(configuration.host, candidate)) {
+        fallback = candidate;
+        break;
+      }
+    }
+    if (fallback === null) {
+      unavailable.push(`${name} ${configuration.host}:${port}`);
+      continue;
+    }
+    configuration[{
+      frontend: "webPort",
+      "trusted API": "trustedPort",
+      "content API": "legacyPort",
+    }[name]] = fallback;
+    process.stdout.write(
+      `Port ${port} is unavailable; using ${fallback} for ${name}. Set ${environmentName} to force a specific port.\n`,
+    );
   }
   if (unavailable.length) {
     fail(

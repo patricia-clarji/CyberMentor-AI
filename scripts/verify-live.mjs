@@ -94,6 +94,18 @@ assert("Lab launch", [200, 201].includes(labLaunch.response.status), {
   resumed: labLaunch.payload.resumed,
 });
 const instanceId = labLaunch.payload.instance?.id;
+if (labLaunch.payload.resumed) {
+  const preparationReset = await post("/api/labs/action", {
+    sessionId: instanceId,
+    ownerId,
+    action: "reset",
+  });
+  if (preparationReset.response.status !== 200) {
+    throw new Error(
+      `Could not reset the verifier-owned lab before testing: ${preparationReset.response.status}`,
+    );
+  }
+}
 const ownershipCheck = await post("/api/labs/verify", {
   labId: lab?.id,
   sessionId: instanceId,

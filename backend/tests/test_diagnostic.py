@@ -11,7 +11,7 @@ from app.identity.dependencies import AuthContext
 from app.identity.service import create_session, register_user, verify_email
 from app.learning.diagnostic import rebuild_roadmap
 from app.models.assessment import QuestionVersion
-from app.models.learning import LearnerSkillState, Recommendation, Skill
+from app.models.learning import LearnerSkillState, Recommendation, Skill, SkillEvidence
 
 PASSWORD = "Strong-Password-42!"  # noqa: S105 - isolated test credential
 
@@ -52,6 +52,34 @@ def test_diagnostic_never_projects_private_answers(client: TestClient, db: Sessi
         "log_interpretation",
         "scenario_decision",
     }
+
+
+def test_diagnostic_records_low_confidence_ml_skill_signal(
+    client: TestClient, db: Session
+) -> None:
+    user = prepare(db, "ml-diagnostic@example.com")
+    csrf = login(client, "ml-diagnostic@example.com")
+    start = client.post(
+        "/api/v1/diagnostic/start",
+        headers={"X-CSRF-Token": csrf},
+        json={
+            "self_assessment_text": (
+                "I understand networking but need practice with Linux permissions and logs."
+            )
+        },
+    )
+    assert start.status_code == 201
+    evidence = db.scalars(
+        select(SkillEvidence).where(
+            SkillEvidence.user_id == user.id,
+            SkillEvidence.source_type == "ml_self_assessment",
+        )
+    ).all()
+    assert len(evidence) == 1
+    skill = db.get(Skill, evidence[0].skill_id)
+    assert skill is not None
+    assert skill.stable_key == "linux-processes"
+    assert 0.0 < evidence[0].score <= 1.0
 
 
 def test_complete_diagnostic_generates_low_confidence_evidence_and_roadmap(

@@ -320,6 +320,7 @@ function DiagnosticPage() {
   const [completed, setCompleted] = useState(false);
   const [error, setError] = useState<unknown>();
   const [busy, setBusy] = useState(false);
+  const [selfAssessment, setSelfAssessment] = useState("");
   async function start() {
     setBusy(true);
     setError(undefined);
@@ -327,7 +328,10 @@ function DiagnosticPage() {
       const result = await apiFetch<{
         attempt_id: string;
         question: DiagnosticQuestion;
-      }>("/api/v1/diagnostic/start", { method: "POST" });
+      }>("/api/v1/diagnostic/start", {
+        method: "POST",
+        body: JSON.stringify({ self_assessment_text: selfAssessment }),
+      });
       setAttemptId(result.attempt_id);
       setQuestion(result.question);
       setFeedback("");
@@ -373,9 +377,24 @@ function DiagnosticPage() {
       </p>
       {error != null && <ErrorPanel error={error} />}
       {!attemptId && (
-        <button className="primary" onClick={start} disabled={busy}>
-          {busy ? "Preparing…" : "Start diagnostic"}
-        </button>
+        <>
+          <label>
+            In your own words, what cybersecurity skill do you want to improve?
+            <textarea
+              rows={4}
+              value={selfAssessment}
+              onChange={(event) => setSelfAssessment(event.target.value)}
+              placeholder="Example: I understand networking but need practice with Linux logs and SOC alerts."
+            />
+          </label>
+          <p className="form-hint">
+            This text gives the adaptive engine a low-confidence starting signal;
+            the graded diagnostic remains the authoritative evidence.
+          </p>
+          <button className="primary" onClick={start} disabled={busy}>
+            {busy ? "Preparing…" : "Start diagnostic"}
+          </button>
+        </>
       )}
       {feedback && (
         <div className="workflow-feedback" role="status">

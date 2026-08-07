@@ -244,6 +244,10 @@ export function recommendActivities({
         Object.values(normalizedSkills).some(
           (state) => (state.recencyFactor || 1) < 0.9,
         );
+      const advancedChallengeFit =
+        activity.difficulty === "expert-challenge" &&
+        taggedMasteries.length > 0 &&
+        Math.min(...taggedMasteries) >= 0.85;
       const score =
         (mandatory ? 10 : 0) +
         (ready ? 1.2 : -1.8) +
@@ -256,7 +260,8 @@ export function recommendActivities({
         (crossDomainBridge ? 0.7 : 0) +
         (practicalNeed ? 1.4 : 0) +
         (theoryNeed ? 1.4 : 0) +
-        (returningAfterInactivity ? 1.6 : 0);
+        (returningAfterInactivity ? 1.6 : 0) +
+        (advancedChallengeFit ? 1.5 : 0);
       return {
         activity,
         score,

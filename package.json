@@ -44,7 +44,9 @@
     "content:rollback": "node scripts/content-pipeline.mjs rollback",
     "content:check-references": "node scripts/content-pipeline.mjs refresh",
     "validate-content": "vitest run src/data/content.test.ts scripts/content-pipeline.test.mjs && node scripts/content-pipeline.mjs validate",
-    "evaluate-ai": "vitest run src/lib/sentinel.test.ts src/lib/sentinel.eval.test.ts"
+    "evaluate-ai": "vitest run src/lib/sentinel.test.ts src/lib/sentinel.eval.test.ts",
+    "ml:train": "python ml/train.py",
+    "ml:test": "python -m unittest discover -s ml -p \"test_*.py\""
   },
   "dependencies": {
     "@tanstack/react-query": "^5.85.5",

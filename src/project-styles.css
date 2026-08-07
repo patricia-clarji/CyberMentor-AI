@@ -111,6 +111,40 @@
   }
 }
 
+.range-stats,
+.range-stats div,
+.range-mode,
+.lab-actions,
+.lab-session-bar,
+.lab-exercise,
+.progressive-hints,
+.lab-debrief,
+.project-grid,
+.project-workspace,
+.auth-card,
+.competition-shell,
+.competition-main,
+.workflow-panel {
+  color: var(--ink);
+}
+
+.range-stats span,
+.lab-session-bar,
+.range-mode span,
+.lab-exercise ul,
+.lab-exercise ol,
+.progressive-hints,
+.lab-debrief,
+.project-workspace label,
+.project-workspace textarea,
+.auth-card p,
+.auth-card label,
+.competition-main p,
+.workflow-panel p,
+.workflow-panel li {
+  color: var(--muted);
+}
+
 .project-grid {
   display: grid;
   gap: 1.25rem;
